@@ -1,0 +1,122 @@
+{
+  "archive": "grape-thinning-delivery-v02.zip",
+  "size": 269087545,
+  "sha256": "b1e358184b8537b9e4f1db3c49b549c8b406c0813ccbdac6d66ee042320092b4",
+  "parts": [
+    {
+      "name": "grape-thinning-delivery-v02.zip.part001",
+      "size": 12000000,
+      "sha256": "ade6782217f46332d9207e1673634474544d744d86bc2bb935c34dbf69c8a1da"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part002",
+      "size": 12000000,
+      "sha256": "ffaf534971ace70132f4dcade35a8046b4f28dc03e6e5c82a7458b910a3a4df2"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part003",
+      "size": 12000000,
+      "sha256": "bb2b807b454880c74e62568b0f1138b3c98326b59bbe0df690632296cfd084fb"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part004",
+      "size": 12000000,
+      "sha256": "f97b1b0b25cb57f2a6f23360de0ac977b4bce5b964a3ce79529836f7db7452c9"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part005",
+      "size": 12000000,
+      "sha256": "45fbb96fd510fc146a7a002e88c864ed1703e3b0f92a1432030fffb3207ee838"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part006",
+      "size": 12000000,
+      "sha256": "0f33a3f4369d0c2b4851e1b5e3fbc5031ac86350afd80c1815a3f08a07551b5e"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part007",
+      "size": 12000000,
+      "sha256": "0e2919854530a41c12c7e1865feafc46a9a7b972ac8fbb4c98ac7729df14c93e"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part008",
+      "size": 12000000,
+      "sha256": "c7d936eb1202bd247df969834c7ca4de42e6c75b37894c13a8a336142daeb280"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part009",
+      "size": 12000000,
+      "sha256": "814cc0988d643099c9934f0818b5282998a1f3cf381aecd8d74b350553d7782d"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part010",
+      "size": 12000000,
+      "sha256": "4b5ad99e2a6baf68379555a720a6aca98161d23bb72b510c704e422216f36eeb"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part011",
+      "size": 12000000,
+      "sha256": "a58644513ab8bd67bf988b71a26f9a7971fce367a56f2f22c16da6228348811e"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part012",
+      "size": 12000000,
+      "sha256": "b0e70b814a895f8cb2101d549733405c5aef64331f178aaa1a2ca7d361d031ab"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part013",
+      "size": 12000000,
+      "sha256": "5e17d289e380fe922d6b6637feca2fedac2a55d9362d529d1128c021cb53fcf1"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part014",
+      "size": 12000000,
+      "sha256": "e529cfc14bbef0c90f4b092b0c8b894b7d6a211d19467c543ccd808e3ea71b6a"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part015",
+      "size": 12000000,
+      "sha256": "5bfa35cdd811f2a0ce833ed24921646f6f3742d40b2709c2b0bd7c9130058aca"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part016",
+      "size": 12000000,
+      "sha256": "d2b3655ff1829766833d33e4e27d13e3c0cac8490b5f4540584959bd3bdf2afe"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part017",
+      "size": 12000000,
+      "sha256": "41f9a66fd464bb3afee949efea2b53d3e233b0f6dac4170275771ac9955c34ff"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part018",
+      "size": 12000000,
+      "sha256": "b407ac1600e295c9549414d8c8751be4c1ef24afe292cf62cd3eb37256629a45"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part019",
+      "size": 12000000,
+      "sha256": "6b924bd77f2c9fbe34ee6324af05a017e180f03aa0ce3199fbd545f1a6b1e826"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part020",
+      "size": 12000000,
+      "sha256": "1560940e06fb81cf03acb61617810694ebbfc28b4df3543088129873498fc528"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part021",
+      "size": 12000000,
+      "sha256": "f67a83c8b5ba3a967bc66a563bb29a0a2a426fff5b03525d2b01a0c064982762"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part022",
+      "size": 12000000,
+      "sha256": "fef9aa9589b33f605a9327826ae2aead1de93474f4d2b7568ba639c24ad82ddd"
+    },
+    {
+      "name": "grape-thinning-delivery-v02.zip.part023",
+      "size": 5087545,
+      "sha256": "2c2321f52bcafff86494c3f3fbe3d57cbffe8b74a3dc30576e779248b5a735b8"
+    }
+  ]
+}

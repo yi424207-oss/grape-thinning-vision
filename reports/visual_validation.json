@@ -1,0 +1,87 @@
+{
+  "berry_aux": {
+    "metrics": {
+      "metrics/precision(B)": 0.8811325867966955,
+      "metrics/recall(B)": 0.6399605328071041,
+      "metrics/mAP50(B)": 0.7114813795085042,
+      "metrics/mAP50-95(B)": 0.4440497491735633,
+      "fitness": 0.4440497491735633
+    },
+    "confusion_matrix": [
+      [
+        8115.0,
+        57375.0
+      ],
+      [
+        2020.0,
+        0.0
+      ]
+    ],
+    "split": "validation",
+    "weights": "runs/berry_aux/weights/best.pt",
+    "input_size": 384,
+    "prediction_conf": 0.001,
+    "nms_iou": 0.5,
+    "plotting_matrix_threshold": 0.001,
+    "matrix_matching_iou": 0.45
+  },
+  "flower": {
+    "metrics": {
+      "metrics/precision(B)": 0.749003862793427,
+      "metrics/recall(B)": 0.7242679204623965,
+      "metrics/mAP50(B)": 0.7558146770744414,
+      "metrics/mAP50-95(B)": 0.5018596023207584,
+      "fitness": 0.5018596023207584
+    },
+    "confusion_matrix": [
+      [
+        82.0,
+        9.0,
+        1228.0
+      ],
+      [
+        3.0,
+        1228.0,
+        14060.0
+      ],
+      [
+        0.0,
+        330.0,
+        0.0
+      ]
+    ],
+    "split": "validation",
+    "weights": "runs/flower/weights/best.pt",
+    "input_size": 384,
+    "prediction_conf": 0.001,
+    "nms_iou": 0.5,
+    "plotting_matrix_threshold": 0.001,
+    "matrix_matching_iou": 0.45
+  },
+  "young": {
+    "metrics": {
+      "metrics/precision(B)": 0.5179299161192648,
+      "metrics/recall(B)": 0.4776343157739846,
+      "metrics/mAP50(B)": 0.4583801728310719,
+      "metrics/mAP50-95(B)": 0.18616559705481203,
+      "fitness": 0.18616559705481203
+    },
+    "confusion_matrix": [
+      [
+        25.0,
+        497.0
+      ],
+      [
+        11.0,
+        0.0
+      ]
+    ],
+    "split": "validation",
+    "weights": "runs/young/weights/best.pt",
+    "input_size": 384,
+    "prediction_conf": 0.001,
+    "nms_iou": 0.5,
+    "plotting_matrix_threshold": 0.001,
+    "matrix_matching_iou": 0.45
+  }
+}

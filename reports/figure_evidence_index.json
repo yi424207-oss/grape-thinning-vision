@@ -1,0 +1,163 @@
+[
+  {
+    "figure": "berry_samples.png",
+    "source": [
+      "data/berry_yolo/images/train/ShineMuscat_10_01.jpg",
+      "data/berry_yolo/images/train/ShineMuscat_2_00.jpg",
+      "data/berry_yolo/images/train/ShineMuscat_34_11.jpg",
+      "data/berry_yolo/images/train/ShineMuscat_3_10.jpg",
+      "data/berry_yolo/images/train/ShineMuscat_4_11.jpg",
+      "data/berry_yolo/images/train/ShineMuscat_9_11.jpg"
+    ]
+  },
+  {
+    "figure": "flower_samples.png",
+    "source": [
+      "data/flower_yolo/images/train/IMG_1432.jpg",
+      "data/flower_yolo/images/train/IMG_1557.jpg",
+      "data/flower_yolo/images/train/IMG_1706.jpg",
+      "data/flower_yolo/images/train/IMG_1795.jpg",
+      "data/flower_yolo/images/train/IMG_1903.jpg",
+      "data/flower_yolo/images/train/IMG_2018.jpg"
+    ]
+  },
+  {
+    "figure": "berry_aux_results.png",
+    "source": "runs/berry_aux/results.png",
+    "split": "training CSV for results.png; best-weight validation for matrices and PR; NOT held-out test"
+  },
+  {
+    "figure": "berry_aux_confusion_matrix.png",
+    "source": "runs/berry_aux_visual_val/confusion_matrix.png",
+    "split": "training CSV for results.png; best-weight validation for matrices and PR; NOT held-out test"
+  },
+  {
+    "figure": "berry_aux_confusion_matrix_normalized.png",
+    "source": "runs/berry_aux_visual_val/confusion_matrix_normalized.png",
+    "split": "training CSV for results.png; best-weight validation for matrices and PR; NOT held-out test"
+  },
+  {
+    "figure": "berry_aux_BoxPR_curve.png",
+    "source": "runs/berry_aux_visual_val/BoxPR_curve.png",
+    "split": "training CSV for results.png; best-weight validation for matrices and PR; NOT held-out test"
+  },
+  {
+    "figure": "flower_results.png",
+    "source": "runs/flower/results.png",
+    "split": "training CSV for results.png; best-weight validation for matrices and PR; NOT held-out test"
+  },
+  {
+    "figure": "flower_confusion_matrix.png",
+    "source": "runs/flower_visual_val/confusion_matrix.png",
+    "split": "training CSV for results.png; best-weight validation for matrices and PR; NOT held-out test"
+  },
+  {
+    "figure": "flower_confusion_matrix_normalized.png",
+    "source": "runs/flower_visual_val/confusion_matrix_normalized.png",
+    "split": "training CSV for results.png; best-weight validation for matrices and PR; NOT held-out test"
+  },
+  {
+    "figure": "flower_BoxPR_curve.png",
+    "source": "runs/flower_visual_val/BoxPR_curve.png",
+    "split": "training CSV for results.png; best-weight validation for matrices and PR; NOT held-out test"
+  },
+  {
+    "figure": "young_results.png",
+    "source": "runs/young/results.png",
+    "split": "training CSV for results.png; best-weight validation for matrices and PR; NOT held-out test"
+  },
+  {
+    "figure": "young_confusion_matrix.png",
+    "source": "runs/young_visual_val/confusion_matrix.png",
+    "split": "training CSV for results.png; best-weight validation for matrices and PR; NOT held-out test"
+  },
+  {
+    "figure": "young_confusion_matrix_normalized.png",
+    "source": "runs/young_visual_val/confusion_matrix_normalized.png",
+    "split": "training CSV for results.png; best-weight validation for matrices and PR; NOT held-out test"
+  },
+  {
+    "figure": "young_BoxPR_curve.png",
+    "source": "runs/young_visual_val/BoxPR_curve.png",
+    "split": "training CSV for results.png; best-weight validation for matrices and PR; NOT held-out test"
+  },
+  {
+    "figure": "berry_aux_cm_evidence.png",
+    "source": {
+      "numeric_source": "reports/visual_validation.json",
+      "task": "berry_aux",
+      "conf": 0.001,
+      "match_iou": 0.45
+    }
+  },
+  {
+    "figure": "flower_cm_evidence.png",
+    "source": {
+      "numeric_source": "reports/visual_validation.json",
+      "task": "flower",
+      "conf": 0.001,
+      "match_iou": 0.45
+    }
+  },
+  {
+    "figure": "young_cm_evidence.png",
+    "source": {
+      "numeric_source": "reports/visual_validation.json",
+      "task": "young",
+      "conf": 0.001,
+      "match_iou": 0.45
+    }
+  },
+  {
+    "figure": "berry_aux_train_batch0.jpg",
+    "source": "runs/berry_aux/train_batch0.jpg",
+    "split": "training augmentation mosaic"
+  },
+  {
+    "figure": "flower_train_batch0.jpg",
+    "source": "runs/flower/train_batch0.jpg",
+    "split": "training augmentation mosaic"
+  },
+  {
+    "figure": "test_confusion.png",
+    "source": "reports/*_evaluation.json: fixed threshold on held-out test"
+  },
+  {
+    "figure": "test_count_scatter.png",
+    "source": "reports/*_evaluation.json: per_image"
+  },
+  {
+    "figure": "berry_input_output.png",
+    "source": [
+      "examples/berry_demo_input.jpg",
+      "outputs/public_quickstart/annotated.jpg"
+    ]
+  },
+  {
+    "figure": "flower_input_output.png",
+    "source": [
+      "examples/flower_demo_input.jpg",
+      "outputs/flower_demo/annotated.jpg"
+    ]
+  },
+  {
+    "figure": "cli_run_record.png",
+    "source": [
+      "outputs/public_quickstart/result.json",
+      "reports/unit_tests.txt",
+      "reports/delivery_verification.json"
+    ]
+  },
+  {
+    "figure": "csv_export_preview.png",
+    "source": "outputs/public_quickstart/berries.csv"
+  },
+  {
+    "figure": "test_error_examples.png",
+    "source": {
+      "selection": "two largest absolute test count errors",
+      "cyan": "ground truth",
+      "orange": "prediction"
+    }
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "dataset_images_fully_decoded": {
+    "berry_yolo": {
+      "train": 360,
+      "val": 120,
+      "test": 120
+    },
+    "flower_yolo": {
+      "train": 369,
+      "val": 75,
+      "test": 79
+    },
+    "young_yolo": {
+      "train": 37,
+      "val": 1,
+      "test": 2
+    }
+  },
+  "public_images": 1123,
+  "public_training_images": 729,
+  "private_young_images": 40,
+  "label_pairing": "passed",
+  "public_rgb_allowlist": [
+    "berry_yolo",
+    "flower_yolo"
+  ],
+  "paper_figure_groups": 19,
+  "paper_image_objects": 21,
+  "gui_runtime": "not verified; actual CLI records supplied"
+}
