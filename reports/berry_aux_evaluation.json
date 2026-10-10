@@ -1,0 +1,1845 @@
+{
+  "task": "berry_aux",
+  "imgsz": 384,
+  "iou_match": 0.5,
+  "nms_iou": 0.5,
+  "max_det": 1000,
+  "threshold_selection": "maximum validation F1; never test",
+  "classes": {
+    "berry": {
+      "validation_sweep": [
+        {
+          "threshold": 0.05,
+          "class_id": 0,
+          "precision": 0.46860566720758956,
+          "recall": 0.7407992106561421,
+          "f1": 0.574071950147188,
+          "tp": 7508,
+          "fp": 8514,
+          "fn": 2627,
+          "images": 120,
+          "count_mae": 49.05833333333333,
+          "count_rmse": 56.9876448597998,
+          "count_bias": 49.05833333333333
+        },
+        {
+          "threshold": 0.1,
+          "class_id": 0,
+          "precision": 0.6037782749192145,
+          "recall": 0.7189935865811544,
+          "f1": 0.6563682219419925,
+          "tp": 7287,
+          "fp": 4782,
+          "fn": 2848,
+          "images": 120,
+          "count_mae": 17.75,
+          "count_rmse": 23.39408757214808,
+          "count_bias": 16.116666666666667
+        },
+        {
+          "threshold": 0.15,
+          "class_id": 0,
+          "precision": 0.7006621207629212,
+          "recall": 0.6995559940799211,
+          "f1": 0.7001086205194036,
+          "tp": 7090,
+          "fp": 3029,
+          "fn": 3045,
+          "images": 120,
+          "count_mae": 9.916666666666666,
+          "count_rmse": 13.119959349530522,
+          "count_bias": -0.13333333333333333
+        },
+        {
+          "threshold": 0.2,
+          "class_id": 0,
+          "precision": 0.7735047512576858,
+          "recall": 0.6826837691169215,
+          "f1": 0.7252620545073375,
+          "tp": 6919,
+          "fp": 2026,
+          "fn": 3216,
+          "images": 120,
+          "count_mae": 11.766666666666667,
+          "count_rmse": 16.739673433692385,
+          "count_bias": -9.916666666666666
+        },
+        {
+          "threshold": 0.25,
+          "class_id": 0,
+          "precision": 0.8297190734351898,
+          "recall": 0.6644301924025654,
+          "f1": 0.7379321681003782,
+          "tp": 6734,
+          "fp": 1382,
+          "fn": 3401,
+          "images": 120,
+          "count_mae": 17.008333333333333,
+          "count_rmse": 22.815382238013605,
+          "count_bias": -16.825
+        },
+        {
+          "threshold": 0.3,
+          "class_id": 0,
+          "precision": 0.8699057480419488,
+          "recall": 0.6465712876171682,
+          "f1": 0.7417930722209644,
+          "tp": 6553,
+          "fp": 980,
+          "fn": 3582,
+          "images": 120,
+          "count_mae": 21.733333333333334,
+          "count_rmse": 27.840917130487398,
+          "count_bias": -21.683333333333334
+        },
+        {
+          "threshold": 0.4,
+          "class_id": 0,
+          "precision": 0.9244037798110094,
+          "recall": 0.6080907745436606,
+          "f1": 0.7336031424830378,
+          "tp": 6163,
+          "fp": 504,
+          "fn": 3972,
+          "images": 120,
+          "count_mae": 28.9,
+          "count_rmse": 36.12847445805962,
+          "count_bias": -28.9
+        },
+        {
+          "threshold": 0.5,
+          "class_id": 0,
+          "precision": 0.952642988160747,
+          "recall": 0.5636901825357672,
+          "f1": 0.7082816761715844,
+          "tp": 5713,
+          "fp": 284,
+          "fn": 4422,
+          "images": 120,
+          "count_mae": 34.483333333333334,
+          "count_rmse": 42.68684418725126,
+          "count_bias": -34.483333333333334
+        }
+      ],
+      "validation": {
+        "threshold": 0.3,
+        "class_id": 0,
+        "precision": 0.8699057480419488,
+        "recall": 0.6465712876171682,
+        "f1": 0.7417930722209644,
+        "tp": 6553,
+        "fp": 980,
+        "fn": 3582,
+        "images": 120,
+        "count_mae": 21.733333333333334,
+        "count_rmse": 27.840917130487398,
+        "count_bias": -21.683333333333334,
+        "per_image": [
+          {
+            "file": "Kyoho_1_00.jpg",
+            "ground_truth": 95,
+            "predicted": 65,
+            "tp": 55,
+            "error": -30
+          },
+          {
+            "file": "Kyoho_1_01.jpg",
+            "ground_truth": 134,
+            "predicted": 106,
+            "tp": 95,
+            "error": -28
+          },
+          {
+            "file": "Kyoho_1_10.jpg",
+            "ground_truth": 66,
+            "predicted": 46,
+            "tp": 44,
+            "error": -20
+          },
+          {
+            "file": "Kyoho_1_11.jpg",
+            "ground_truth": 6,
+            "predicted": 7,
+            "tp": 6,
+            "error": 1
+          },
+          {
+            "file": "Kyoho_2_00.jpg",
+            "ground_truth": 85,
+            "predicted": 75,
+            "tp": 64,
+            "error": -10
+          },
+          {
+            "file": "Kyoho_2_01.jpg",
+            "ground_truth": 47,
+            "predicted": 36,
+            "tp": 34,
+            "error": -11
+          },
+          {
+            "file": "Kyoho_2_10.jpg",
+            "ground_truth": 90,
+            "predicted": 73,
+            "tp": 67,
+            "error": -17
+          },
+          {
+            "file": "Kyoho_2_11.jpg",
+            "ground_truth": 40,
+            "predicted": 35,
+            "tp": 30,
+            "error": -5
+          },
+          {
+            "file": "Kyoho_3_00.jpg",
+            "ground_truth": 62,
+            "predicted": 50,
+            "tp": 45,
+            "error": -12
+          },
+          {
+            "file": "Kyoho_3_01.jpg",
+            "ground_truth": 43,
+            "predicted": 42,
+            "tp": 35,
+            "error": -1
+          },
+          {
+            "file": "Kyoho_3_10.jpg",
+            "ground_truth": 46,
+            "predicted": 37,
+            "tp": 34,
+            "error": -9
+          },
+          {
+            "file": "Kyoho_3_11.jpg",
+            "ground_truth": 80,
+            "predicted": 64,
+            "tp": 57,
+            "error": -16
+          },
+          {
+            "file": "Kyoho_46_00.jpg",
+            "ground_truth": 136,
+            "predicted": 115,
+            "tp": 103,
+            "error": -21
+          },
+          {
+            "file": "Kyoho_46_01.jpg",
+            "ground_truth": 88,
+            "predicted": 79,
+            "tp": 67,
+            "error": -9
+          },
+          {
+            "file": "Kyoho_46_10.jpg",
+            "ground_truth": 136,
+            "predicted": 110,
+            "tp": 91,
+            "error": -26
+          },
+          {
+            "file": "Kyoho_46_11.jpg",
+            "ground_truth": 141,
+            "predicted": 83,
+            "tp": 64,
+            "error": -58
+          },
+          {
+            "file": "Kyoho_47_00.jpg",
+            "ground_truth": 98,
+            "predicted": 70,
+            "tp": 65,
+            "error": -28
+          },
+          {
+            "file": "Kyoho_47_01.jpg",
+            "ground_truth": 132,
+            "predicted": 98,
+            "tp": 92,
+            "error": -34
+          },
+          {
+            "file": "Kyoho_47_10.jpg",
+            "ground_truth": 61,
+            "predicted": 43,
+            "tp": 41,
+            "error": -18
+          },
+          {
+            "file": "Kyoho_47_11.jpg",
+            "ground_truth": 49,
+            "predicted": 40,
+            "tp": 33,
+            "error": -9
+          },
+          {
+            "file": "Kyoho_48_00.jpg",
+            "ground_truth": 86,
+            "predicted": 60,
+            "tp": 54,
+            "error": -26
+          },
+          {
+            "file": "Kyoho_48_01.jpg",
+            "ground_truth": 103,
+            "predicted": 77,
+            "tp": 72,
+            "error": -26
+          },
+          {
+            "file": "Kyoho_48_10.jpg",
+            "ground_truth": 109,
+            "predicted": 66,
+            "tp": 62,
+            "error": -43
+          },
+          {
+            "file": "Kyoho_48_11.jpg",
+            "ground_truth": 166,
+            "predicted": 124,
+            "tp": 115,
+            "error": -42
+          },
+          {
+            "file": "Kyoho_49_00.jpg",
+            "ground_truth": 141,
+            "predicted": 98,
+            "tp": 91,
+            "error": -43
+          },
+          {
+            "file": "Kyoho_49_01.jpg",
+            "ground_truth": 209,
+            "predicted": 152,
+            "tp": 141,
+            "error": -57
+          },
+          {
+            "file": "Kyoho_49_10.jpg",
+            "ground_truth": 137,
+            "predicted": 96,
+            "tp": 83,
+            "error": -41
+          },
+          {
+            "file": "Kyoho_49_11.jpg",
+            "ground_truth": 67,
+            "predicted": 38,
+            "tp": 29,
+            "error": -29
+          },
+          {
+            "file": "Kyoho_4_00.jpg",
+            "ground_truth": 79,
+            "predicted": 45,
+            "tp": 36,
+            "error": -34
+          },
+          {
+            "file": "Kyoho_4_01.jpg",
+            "ground_truth": 149,
+            "predicted": 99,
+            "tp": 82,
+            "error": -50
+          },
+          {
+            "file": "Kyoho_4_10.jpg",
+            "ground_truth": 176,
+            "predicted": 98,
+            "tp": 93,
+            "error": -78
+          },
+          {
+            "file": "Kyoho_4_11.jpg",
+            "ground_truth": 74,
+            "predicted": 38,
+            "tp": 29,
+            "error": -36
+          },
+          {
+            "file": "Kyoho_50_00.jpg",
+            "ground_truth": 134,
+            "predicted": 99,
+            "tp": 92,
+            "error": -35
+          },
+          {
+            "file": "Kyoho_50_01.jpg",
+            "ground_truth": 127,
+            "predicted": 83,
+            "tp": 77,
+            "error": -44
+          },
+          {
+            "file": "Kyoho_50_10.jpg",
+            "ground_truth": 6,
+            "predicted": 5,
+            "tp": 3,
+            "error": -1
+          },
+          {
+            "file": "Kyoho_50_11.jpg",
+            "ground_truth": 67,
+            "predicted": 40,
+            "tp": 37,
+            "error": -27
+          },
+          {
+            "file": "Kyoho_5_00.jpg",
+            "ground_truth": 79,
+            "predicted": 65,
+            "tp": 60,
+            "error": -14
+          },
+          {
+            "file": "Kyoho_5_01.jpg",
+            "ground_truth": 33,
+            "predicted": 22,
+            "tp": 21,
+            "error": -11
+          },
+          {
+            "file": "Kyoho_5_10.jpg",
+            "ground_truth": 49,
+            "predicted": 45,
+            "tp": 34,
+            "error": -4
+          },
+          {
+            "file": "Kyoho_5_11.jpg",
+            "ground_truth": 22,
+            "predicted": 13,
+            "tp": 12,
+            "error": -9
+          },
+          {
+            "file": "ShineMuscat_16_00.jpg",
+            "ground_truth": 84,
+            "predicted": 66,
+            "tp": 55,
+            "error": -18
+          },
+          {
+            "file": "ShineMuscat_16_01.jpg",
+            "ground_truth": 86,
+            "predicted": 40,
+            "tp": 36,
+            "error": -46
+          },
+          {
+            "file": "ShineMuscat_16_10.jpg",
+            "ground_truth": 103,
+            "predicted": 85,
+            "tp": 63,
+            "error": -18
+          },
+          {
+            "file": "ShineMuscat_16_11.jpg",
+            "ground_truth": 144,
+            "predicted": 119,
+            "tp": 102,
+            "error": -25
+          },
+          {
+            "file": "ShineMuscat_17_00.jpg",
+            "ground_truth": 108,
+            "predicted": 54,
+            "tp": 46,
+            "error": -54
+          },
+          {
+            "file": "ShineMuscat_17_01.jpg",
+            "ground_truth": 121,
+            "predicted": 85,
+            "tp": 77,
+            "error": -36
+          },
+          {
+            "file": "ShineMuscat_17_10.jpg",
+            "ground_truth": 85,
+            "predicted": 69,
+            "tp": 58,
+            "error": -16
+          },
+          {
+            "file": "ShineMuscat_17_11.jpg",
+            "ground_truth": 93,
+            "predicted": 80,
+            "tp": 73,
+            "error": -13
+          },
+          {
+            "file": "ShineMuscat_18_00.jpg",
+            "ground_truth": 108,
+            "predicted": 90,
+            "tp": 74,
+            "error": -18
+          },
+          {
+            "file": "ShineMuscat_18_01.jpg",
+            "ground_truth": 21,
+            "predicted": 11,
+            "tp": 8,
+            "error": -10
+          },
+          {
+            "file": "ShineMuscat_18_10.jpg",
+            "ground_truth": 19,
+            "predicted": 21,
+            "tp": 18,
+            "error": 2
+          },
+          {
+            "file": "ShineMuscat_18_11.jpg",
+            "ground_truth": 62,
+            "predicted": 52,
+            "tp": 43,
+            "error": -10
+          },
+          {
+            "file": "ShineMuscat_19_00.jpg",
+            "ground_truth": 51,
+            "predicted": 17,
+            "tp": 14,
+            "error": -34
+          },
+          {
+            "file": "ShineMuscat_19_01.jpg",
+            "ground_truth": 89,
+            "predicted": 66,
+            "tp": 59,
+            "error": -23
+          },
+          {
+            "file": "ShineMuscat_19_10.jpg",
+            "ground_truth": 156,
+            "predicted": 117,
+            "tp": 102,
+            "error": -39
+          },
+          {
+            "file": "ShineMuscat_19_11.jpg",
+            "ground_truth": 113,
+            "predicted": 79,
+            "tp": 74,
+            "error": -34
+          },
+          {
+            "file": "ShineMuscat_20_00.jpg",
+            "ground_truth": 74,
+            "predicted": 62,
+            "tp": 55,
+            "error": -12
+          },
+          {
+            "file": "ShineMuscat_20_01.jpg",
+            "ground_truth": 140,
+            "predicted": 114,
+            "tp": 103,
+            "error": -26
+          },
+          {
+            "file": "ShineMuscat_20_10.jpg",
+            "ground_truth": 150,
+            "predicted": 128,
+            "tp": 118,
+            "error": -22
+          },
+          {
+            "file": "ShineMuscat_20_11.jpg",
+            "ground_truth": 59,
+            "predicted": 33,
+            "tp": 27,
+            "error": -26
+          },
+          {
+            "file": "ShineMuscat_41_00.jpg",
+            "ground_truth": 104,
+            "predicted": 97,
+            "tp": 81,
+            "error": -7
+          },
+          {
+            "file": "ShineMuscat_41_01.jpg",
+            "ground_truth": 83,
+            "predicted": 81,
+            "tp": 69,
+            "error": -2
+          },
+          {
+            "file": "ShineMuscat_41_10.jpg",
+            "ground_truth": 156,
+            "predicted": 90,
+            "tp": 82,
+            "error": -66
+          },
+          {
+            "file": "ShineMuscat_41_11.jpg",
+            "ground_truth": 84,
+            "predicted": 58,
+            "tp": 49,
+            "error": -26
+          },
+          {
+            "file": "ShineMuscat_42_00.jpg",
+            "ground_truth": 60,
+            "predicted": 35,
+            "tp": 27,
+            "error": -25
+          },
+          {
+            "file": "ShineMuscat_42_01.jpg",
+            "ground_truth": 146,
+            "predicted": 136,
+            "tp": 112,
+            "error": -10
+          },
+          {
+            "file": "ShineMuscat_42_10.jpg",
+            "ground_truth": 121,
+            "predicted": 89,
+            "tp": 71,
+            "error": -32
+          },
+          {
+            "file": "ShineMuscat_42_11.jpg",
+            "ground_truth": 118,
+            "predicted": 86,
+            "tp": 79,
+            "error": -32
+          },
+          {
+            "file": "ShineMuscat_43_00.jpg",
+            "ground_truth": 8,
+            "predicted": 2,
+            "tp": 1,
+            "error": -6
+          },
+          {
+            "file": "ShineMuscat_43_01.jpg",
+            "ground_truth": 41,
+            "predicted": 14,
+            "tp": 14,
+            "error": -27
+          },
+          {
+            "file": "ShineMuscat_43_10.jpg",
+            "ground_truth": 279,
+            "predicted": 206,
+            "tp": 175,
+            "error": -73
+          },
+          {
+            "file": "ShineMuscat_43_11.jpg",
+            "ground_truth": 194,
+            "predicted": 161,
+            "tp": 136,
+            "error": -33
+          },
+          {
+            "file": "ShineMuscat_44_00.jpg",
+            "ground_truth": 54,
+            "predicted": 41,
+            "tp": 39,
+            "error": -13
+          },
+          {
+            "file": "ShineMuscat_44_01.jpg",
+            "ground_truth": 10,
+            "predicted": 6,
+            "tp": 5,
+            "error": -4
+          },
+          {
+            "file": "ShineMuscat_44_10.jpg",
+            "ground_truth": 129,
+            "predicted": 110,
+            "tp": 92,
+            "error": -19
+          },
+          {
+            "file": "ShineMuscat_44_11.jpg",
+            "ground_truth": 223,
+            "predicted": 187,
+            "tp": 169,
+            "error": -36
+          },
+          {
+            "file": "ShineMuscat_45_00.jpg",
+            "ground_truth": 140,
+            "predicted": 112,
+            "tp": 103,
+            "error": -28
+          },
+          {
+            "file": "ShineMuscat_45_01.jpg",
+            "ground_truth": 130,
+            "predicted": 75,
+            "tp": 64,
+            "error": -55
+          },
+          {
+            "file": "ShineMuscat_45_10.jpg",
+            "ground_truth": 153,
+            "predicted": 123,
+            "tp": 107,
+            "error": -30
+          },
+          {
+            "file": "ShineMuscat_45_11.jpg",
+            "ground_truth": 86,
+            "predicted": 63,
+            "tp": 49,
+            "error": -23
+          },
+          {
+            "file": "SummerBlack_16_00.jpg",
+            "ground_truth": 67,
+            "predicted": 26,
+            "tp": 21,
+            "error": -41
+          },
+          {
+            "file": "SummerBlack_16_01.jpg",
+            "ground_truth": 86,
+            "predicted": 54,
+            "tp": 47,
+            "error": -32
+          },
+          {
+            "file": "SummerBlack_16_10.jpg",
+            "ground_truth": 79,
+            "predicted": 58,
+            "tp": 49,
+            "error": -21
+          },
+          {
+            "file": "SummerBlack_16_11.jpg",
+            "ground_truth": 39,
+            "predicted": 36,
+            "tp": 28,
+            "error": -3
+          },
+          {
+            "file": "SummerBlack_17_00.jpg",
+            "ground_truth": 57,
+            "predicted": 48,
+            "tp": 31,
+            "error": -9
+          },
+          {
+            "file": "SummerBlack_17_01.jpg",
+            "ground_truth": 48,
+            "predicted": 41,
+            "tp": 32,
+            "error": -7
+          },
+          {
+            "file": "SummerBlack_17_10.jpg",
+            "ground_truth": 28,
+            "predicted": 28,
+            "tp": 23,
+            "error": 0
+          },
+          {
+            "file": "SummerBlack_17_11.jpg",
+            "ground_truth": 25,
+            "predicted": 18,
+            "tp": 14,
+            "error": -7
+          },
+          {
+            "file": "SummerBlack_18_00.jpg",
+            "ground_truth": 211,
+            "predicted": 136,
+            "tp": 117,
+            "error": -75
+          },
+          {
+            "file": "SummerBlack_18_01.jpg",
+            "ground_truth": 96,
+            "predicted": 52,
+            "tp": 33,
+            "error": -44
+          },
+          {
+            "file": "SummerBlack_18_10.jpg",
+            "ground_truth": 13,
+            "predicted": 8,
+            "tp": 7,
+            "error": -5
+          },
+          {
+            "file": "SummerBlack_18_11.jpg",
+            "ground_truth": 105,
+            "predicted": 88,
+            "tp": 75,
+            "error": -17
+          },
+          {
+            "file": "SummerBlack_19_00.jpg",
+            "ground_truth": 94,
+            "predicted": 59,
+            "tp": 50,
+            "error": -35
+          },
+          {
+            "file": "SummerBlack_19_01.jpg",
+            "ground_truth": 32,
+            "predicted": 24,
+            "tp": 22,
+            "error": -8
+          },
+          {
+            "file": "SummerBlack_19_10.jpg",
+            "ground_truth": 52,
+            "predicted": 43,
+            "tp": 42,
+            "error": -9
+          },
+          {
+            "file": "SummerBlack_19_11.jpg",
+            "ground_truth": 2,
+            "predicted": 1,
+            "tp": 1,
+            "error": -1
+          },
+          {
+            "file": "SummerBlack_20_00.jpg",
+            "ground_truth": 60,
+            "predicted": 46,
+            "tp": 40,
+            "error": -14
+          },
+          {
+            "file": "SummerBlack_20_01.jpg",
+            "ground_truth": 119,
+            "predicted": 69,
+            "tp": 53,
+            "error": -50
+          },
+          {
+            "file": "SummerBlack_20_10.jpg",
+            "ground_truth": 121,
+            "predicted": 86,
+            "tp": 61,
+            "error": -35
+          },
+          {
+            "file": "SummerBlack_20_11.jpg",
+            "ground_truth": 58,
+            "predicted": 47,
+            "tp": 41,
+            "error": -11
+          },
+          {
+            "file": "SummerBlack_41_00.jpg",
+            "ground_truth": 66,
+            "predicted": 55,
+            "tp": 51,
+            "error": -11
+          },
+          {
+            "file": "SummerBlack_41_01.jpg",
+            "ground_truth": 48,
+            "predicted": 38,
+            "tp": 37,
+            "error": -10
+          },
+          {
+            "file": "SummerBlack_41_10.jpg",
+            "ground_truth": 26,
+            "predicted": 23,
+            "tp": 20,
+            "error": -3
+          },
+          {
+            "file": "SummerBlack_41_11.jpg",
+            "ground_truth": 0,
+            "predicted": 0,
+            "tp": 0,
+            "error": 0
+          },
+          {
+            "file": "SummerBlack_42_00.jpg",
+            "ground_truth": 65,
+            "predicted": 57,
+            "tp": 53,
+            "error": -8
+          },
+          {
+            "file": "SummerBlack_42_01.jpg",
+            "ground_truth": 86,
+            "predicted": 69,
+            "tp": 60,
+            "error": -17
+          },
+          {
+            "file": "SummerBlack_42_10.jpg",
+            "ground_truth": 13,
+            "predicted": 8,
+            "tp": 7,
+            "error": -5
+          },
+          {
+            "file": "SummerBlack_42_11.jpg",
+            "ground_truth": 15,
+            "predicted": 11,
+            "tp": 9,
+            "error": -4
+          },
+          {
+            "file": "SummerBlack_43_00.jpg",
+            "ground_truth": 49,
+            "predicted": 41,
+            "tp": 35,
+            "error": -8
+          },
+          {
+            "file": "SummerBlack_43_01.jpg",
+            "ground_truth": 50,
+            "predicted": 41,
+            "tp": 32,
+            "error": -9
+          },
+          {
+            "file": "SummerBlack_43_10.jpg",
+            "ground_truth": 53,
+            "predicted": 47,
+            "tp": 40,
+            "error": -6
+          },
+          {
+            "file": "SummerBlack_43_11.jpg",
+            "ground_truth": 28,
+            "predicted": 21,
+            "tp": 21,
+            "error": -7
+          },
+          {
+            "file": "SummerBlack_44_00.jpg",
+            "ground_truth": 52,
+            "predicted": 49,
+            "tp": 46,
+            "error": -3
+          },
+          {
+            "file": "SummerBlack_44_01.jpg",
+            "ground_truth": 46,
+            "predicted": 42,
+            "tp": 40,
+            "error": -4
+          },
+          {
+            "file": "SummerBlack_44_10.jpg",
+            "ground_truth": 99,
+            "predicted": 81,
+            "tp": 76,
+            "error": -18
+          },
+          {
+            "file": "SummerBlack_44_11.jpg",
+            "ground_truth": 37,
+            "predicted": 34,
+            "tp": 32,
+            "error": -3
+          },
+          {
+            "file": "SummerBlack_45_00.jpg",
+            "ground_truth": 21,
+            "predicted": 18,
+            "tp": 16,
+            "error": -3
+          },
+          {
+            "file": "SummerBlack_45_01.jpg",
+            "ground_truth": 58,
+            "predicted": 45,
+            "tp": 37,
+            "error": -13
+          },
+          {
+            "file": "SummerBlack_45_10.jpg",
+            "ground_truth": 23,
+            "predicted": 18,
+            "tp": 17,
+            "error": -5
+          },
+          {
+            "file": "SummerBlack_45_11.jpg",
+            "ground_truth": 75,
+            "predicted": 70,
+            "tp": 63,
+            "error": -5
+          }
+        ]
+      },
+      "test": {
+        "threshold": 0.3,
+        "class_id": 0,
+        "precision": 0.8826284416690321,
+        "recall": 0.647003745318352,
+        "f1": 0.7466682674990995,
+        "tp": 6219,
+        "fp": 827,
+        "fn": 3393,
+        "images": 120,
+        "count_mae": 21.716666666666665,
+        "count_rmse": 28.492689120778568,
+        "count_bias": -21.383333333333333,
+        "per_image": [
+          {
+            "file": "Kyoho_16_00.jpg",
+            "ground_truth": 116,
+            "predicted": 67,
+            "tp": 58,
+            "error": -49
+          },
+          {
+            "file": "Kyoho_16_01.jpg",
+            "ground_truth": 117,
+            "predicted": 81,
+            "tp": 77,
+            "error": -36
+          },
+          {
+            "file": "Kyoho_16_10.jpg",
+            "ground_truth": 157,
+            "predicted": 105,
+            "tp": 79,
+            "error": -52
+          },
+          {
+            "file": "Kyoho_16_11.jpg",
+            "ground_truth": 101,
+            "predicted": 74,
+            "tp": 68,
+            "error": -27
+          },
+          {
+            "file": "Kyoho_17_00.jpg",
+            "ground_truth": 28,
+            "predicted": 26,
+            "tp": 22,
+            "error": -2
+          },
+          {
+            "file": "Kyoho_17_01.jpg",
+            "ground_truth": 61,
+            "predicted": 39,
+            "tp": 36,
+            "error": -22
+          },
+          {
+            "file": "Kyoho_17_10.jpg",
+            "ground_truth": 214,
+            "predicted": 146,
+            "tp": 130,
+            "error": -68
+          },
+          {
+            "file": "Kyoho_17_11.jpg",
+            "ground_truth": 180,
+            "predicted": 122,
+            "tp": 109,
+            "error": -58
+          },
+          {
+            "file": "Kyoho_18_00.jpg",
+            "ground_truth": 112,
+            "predicted": 80,
+            "tp": 71,
+            "error": -32
+          },
+          {
+            "file": "Kyoho_18_01.jpg",
+            "ground_truth": 165,
+            "predicted": 115,
+            "tp": 107,
+            "error": -50
+          },
+          {
+            "file": "Kyoho_18_10.jpg",
+            "ground_truth": 5,
+            "predicted": 2,
+            "tp": 2,
+            "error": -3
+          },
+          {
+            "file": "Kyoho_18_11.jpg",
+            "ground_truth": 21,
+            "predicted": 17,
+            "tp": 13,
+            "error": -4
+          },
+          {
+            "file": "Kyoho_19_00.jpg",
+            "ground_truth": 104,
+            "predicted": 77,
+            "tp": 64,
+            "error": -27
+          },
+          {
+            "file": "Kyoho_19_01.jpg",
+            "ground_truth": 96,
+            "predicted": 78,
+            "tp": 72,
+            "error": -18
+          },
+          {
+            "file": "Kyoho_19_10.jpg",
+            "ground_truth": 144,
+            "predicted": 101,
+            "tp": 97,
+            "error": -43
+          },
+          {
+            "file": "Kyoho_19_11.jpg",
+            "ground_truth": 124,
+            "predicted": 86,
+            "tp": 77,
+            "error": -38
+          },
+          {
+            "file": "Kyoho_20_00.jpg",
+            "ground_truth": 105,
+            "predicted": 80,
+            "tp": 72,
+            "error": -25
+          },
+          {
+            "file": "Kyoho_20_01.jpg",
+            "ground_truth": 78,
+            "predicted": 65,
+            "tp": 61,
+            "error": -13
+          },
+          {
+            "file": "Kyoho_20_10.jpg",
+            "ground_truth": 103,
+            "predicted": 82,
+            "tp": 65,
+            "error": -21
+          },
+          {
+            "file": "Kyoho_20_11.jpg",
+            "ground_truth": 117,
+            "predicted": 96,
+            "tp": 78,
+            "error": -21
+          },
+          {
+            "file": "Kyoho_26_00.jpg",
+            "ground_truth": 29,
+            "predicted": 27,
+            "tp": 22,
+            "error": -2
+          },
+          {
+            "file": "Kyoho_26_01.jpg",
+            "ground_truth": 52,
+            "predicted": 38,
+            "tp": 35,
+            "error": -14
+          },
+          {
+            "file": "Kyoho_26_10.jpg",
+            "ground_truth": 153,
+            "predicted": 94,
+            "tp": 87,
+            "error": -59
+          },
+          {
+            "file": "Kyoho_26_11.jpg",
+            "ground_truth": 12,
+            "predicted": 11,
+            "tp": 10,
+            "error": -1
+          },
+          {
+            "file": "Kyoho_27_00.jpg",
+            "ground_truth": 99,
+            "predicted": 41,
+            "tp": 31,
+            "error": -58
+          },
+          {
+            "file": "Kyoho_27_01.jpg",
+            "ground_truth": 63,
+            "predicted": 40,
+            "tp": 34,
+            "error": -23
+          },
+          {
+            "file": "Kyoho_27_10.jpg",
+            "ground_truth": 92,
+            "predicted": 43,
+            "tp": 42,
+            "error": -49
+          },
+          {
+            "file": "Kyoho_27_11.jpg",
+            "ground_truth": 160,
+            "predicted": 98,
+            "tp": 93,
+            "error": -62
+          },
+          {
+            "file": "Kyoho_28_00.jpg",
+            "ground_truth": 93,
+            "predicted": 71,
+            "tp": 63,
+            "error": -22
+          },
+          {
+            "file": "Kyoho_28_01.jpg",
+            "ground_truth": 92,
+            "predicted": 69,
+            "tp": 63,
+            "error": -23
+          },
+          {
+            "file": "Kyoho_28_10.jpg",
+            "ground_truth": 97,
+            "predicted": 70,
+            "tp": 62,
+            "error": -27
+          },
+          {
+            "file": "Kyoho_28_11.jpg",
+            "ground_truth": 63,
+            "predicted": 44,
+            "tp": 39,
+            "error": -19
+          },
+          {
+            "file": "Kyoho_29_00.jpg",
+            "ground_truth": 135,
+            "predicted": 108,
+            "tp": 100,
+            "error": -27
+          },
+          {
+            "file": "Kyoho_29_01.jpg",
+            "ground_truth": 138,
+            "predicted": 93,
+            "tp": 88,
+            "error": -45
+          },
+          {
+            "file": "Kyoho_29_10.jpg",
+            "ground_truth": 23,
+            "predicted": 17,
+            "tp": 14,
+            "error": -6
+          },
+          {
+            "file": "Kyoho_29_11.jpg",
+            "ground_truth": 13,
+            "predicted": 10,
+            "tp": 6,
+            "error": -3
+          },
+          {
+            "file": "Kyoho_30_00.jpg",
+            "ground_truth": 61,
+            "predicted": 36,
+            "tp": 30,
+            "error": -25
+          },
+          {
+            "file": "Kyoho_30_01.jpg",
+            "ground_truth": 47,
+            "predicted": 35,
+            "tp": 33,
+            "error": -12
+          },
+          {
+            "file": "Kyoho_30_10.jpg",
+            "ground_truth": 169,
+            "predicted": 110,
+            "tp": 85,
+            "error": -59
+          },
+          {
+            "file": "Kyoho_30_11.jpg",
+            "ground_truth": 126,
+            "predicted": 98,
+            "tp": 87,
+            "error": -28
+          },
+          {
+            "file": "ShineMuscat_11_00.jpg",
+            "ground_truth": 39,
+            "predicted": 19,
+            "tp": 14,
+            "error": -20
+          },
+          {
+            "file": "ShineMuscat_11_01.jpg",
+            "ground_truth": 29,
+            "predicted": 25,
+            "tp": 20,
+            "error": -4
+          },
+          {
+            "file": "ShineMuscat_11_10.jpg",
+            "ground_truth": 198,
+            "predicted": 153,
+            "tp": 128,
+            "error": -45
+          },
+          {
+            "file": "ShineMuscat_11_11.jpg",
+            "ground_truth": 54,
+            "predicted": 50,
+            "tp": 44,
+            "error": -4
+          },
+          {
+            "file": "ShineMuscat_12_00.jpg",
+            "ground_truth": 65,
+            "predicted": 47,
+            "tp": 44,
+            "error": -18
+          },
+          {
+            "file": "ShineMuscat_12_01.jpg",
+            "ground_truth": 92,
+            "predicted": 57,
+            "tp": 52,
+            "error": -35
+          },
+          {
+            "file": "ShineMuscat_12_10.jpg",
+            "ground_truth": 117,
+            "predicted": 79,
+            "tp": 73,
+            "error": -38
+          },
+          {
+            "file": "ShineMuscat_12_11.jpg",
+            "ground_truth": 143,
+            "predicted": 111,
+            "tp": 102,
+            "error": -32
+          },
+          {
+            "file": "ShineMuscat_13_00.jpg",
+            "ground_truth": 114,
+            "predicted": 83,
+            "tp": 80,
+            "error": -31
+          },
+          {
+            "file": "ShineMuscat_13_01.jpg",
+            "ground_truth": 134,
+            "predicted": 115,
+            "tp": 105,
+            "error": -19
+          },
+          {
+            "file": "ShineMuscat_13_10.jpg",
+            "ground_truth": 58,
+            "predicted": 39,
+            "tp": 29,
+            "error": -19
+          },
+          {
+            "file": "ShineMuscat_13_11.jpg",
+            "ground_truth": 151,
+            "predicted": 113,
+            "tp": 96,
+            "error": -38
+          },
+          {
+            "file": "ShineMuscat_14_00.jpg",
+            "ground_truth": 137,
+            "predicted": 99,
+            "tp": 91,
+            "error": -38
+          },
+          {
+            "file": "ShineMuscat_14_01.jpg",
+            "ground_truth": 54,
+            "predicted": 34,
+            "tp": 33,
+            "error": -20
+          },
+          {
+            "file": "ShineMuscat_14_10.jpg",
+            "ground_truth": 36,
+            "predicted": 29,
+            "tp": 25,
+            "error": -7
+          },
+          {
+            "file": "ShineMuscat_14_11.jpg",
+            "ground_truth": 64,
+            "predicted": 55,
+            "tp": 52,
+            "error": -9
+          },
+          {
+            "file": "ShineMuscat_15_00.jpg",
+            "ground_truth": 77,
+            "predicted": 40,
+            "tp": 35,
+            "error": -37
+          },
+          {
+            "file": "ShineMuscat_15_01.jpg",
+            "ground_truth": 49,
+            "predicted": 35,
+            "tp": 31,
+            "error": -14
+          },
+          {
+            "file": "ShineMuscat_15_10.jpg",
+            "ground_truth": 193,
+            "predicted": 135,
+            "tp": 123,
+            "error": -58
+          },
+          {
+            "file": "ShineMuscat_15_11.jpg",
+            "ground_truth": 125,
+            "predicted": 96,
+            "tp": 88,
+            "error": -29
+          },
+          {
+            "file": "ShineMuscat_21_00.jpg",
+            "ground_truth": 68,
+            "predicted": 42,
+            "tp": 37,
+            "error": -26
+          },
+          {
+            "file": "ShineMuscat_21_01.jpg",
+            "ground_truth": 68,
+            "predicted": 50,
+            "tp": 43,
+            "error": -18
+          },
+          {
+            "file": "ShineMuscat_21_10.jpg",
+            "ground_truth": 137,
+            "predicted": 113,
+            "tp": 106,
+            "error": -24
+          },
+          {
+            "file": "ShineMuscat_21_11.jpg",
+            "ground_truth": 102,
+            "predicted": 87,
+            "tp": 78,
+            "error": -15
+          },
+          {
+            "file": "ShineMuscat_22_00.jpg",
+            "ground_truth": 32,
+            "predicted": 18,
+            "tp": 15,
+            "error": -14
+          },
+          {
+            "file": "ShineMuscat_22_01.jpg",
+            "ground_truth": 71,
+            "predicted": 54,
+            "tp": 48,
+            "error": -17
+          },
+          {
+            "file": "ShineMuscat_22_10.jpg",
+            "ground_truth": 58,
+            "predicted": 46,
+            "tp": 40,
+            "error": -12
+          },
+          {
+            "file": "ShineMuscat_22_11.jpg",
+            "ground_truth": 93,
+            "predicted": 60,
+            "tp": 58,
+            "error": -33
+          },
+          {
+            "file": "ShineMuscat_23_00.jpg",
+            "ground_truth": 104,
+            "predicted": 77,
+            "tp": 63,
+            "error": -27
+          },
+          {
+            "file": "ShineMuscat_23_01.jpg",
+            "ground_truth": 53,
+            "predicted": 27,
+            "tp": 25,
+            "error": -26
+          },
+          {
+            "file": "ShineMuscat_23_10.jpg",
+            "ground_truth": 120,
+            "predicted": 98,
+            "tp": 79,
+            "error": -22
+          },
+          {
+            "file": "ShineMuscat_23_11.jpg",
+            "ground_truth": 133,
+            "predicted": 108,
+            "tp": 94,
+            "error": -25
+          },
+          {
+            "file": "ShineMuscat_24_00.jpg",
+            "ground_truth": 44,
+            "predicted": 33,
+            "tp": 31,
+            "error": -11
+          },
+          {
+            "file": "ShineMuscat_24_01.jpg",
+            "ground_truth": 93,
+            "predicted": 71,
+            "tp": 61,
+            "error": -22
+          },
+          {
+            "file": "ShineMuscat_24_10.jpg",
+            "ground_truth": 222,
+            "predicted": 179,
+            "tp": 166,
+            "error": -43
+          },
+          {
+            "file": "ShineMuscat_24_11.jpg",
+            "ground_truth": 114,
+            "predicted": 70,
+            "tp": 61,
+            "error": -44
+          },
+          {
+            "file": "ShineMuscat_25_00.jpg",
+            "ground_truth": 36,
+            "predicted": 28,
+            "tp": 25,
+            "error": -8
+          },
+          {
+            "file": "ShineMuscat_25_01.jpg",
+            "ground_truth": 56,
+            "predicted": 47,
+            "tp": 41,
+            "error": -9
+          },
+          {
+            "file": "ShineMuscat_25_10.jpg",
+            "ground_truth": 176,
+            "predicted": 126,
+            "tp": 115,
+            "error": -50
+          },
+          {
+            "file": "ShineMuscat_25_11.jpg",
+            "ground_truth": 161,
+            "predicted": 126,
+            "tp": 112,
+            "error": -35
+          },
+          {
+            "file": "SummerBlack_11_00.jpg",
+            "ground_truth": 44,
+            "predicted": 40,
+            "tp": 38,
+            "error": -4
+          },
+          {
+            "file": "SummerBlack_11_01.jpg",
+            "ground_truth": 64,
+            "predicted": 45,
+            "tp": 41,
+            "error": -19
+          },
+          {
+            "file": "SummerBlack_11_10.jpg",
+            "ground_truth": 7,
+            "predicted": 4,
+            "tp": 4,
+            "error": -3
+          },
+          {
+            "file": "SummerBlack_11_11.jpg",
+            "ground_truth": 75,
+            "predicted": 62,
+            "tp": 52,
+            "error": -13
+          },
+          {
+            "file": "SummerBlack_12_00.jpg",
+            "ground_truth": 123,
+            "predicted": 42,
+            "tp": 37,
+            "error": -81
+          },
+          {
+            "file": "SummerBlack_12_01.jpg",
+            "ground_truth": 61,
+            "predicted": 50,
+            "tp": 41,
+            "error": -11
+          },
+          {
+            "file": "SummerBlack_12_10.jpg",
+            "ground_truth": 76,
+            "predicted": 56,
+            "tp": 48,
+            "error": -20
+          },
+          {
+            "file": "SummerBlack_12_11.jpg",
+            "ground_truth": 73,
+            "predicted": 57,
+            "tp": 40,
+            "error": -16
+          },
+          {
+            "file": "SummerBlack_13_00.jpg",
+            "ground_truth": 42,
+            "predicted": 26,
+            "tp": 22,
+            "error": -16
+          },
+          {
+            "file": "SummerBlack_13_01.jpg",
+            "ground_truth": 85,
+            "predicted": 54,
+            "tp": 44,
+            "error": -31
+          },
+          {
+            "file": "SummerBlack_13_10.jpg",
+            "ground_truth": 171,
+            "predicted": 131,
+            "tp": 121,
+            "error": -40
+          },
+          {
+            "file": "SummerBlack_13_11.jpg",
+            "ground_truth": 166,
+            "predicted": 93,
+            "tp": 71,
+            "error": -73
+          },
+          {
+            "file": "SummerBlack_14_00.jpg",
+            "ground_truth": 75,
+            "predicted": 57,
+            "tp": 51,
+            "error": -18
+          },
+          {
+            "file": "SummerBlack_14_01.jpg",
+            "ground_truth": 38,
+            "predicted": 32,
+            "tp": 31,
+            "error": -6
+          },
+          {
+            "file": "SummerBlack_14_10.jpg",
+            "ground_truth": 48,
+            "predicted": 40,
+            "tp": 37,
+            "error": -8
+          },
+          {
+            "file": "SummerBlack_14_11.jpg",
+            "ground_truth": 0,
+            "predicted": 0,
+            "tp": 0,
+            "error": 0
+          },
+          {
+            "file": "SummerBlack_15_00.jpg",
+            "ground_truth": 34,
+            "predicted": 30,
+            "tp": 27,
+            "error": -4
+          },
+          {
+            "file": "SummerBlack_15_01.jpg",
+            "ground_truth": 47,
+            "predicted": 39,
+            "tp": 34,
+            "error": -8
+          },
+          {
+            "file": "SummerBlack_15_10.jpg",
+            "ground_truth": 49,
+            "predicted": 44,
+            "tp": 37,
+            "error": -5
+          },
+          {
+            "file": "SummerBlack_15_11.jpg",
+            "ground_truth": 34,
+            "predicted": 33,
+            "tp": 29,
+            "error": -1
+          },
+          {
+            "file": "SummerBlack_46_00.jpg",
+            "ground_truth": 12,
+            "predicted": 16,
+            "tp": 11,
+            "error": 4
+          },
+          {
+            "file": "SummerBlack_46_01.jpg",
+            "ground_truth": 45,
+            "predicted": 51,
+            "tp": 39,
+            "error": 6
+          },
+          {
+            "file": "SummerBlack_46_10.jpg",
+            "ground_truth": 48,
+            "predicted": 42,
+            "tp": 40,
+            "error": -6
+          },
+          {
+            "file": "SummerBlack_46_11.jpg",
+            "ground_truth": 28,
+            "predicted": 31,
+            "tp": 23,
+            "error": 3
+          },
+          {
+            "file": "SummerBlack_47_00.jpg",
+            "ground_truth": 2,
+            "predicted": 3,
+            "tp": 1,
+            "error": 1
+          },
+          {
+            "file": "SummerBlack_47_01.jpg",
+            "ground_truth": 33,
+            "predicted": 33,
+            "tp": 25,
+            "error": 0
+          },
+          {
+            "file": "SummerBlack_47_10.jpg",
+            "ground_truth": 3,
+            "predicted": 4,
+            "tp": 1,
+            "error": 1
+          },
+          {
+            "file": "SummerBlack_47_11.jpg",
+            "ground_truth": 32,
+            "predicted": 36,
+            "tp": 28,
+            "error": 4
+          },
+          {
+            "file": "SummerBlack_48_00.jpg",
+            "ground_truth": 48,
+            "predicted": 48,
+            "tp": 45,
+            "error": 0
+          },
+          {
+            "file": "SummerBlack_48_01.jpg",
+            "ground_truth": 39,
+            "predicted": 33,
+            "tp": 32,
+            "error": -6
+          },
+          {
+            "file": "SummerBlack_48_10.jpg",
+            "ground_truth": 37,
+            "predicted": 36,
+            "tp": 32,
+            "error": -1
+          },
+          {
+            "file": "SummerBlack_48_11.jpg",
+            "ground_truth": 7,
+            "predicted": 5,
+            "tp": 5,
+            "error": -2
+          },
+          {
+            "file": "SummerBlack_49_00.jpg",
+            "ground_truth": 31,
+            "predicted": 25,
+            "tp": 23,
+            "error": -6
+          },
+          {
+            "file": "SummerBlack_49_01.jpg",
+            "ground_truth": 24,
+            "predicted": 20,
+            "tp": 19,
+            "error": -4
+          },
+          {
+            "file": "SummerBlack_49_10.jpg",
+            "ground_truth": 45,
+            "predicted": 41,
+            "tp": 37,
+            "error": -4
+          },
+          {
+            "file": "SummerBlack_49_11.jpg",
+            "ground_truth": 20,
+            "predicted": 21,
+            "tp": 18,
+            "error": 1
+          },
+          {
+            "file": "SummerBlack_50_00.jpg",
+            "ground_truth": 56,
+            "predicted": 54,
+            "tp": 50,
+            "error": -2
+          },
+          {
+            "file": "SummerBlack_50_01.jpg",
+            "ground_truth": 28,
+            "predicted": 21,
+            "tp": 19,
+            "error": -7
+          },
+          {
+            "file": "SummerBlack_50_10.jpg",
+            "ground_truth": 23,
+            "predicted": 22,
+            "tp": 18,
+            "error": -1
+          },
+          {
+            "file": "SummerBlack_50_11.jpg",
+            "ground_truth": 4,
+            "predicted": 3,
+            "tp": 3,
+            "error": -1
+          }
+        ]
+      }
+    }
+  },
+  "test_AP": {
+    "metrics/precision(B)": 0.8897422964869937,
+    "metrics/recall(B)": 0.6464460100305943,
+    "metrics/mAP50(B)": 0.7148345805396865,
+    "metrics/mAP50-95(B)": 0.4505091644753817,
+    "fitness": 0.4505091644753817
+  }
+}

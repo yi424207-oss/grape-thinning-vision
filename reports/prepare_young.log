@@ -1,0 +1,2 @@
+train 37 pseudo boxes 1571
+evaluation [('s13_07.jpg', 42), ('s13_10.jpg', 36), ('s2_14.jpg', 36)]

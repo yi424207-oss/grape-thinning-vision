@@ -1,0 +1,11 @@
+test_empty (test_thinning.ThinningTests.test_empty) ... ok
+test_invalid (test_thinning.ThinningTests.test_invalid) ... ok
+test_scale_invariance (test_thinning.ThinningTests.test_scale_invariance) ... ok
+test_small_threshold (test_thinning.ThinningTests.test_small_threshold) ... ok
+test_target_never_invents_berries (test_thinning.ThinningTests.test_target_never_invents_berries) ... ok
+test_zero_target (test_thinning.ThinningTests.test_zero_target) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.009s
+
+OK

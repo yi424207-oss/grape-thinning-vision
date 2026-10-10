@@ -1,0 +1,14 @@
+{
+  "berry": {
+    "images": 150,
+    "cross_split_exact_hashes": [],
+    "phash_distance_le8_candidates": [],
+    "limitation": "No match is not proof of independent scenes; sequential capture groups are a heuristic."
+  },
+  "flower": {
+    "images": 523,
+    "cross_split_exact_hashes": [],
+    "phash_distance_le8_candidates": [],
+    "limitation": "No match is not proof of independent scenes; sequential capture groups are a heuristic."
+  }
+}

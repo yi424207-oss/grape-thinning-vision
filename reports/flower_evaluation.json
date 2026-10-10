@@ -1,0 +1,2469 @@
+{
+  "task": "flower",
+  "imgsz": 384,
+  "iou_match": 0.5,
+  "nms_iou": 0.5,
+  "max_det": 1000,
+  "threshold_selection": "maximum validation F1; never test",
+  "classes": {
+    "inflorescence": {
+      "validation_sweep": [
+        {
+          "threshold": 0.05,
+          "class_id": 0,
+          "precision": 0.47928994082840237,
+          "recall": 0.9529411764705882,
+          "f1": 0.6377952755905512,
+          "tp": 81,
+          "fp": 88,
+          "fn": 4,
+          "images": 75,
+          "count_mae": 1.1466666666666667,
+          "count_rmse": 1.7358955421722049,
+          "count_bias": 1.12
+        },
+        {
+          "threshold": 0.1,
+          "class_id": 0,
+          "precision": 0.6136363636363636,
+          "recall": 0.9529411764705882,
+          "f1": 0.7465437788018433,
+          "tp": 81,
+          "fp": 51,
+          "fn": 4,
+          "images": 75,
+          "count_mae": 0.6533333333333333,
+          "count_rmse": 1.1372481406154653,
+          "count_bias": 0.6266666666666667
+        },
+        {
+          "threshold": 0.15,
+          "class_id": 0,
+          "precision": 0.7079646017699115,
+          "recall": 0.9411764705882353,
+          "f1": 0.8080808080808081,
+          "tp": 80,
+          "fp": 33,
+          "fn": 5,
+          "images": 75,
+          "count_mae": 0.4266666666666667,
+          "count_rmse": 0.816496580927726,
+          "count_bias": 0.37333333333333335
+        },
+        {
+          "threshold": 0.2,
+          "class_id": 0,
+          "precision": 0.7843137254901961,
+          "recall": 0.9411764705882353,
+          "f1": 0.8556149732620321,
+          "tp": 80,
+          "fp": 22,
+          "fn": 5,
+          "images": 75,
+          "count_mae": 0.30666666666666664,
+          "count_rmse": 0.6633249580710799,
+          "count_bias": 0.22666666666666666
+        },
+        {
+          "threshold": 0.25,
+          "class_id": 0,
+          "precision": 0.8421052631578947,
+          "recall": 0.9411764705882353,
+          "f1": 0.8888888888888888,
+          "tp": 80,
+          "fp": 15,
+          "fn": 5,
+          "images": 75,
+          "count_mae": 0.24,
+          "count_rmse": 0.565685424949238,
+          "count_bias": 0.13333333333333333
+        },
+        {
+          "threshold": 0.3,
+          "class_id": 0,
+          "precision": 0.8681318681318682,
+          "recall": 0.9294117647058824,
+          "f1": 0.8977272727272727,
+          "tp": 79,
+          "fp": 12,
+          "fn": 6,
+          "images": 75,
+          "count_mae": 0.21333333333333335,
+          "count_rmse": 0.5163977794943222,
+          "count_bias": 0.08
+        },
+        {
+          "threshold": 0.4,
+          "class_id": 0,
+          "precision": 0.875,
+          "recall": 0.9058823529411765,
+          "f1": 0.8901734104046243,
+          "tp": 77,
+          "fp": 11,
+          "fn": 8,
+          "images": 75,
+          "count_mae": 0.2,
+          "count_rmse": 0.5537749241945383,
+          "count_bias": 0.04
+        },
+        {
+          "threshold": 0.5,
+          "class_id": 0,
+          "precision": 0.9166666666666666,
+          "recall": 0.9058823529411765,
+          "f1": 0.9112426035502958,
+          "tp": 77,
+          "fp": 7,
+          "fn": 8,
+          "images": 75,
+          "count_mae": 0.14666666666666667,
+          "count_rmse": 0.5033222956847166,
+          "count_bias": -0.013333333333333334
+        }
+      ],
+      "validation": {
+        "threshold": 0.5,
+        "class_id": 0,
+        "precision": 0.9166666666666666,
+        "recall": 0.9058823529411765,
+        "f1": 0.9112426035502958,
+        "tp": 77,
+        "fp": 7,
+        "fn": 8,
+        "images": 75,
+        "count_mae": 0.14666666666666667,
+        "count_rmse": 0.5033222956847166,
+        "count_bias": -0.013333333333333334,
+        "per_image": [
+          {
+            "file": "IMG_1530.jpg",
+            "ground_truth": 2,
+            "predicted": 2,
+            "tp": 2,
+            "error": 0
+          },
+          {
+            "file": "IMG_1533.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1534.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1535.jpg",
+            "ground_truth": 1,
+            "predicted": 0,
+            "tp": 0,
+            "error": -1
+          },
+          {
+            "file": "IMG_1536.jpg",
+            "ground_truth": 1,
+            "predicted": 2,
+            "tp": 1,
+            "error": 1
+          },
+          {
+            "file": "IMG_1537.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1538.jpg",
+            "ground_truth": 2,
+            "predicted": 2,
+            "tp": 2,
+            "error": 0
+          },
+          {
+            "file": "IMG_1539.jpg",
+            "ground_truth": 2,
+            "predicted": 2,
+            "tp": 2,
+            "error": 0
+          },
+          {
+            "file": "IMG_1540.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1541.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1542.jpg",
+            "ground_truth": 2,
+            "predicted": 2,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1543.jpg",
+            "ground_truth": 4,
+            "predicted": 1,
+            "tp": 0,
+            "error": -3
+          },
+          {
+            "file": "IMG_1544.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1545.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1547.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1548.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1549.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1630.jpg",
+            "ground_truth": 3,
+            "predicted": 2,
+            "tp": 2,
+            "error": -1
+          },
+          {
+            "file": "IMG_1631.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1632.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1634.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1635.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1636.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1637.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1638.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1639.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1680.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1681.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1682.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1683.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1684.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1685.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1686.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1687.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1688.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1689.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1720.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1721.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1722.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1723.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1724.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1725.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1726.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1727.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1728.jpg",
+            "ground_truth": 1,
+            "predicted": 2,
+            "tp": 1,
+            "error": 1
+          },
+          {
+            "file": "IMG_1729.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1830.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1831.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1833.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1834.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1836.jpg",
+            "ground_truth": 1,
+            "predicted": 3,
+            "tp": 1,
+            "error": 2
+          },
+          {
+            "file": "IMG_1837.jpg",
+            "ground_truth": 1,
+            "predicted": 2,
+            "tp": 1,
+            "error": 1
+          },
+          {
+            "file": "IMG_1838.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1839.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1930.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1931.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1932.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1934.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1935.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1936.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1937.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1938.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1939.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1950.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1951.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1952.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1953.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1954.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1955.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1956.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1957.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1958.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1959.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_2020.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_2021.jpg",
+            "ground_truth": 2,
+            "predicted": 1,
+            "tp": 1,
+            "error": -1
+          }
+        ]
+      },
+      "test": {
+        "threshold": 0.5,
+        "class_id": 0,
+        "precision": 0.9111111111111111,
+        "recall": 0.8631578947368421,
+        "f1": 0.8864864864864865,
+        "tp": 82,
+        "fp": 8,
+        "fn": 13,
+        "images": 79,
+        "count_mae": 0.13924050632911392,
+        "count_rmse": 0.3731494423540171,
+        "count_bias": -0.06329113924050633,
+        "per_image": [
+          {
+            "file": "IMG_1450.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1451.jpg",
+            "ground_truth": 2,
+            "predicted": 2,
+            "tp": 0,
+            "error": 0
+          },
+          {
+            "file": "IMG_1452.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1453.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1454.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1455.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1456.jpg",
+            "ground_truth": 2,
+            "predicted": 1,
+            "tp": 1,
+            "error": -1
+          },
+          {
+            "file": "IMG_1457.jpg",
+            "ground_truth": 2,
+            "predicted": 2,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1458.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1459.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1570.jpg",
+            "ground_truth": 2,
+            "predicted": 1,
+            "tp": 1,
+            "error": -1
+          },
+          {
+            "file": "IMG_1571.jpg",
+            "ground_truth": 2,
+            "predicted": 2,
+            "tp": 2,
+            "error": 0
+          },
+          {
+            "file": "IMG_1572.jpg",
+            "ground_truth": 2,
+            "predicted": 1,
+            "tp": 0,
+            "error": -1
+          },
+          {
+            "file": "IMG_1573.jpg",
+            "ground_truth": 2,
+            "predicted": 1,
+            "tp": 0,
+            "error": -1
+          },
+          {
+            "file": "IMG_1574.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1575.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1576.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1577.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1578.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1579.jpg",
+            "ground_truth": 2,
+            "predicted": 2,
+            "tp": 2,
+            "error": 0
+          },
+          {
+            "file": "IMG_1590.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1591.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1594.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1595.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1597.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1598.jpg",
+            "ground_truth": 2,
+            "predicted": 2,
+            "tp": 2,
+            "error": 0
+          },
+          {
+            "file": "IMG_1599.jpg",
+            "ground_truth": 2,
+            "predicted": 1,
+            "tp": 1,
+            "error": -1
+          },
+          {
+            "file": "IMG_1640.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1641.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1642.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1643.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1644.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1645.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1646.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1647.jpg",
+            "ground_truth": 2,
+            "predicted": 1,
+            "tp": 1,
+            "error": -1
+          },
+          {
+            "file": "IMG_1648.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1649.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1650.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1651.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1652.jpg",
+            "ground_truth": 1,
+            "predicted": 2,
+            "tp": 1,
+            "error": 1
+          },
+          {
+            "file": "IMG_1654.jpg",
+            "ground_truth": 2,
+            "predicted": 3,
+            "tp": 2,
+            "error": 1
+          },
+          {
+            "file": "IMG_1655.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1656.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1657.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1659.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1850.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1852.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1853.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1854.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1857.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1890.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1891.jpg",
+            "ground_truth": 3,
+            "predicted": 2,
+            "tp": 2,
+            "error": -1
+          },
+          {
+            "file": "IMG_1893.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1894.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1895.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1896.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1897.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1898.jpg",
+            "ground_truth": 2,
+            "predicted": 1,
+            "tp": 1,
+            "error": -1
+          },
+          {
+            "file": "IMG_1899.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1940.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1941.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1942.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1943.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1944.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1945.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1946.jpg",
+            "ground_truth": 1,
+            "predicted": 2,
+            "tp": 1,
+            "error": 1
+          },
+          {
+            "file": "IMG_1947.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1948.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1949.jpg",
+            "ground_truth": 2,
+            "predicted": 2,
+            "tp": 2,
+            "error": 0
+          },
+          {
+            "file": "IMG_1960.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1961.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1962.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1963.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1964.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1965.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1966.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1967.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1968.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          },
+          {
+            "file": "IMG_1969.jpg",
+            "ground_truth": 1,
+            "predicted": 1,
+            "tp": 1,
+            "error": 0
+          }
+        ]
+      }
+    },
+    "spikelet": {
+      "validation_sweep": [
+        {
+          "threshold": 0.05,
+          "class_id": 1,
+          "precision": 0.3034126756524233,
+          "recall": 0.6751754945756222,
+          "f1": 0.41867827463395335,
+          "tp": 1058,
+          "fp": 2429,
+          "fn": 509,
+          "images": 75,
+          "count_mae": 25.6,
+          "count_rmse": 28.170906978654415,
+          "count_bias": 25.6
+        },
+        {
+          "threshold": 0.1,
+          "class_id": 1,
+          "precision": 0.38667687595712097,
+          "recall": 0.6445437141033823,
+          "f1": 0.48336922708782,
+          "tp": 1010,
+          "fp": 1602,
+          "fn": 557,
+          "images": 75,
+          "count_mae": 14.04,
+          "count_rmse": 16.401219466856727,
+          "count_bias": 13.933333333333334
+        },
+        {
+          "threshold": 0.15,
+          "class_id": 1,
+          "precision": 0.47371007371007373,
+          "recall": 0.6151882578174857,
+          "f1": 0.5352581898945031,
+          "tp": 964,
+          "fp": 1071,
+          "fn": 603,
+          "images": 75,
+          "count_mae": 7.573333333333333,
+          "count_rmse": 9.170968687476076,
+          "count_bias": 6.24
+        },
+        {
+          "threshold": 0.2,
+          "class_id": 1,
+          "precision": 0.5473876063183475,
+          "recall": 0.5749840459476707,
+          "f1": 0.5608465608465608,
+          "tp": 901,
+          "fp": 745,
+          "fn": 666,
+          "images": 75,
+          "count_mae": 5.16,
+          "count_rmse": 6.795096271086476,
+          "count_bias": 1.0533333333333332
+        },
+        {
+          "threshold": 0.25,
+          "class_id": 1,
+          "precision": 0.6283783783783784,
+          "recall": 0.5341416719846841,
+          "f1": 0.577440496723008,
+          "tp": 837,
+          "fp": 495,
+          "fn": 730,
+          "images": 75,
+          "count_mae": 4.973333333333334,
+          "count_rmse": 7.632387132040233,
+          "count_bias": -3.1333333333333333
+        },
+        {
+          "threshold": 0.3,
+          "class_id": 1,
+          "precision": 0.6907308377896613,
+          "recall": 0.49457562220804085,
+          "f1": 0.5764224618817404,
+          "tp": 775,
+          "fp": 347,
+          "fn": 792,
+          "images": 75,
+          "count_mae": 6.413333333333333,
+          "count_rmse": 9.354499808470074,
+          "count_bias": -5.933333333333334
+        },
+        {
+          "threshold": 0.4,
+          "class_id": 1,
+          "precision": 0.7912932138284251,
+          "recall": 0.39438417358008937,
+          "f1": 0.5264054514480409,
+          "tp": 618,
+          "fp": 163,
+          "fn": 949,
+          "images": 75,
+          "count_mae": 10.533333333333333,
+          "count_rmse": 13.123007785311009,
+          "count_bias": -10.48
+        },
+        {
+          "threshold": 0.5,
+          "class_id": 1,
+          "precision": 0.8532818532818532,
+          "recall": 0.2820676451818762,
+          "f1": 0.4239808153477218,
+          "tp": 442,
+          "fp": 76,
+          "fn": 1125,
+          "images": 75,
+          "count_mae": 13.986666666666666,
+          "count_rmse": 16.49444350885069,
+          "count_bias": -13.986666666666666
+        }
+      ],
+      "validation": {
+        "threshold": 0.25,
+        "class_id": 1,
+        "precision": 0.6283783783783784,
+        "recall": 0.5341416719846841,
+        "f1": 0.577440496723008,
+        "tp": 837,
+        "fp": 495,
+        "fn": 730,
+        "images": 75,
+        "count_mae": 4.973333333333334,
+        "count_rmse": 7.632387132040233,
+        "count_bias": -3.1333333333333333,
+        "per_image": [
+          {
+            "file": "IMG_1530.jpg",
+            "ground_truth": 27,
+            "predicted": 17,
+            "tp": 7,
+            "error": -10
+          },
+          {
+            "file": "IMG_1533.jpg",
+            "ground_truth": 15,
+            "predicted": 15,
+            "tp": 6,
+            "error": 0
+          },
+          {
+            "file": "IMG_1534.jpg",
+            "ground_truth": 19,
+            "predicted": 11,
+            "tp": 7,
+            "error": -8
+          },
+          {
+            "file": "IMG_1535.jpg",
+            "ground_truth": 8,
+            "predicted": 9,
+            "tp": 3,
+            "error": 1
+          },
+          {
+            "file": "IMG_1536.jpg",
+            "ground_truth": 34,
+            "predicted": 27,
+            "tp": 19,
+            "error": -7
+          },
+          {
+            "file": "IMG_1537.jpg",
+            "ground_truth": 8,
+            "predicted": 6,
+            "tp": 3,
+            "error": -2
+          },
+          {
+            "file": "IMG_1538.jpg",
+            "ground_truth": 18,
+            "predicted": 17,
+            "tp": 7,
+            "error": -1
+          },
+          {
+            "file": "IMG_1539.jpg",
+            "ground_truth": 14,
+            "predicted": 15,
+            "tp": 6,
+            "error": 1
+          },
+          {
+            "file": "IMG_1540.jpg",
+            "ground_truth": 37,
+            "predicted": 28,
+            "tp": 21,
+            "error": -9
+          },
+          {
+            "file": "IMG_1541.jpg",
+            "ground_truth": 18,
+            "predicted": 11,
+            "tp": 6,
+            "error": -7
+          },
+          {
+            "file": "IMG_1542.jpg",
+            "ground_truth": 48,
+            "predicted": 18,
+            "tp": 9,
+            "error": -30
+          },
+          {
+            "file": "IMG_1543.jpg",
+            "ground_truth": 48,
+            "predicted": 24,
+            "tp": 15,
+            "error": -24
+          },
+          {
+            "file": "IMG_1544.jpg",
+            "ground_truth": 32,
+            "predicted": 18,
+            "tp": 3,
+            "error": -14
+          },
+          {
+            "file": "IMG_1545.jpg",
+            "ground_truth": 13,
+            "predicted": 12,
+            "tp": 7,
+            "error": -1
+          },
+          {
+            "file": "IMG_1547.jpg",
+            "ground_truth": 22,
+            "predicted": 23,
+            "tp": 18,
+            "error": 1
+          },
+          {
+            "file": "IMG_1548.jpg",
+            "ground_truth": 16,
+            "predicted": 24,
+            "tp": 11,
+            "error": 8
+          },
+          {
+            "file": "IMG_1549.jpg",
+            "ground_truth": 17,
+            "predicted": 21,
+            "tp": 13,
+            "error": 4
+          },
+          {
+            "file": "IMG_1630.jpg",
+            "ground_truth": 33,
+            "predicted": 29,
+            "tp": 16,
+            "error": -4
+          },
+          {
+            "file": "IMG_1631.jpg",
+            "ground_truth": 22,
+            "predicted": 17,
+            "tp": 10,
+            "error": -5
+          },
+          {
+            "file": "IMG_1632.jpg",
+            "ground_truth": 13,
+            "predicted": 10,
+            "tp": 6,
+            "error": -3
+          },
+          {
+            "file": "IMG_1634.jpg",
+            "ground_truth": 12,
+            "predicted": 10,
+            "tp": 6,
+            "error": -2
+          },
+          {
+            "file": "IMG_1635.jpg",
+            "ground_truth": 13,
+            "predicted": 10,
+            "tp": 7,
+            "error": -3
+          },
+          {
+            "file": "IMG_1636.jpg",
+            "ground_truth": 11,
+            "predicted": 11,
+            "tp": 7,
+            "error": 0
+          },
+          {
+            "file": "IMG_1637.jpg",
+            "ground_truth": 16,
+            "predicted": 17,
+            "tp": 10,
+            "error": 1
+          },
+          {
+            "file": "IMG_1638.jpg",
+            "ground_truth": 26,
+            "predicted": 14,
+            "tp": 7,
+            "error": -12
+          },
+          {
+            "file": "IMG_1639.jpg",
+            "ground_truth": 17,
+            "predicted": 19,
+            "tp": 13,
+            "error": 2
+          },
+          {
+            "file": "IMG_1680.jpg",
+            "ground_truth": 10,
+            "predicted": 10,
+            "tp": 8,
+            "error": 0
+          },
+          {
+            "file": "IMG_1681.jpg",
+            "ground_truth": 12,
+            "predicted": 7,
+            "tp": 6,
+            "error": -5
+          },
+          {
+            "file": "IMG_1682.jpg",
+            "ground_truth": 10,
+            "predicted": 12,
+            "tp": 9,
+            "error": 2
+          },
+          {
+            "file": "IMG_1683.jpg",
+            "ground_truth": 9,
+            "predicted": 9,
+            "tp": 8,
+            "error": 0
+          },
+          {
+            "file": "IMG_1684.jpg",
+            "ground_truth": 22,
+            "predicted": 14,
+            "tp": 11,
+            "error": -8
+          },
+          {
+            "file": "IMG_1685.jpg",
+            "ground_truth": 17,
+            "predicted": 10,
+            "tp": 6,
+            "error": -7
+          },
+          {
+            "file": "IMG_1686.jpg",
+            "ground_truth": 30,
+            "predicted": 23,
+            "tp": 17,
+            "error": -7
+          },
+          {
+            "file": "IMG_1687.jpg",
+            "ground_truth": 35,
+            "predicted": 26,
+            "tp": 22,
+            "error": -9
+          },
+          {
+            "file": "IMG_1688.jpg",
+            "ground_truth": 14,
+            "predicted": 12,
+            "tp": 8,
+            "error": -2
+          },
+          {
+            "file": "IMG_1689.jpg",
+            "ground_truth": 28,
+            "predicted": 29,
+            "tp": 20,
+            "error": 1
+          },
+          {
+            "file": "IMG_1720.jpg",
+            "ground_truth": 18,
+            "predicted": 15,
+            "tp": 12,
+            "error": -3
+          },
+          {
+            "file": "IMG_1721.jpg",
+            "ground_truth": 14,
+            "predicted": 15,
+            "tp": 11,
+            "error": 1
+          },
+          {
+            "file": "IMG_1722.jpg",
+            "ground_truth": 23,
+            "predicted": 17,
+            "tp": 12,
+            "error": -6
+          },
+          {
+            "file": "IMG_1723.jpg",
+            "ground_truth": 24,
+            "predicted": 15,
+            "tp": 8,
+            "error": -9
+          },
+          {
+            "file": "IMG_1724.jpg",
+            "ground_truth": 18,
+            "predicted": 15,
+            "tp": 12,
+            "error": -3
+          },
+          {
+            "file": "IMG_1725.jpg",
+            "ground_truth": 17,
+            "predicted": 17,
+            "tp": 12,
+            "error": 0
+          },
+          {
+            "file": "IMG_1726.jpg",
+            "ground_truth": 8,
+            "predicted": 11,
+            "tp": 8,
+            "error": 3
+          },
+          {
+            "file": "IMG_1727.jpg",
+            "ground_truth": 17,
+            "predicted": 25,
+            "tp": 11,
+            "error": 8
+          },
+          {
+            "file": "IMG_1728.jpg",
+            "ground_truth": 18,
+            "predicted": 23,
+            "tp": 17,
+            "error": 5
+          },
+          {
+            "file": "IMG_1729.jpg",
+            "ground_truth": 16,
+            "predicted": 19,
+            "tp": 14,
+            "error": 3
+          },
+          {
+            "file": "IMG_1830.jpg",
+            "ground_truth": 16,
+            "predicted": 16,
+            "tp": 14,
+            "error": 0
+          },
+          {
+            "file": "IMG_1831.jpg",
+            "ground_truth": 16,
+            "predicted": 17,
+            "tp": 13,
+            "error": 1
+          },
+          {
+            "file": "IMG_1833.jpg",
+            "ground_truth": 21,
+            "predicted": 18,
+            "tp": 13,
+            "error": -3
+          },
+          {
+            "file": "IMG_1834.jpg",
+            "ground_truth": 11,
+            "predicted": 14,
+            "tp": 9,
+            "error": 3
+          },
+          {
+            "file": "IMG_1836.jpg",
+            "ground_truth": 19,
+            "predicted": 18,
+            "tp": 13,
+            "error": -1
+          },
+          {
+            "file": "IMG_1837.jpg",
+            "ground_truth": 25,
+            "predicted": 22,
+            "tp": 14,
+            "error": -3
+          },
+          {
+            "file": "IMG_1838.jpg",
+            "ground_truth": 16,
+            "predicted": 19,
+            "tp": 14,
+            "error": 3
+          },
+          {
+            "file": "IMG_1839.jpg",
+            "ground_truth": 22,
+            "predicted": 20,
+            "tp": 12,
+            "error": -2
+          },
+          {
+            "file": "IMG_1930.jpg",
+            "ground_truth": 33,
+            "predicted": 33,
+            "tp": 21,
+            "error": 0
+          },
+          {
+            "file": "IMG_1931.jpg",
+            "ground_truth": 16,
+            "predicted": 18,
+            "tp": 6,
+            "error": 2
+          },
+          {
+            "file": "IMG_1932.jpg",
+            "ground_truth": 22,
+            "predicted": 15,
+            "tp": 7,
+            "error": -7
+          },
+          {
+            "file": "IMG_1934.jpg",
+            "ground_truth": 22,
+            "predicted": 22,
+            "tp": 17,
+            "error": 0
+          },
+          {
+            "file": "IMG_1935.jpg",
+            "ground_truth": 38,
+            "predicted": 23,
+            "tp": 13,
+            "error": -15
+          },
+          {
+            "file": "IMG_1936.jpg",
+            "ground_truth": 41,
+            "predicted": 19,
+            "tp": 13,
+            "error": -22
+          },
+          {
+            "file": "IMG_1937.jpg",
+            "ground_truth": 28,
+            "predicted": 24,
+            "tp": 16,
+            "error": -4
+          },
+          {
+            "file": "IMG_1938.jpg",
+            "ground_truth": 30,
+            "predicted": 31,
+            "tp": 17,
+            "error": 1
+          },
+          {
+            "file": "IMG_1939.jpg",
+            "ground_truth": 15,
+            "predicted": 16,
+            "tp": 11,
+            "error": 1
+          },
+          {
+            "file": "IMG_1950.jpg",
+            "ground_truth": 18,
+            "predicted": 18,
+            "tp": 8,
+            "error": 0
+          },
+          {
+            "file": "IMG_1951.jpg",
+            "ground_truth": 15,
+            "predicted": 23,
+            "tp": 11,
+            "error": 8
+          },
+          {
+            "file": "IMG_1952.jpg",
+            "ground_truth": 21,
+            "predicted": 18,
+            "tp": 14,
+            "error": -3
+          },
+          {
+            "file": "IMG_1953.jpg",
+            "ground_truth": 20,
+            "predicted": 22,
+            "tp": 11,
+            "error": 2
+          },
+          {
+            "file": "IMG_1954.jpg",
+            "ground_truth": 24,
+            "predicted": 28,
+            "tp": 17,
+            "error": 4
+          },
+          {
+            "file": "IMG_1955.jpg",
+            "ground_truth": 21,
+            "predicted": 13,
+            "tp": 10,
+            "error": -8
+          },
+          {
+            "file": "IMG_1956.jpg",
+            "ground_truth": 19,
+            "predicted": 17,
+            "tp": 11,
+            "error": -2
+          },
+          {
+            "file": "IMG_1957.jpg",
+            "ground_truth": 16,
+            "predicted": 17,
+            "tp": 6,
+            "error": 1
+          },
+          {
+            "file": "IMG_1958.jpg",
+            "ground_truth": 18,
+            "predicted": 20,
+            "tp": 11,
+            "error": 2
+          },
+          {
+            "file": "IMG_1959.jpg",
+            "ground_truth": 15,
+            "predicted": 15,
+            "tp": 13,
+            "error": 0
+          },
+          {
+            "file": "IMG_2020.jpg",
+            "ground_truth": 43,
+            "predicted": 26,
+            "tp": 17,
+            "error": -17
+          },
+          {
+            "file": "IMG_2021.jpg",
+            "ground_truth": 29,
+            "predicted": 13,
+            "tp": 10,
+            "error": -16
+          }
+        ]
+      },
+      "test": {
+        "threshold": 0.25,
+        "class_id": 1,
+        "precision": 0.6190140845070422,
+        "recall": 0.5155425219941349,
+        "f1": 0.56256,
+        "tp": 879,
+        "fp": 541,
+        "fn": 826,
+        "images": 79,
+        "count_mae": 5.556962025316456,
+        "count_rmse": 7.371687198457265,
+        "count_bias": -3.607594936708861,
+        "per_image": [
+          {
+            "file": "IMG_1450.jpg",
+            "ground_truth": 24,
+            "predicted": 16,
+            "tp": 12,
+            "error": -8
+          },
+          {
+            "file": "IMG_1451.jpg",
+            "ground_truth": 12,
+            "predicted": 11,
+            "tp": 3,
+            "error": -1
+          },
+          {
+            "file": "IMG_1452.jpg",
+            "ground_truth": 14,
+            "predicted": 11,
+            "tp": 9,
+            "error": -3
+          },
+          {
+            "file": "IMG_1453.jpg",
+            "ground_truth": 13,
+            "predicted": 14,
+            "tp": 12,
+            "error": 1
+          },
+          {
+            "file": "IMG_1454.jpg",
+            "ground_truth": 10,
+            "predicted": 7,
+            "tp": 6,
+            "error": -3
+          },
+          {
+            "file": "IMG_1455.jpg",
+            "ground_truth": 11,
+            "predicted": 19,
+            "tp": 9,
+            "error": 8
+          },
+          {
+            "file": "IMG_1456.jpg",
+            "ground_truth": 26,
+            "predicted": 29,
+            "tp": 16,
+            "error": 3
+          },
+          {
+            "file": "IMG_1457.jpg",
+            "ground_truth": 41,
+            "predicted": 29,
+            "tp": 14,
+            "error": -12
+          },
+          {
+            "file": "IMG_1458.jpg",
+            "ground_truth": 21,
+            "predicted": 13,
+            "tp": 7,
+            "error": -8
+          },
+          {
+            "file": "IMG_1459.jpg",
+            "ground_truth": 19,
+            "predicted": 13,
+            "tp": 8,
+            "error": -6
+          },
+          {
+            "file": "IMG_1570.jpg",
+            "ground_truth": 35,
+            "predicted": 25,
+            "tp": 20,
+            "error": -10
+          },
+          {
+            "file": "IMG_1571.jpg",
+            "ground_truth": 31,
+            "predicted": 30,
+            "tp": 22,
+            "error": -1
+          },
+          {
+            "file": "IMG_1572.jpg",
+            "ground_truth": 20,
+            "predicted": 16,
+            "tp": 9,
+            "error": -4
+          },
+          {
+            "file": "IMG_1573.jpg",
+            "ground_truth": 37,
+            "predicted": 25,
+            "tp": 18,
+            "error": -12
+          },
+          {
+            "file": "IMG_1574.jpg",
+            "ground_truth": 12,
+            "predicted": 16,
+            "tp": 7,
+            "error": 4
+          },
+          {
+            "file": "IMG_1575.jpg",
+            "ground_truth": 17,
+            "predicted": 13,
+            "tp": 7,
+            "error": -4
+          },
+          {
+            "file": "IMG_1576.jpg",
+            "ground_truth": 21,
+            "predicted": 21,
+            "tp": 12,
+            "error": 0
+          },
+          {
+            "file": "IMG_1577.jpg",
+            "ground_truth": 5,
+            "predicted": 9,
+            "tp": 3,
+            "error": 4
+          },
+          {
+            "file": "IMG_1578.jpg",
+            "ground_truth": 13,
+            "predicted": 19,
+            "tp": 11,
+            "error": 6
+          },
+          {
+            "file": "IMG_1579.jpg",
+            "ground_truth": 31,
+            "predicted": 15,
+            "tp": 12,
+            "error": -16
+          },
+          {
+            "file": "IMG_1590.jpg",
+            "ground_truth": 18,
+            "predicted": 10,
+            "tp": 4,
+            "error": -8
+          },
+          {
+            "file": "IMG_1591.jpg",
+            "ground_truth": 10,
+            "predicted": 7,
+            "tp": 6,
+            "error": -3
+          },
+          {
+            "file": "IMG_1594.jpg",
+            "ground_truth": 21,
+            "predicted": 11,
+            "tp": 5,
+            "error": -10
+          },
+          {
+            "file": "IMG_1595.jpg",
+            "ground_truth": 29,
+            "predicted": 4,
+            "tp": 3,
+            "error": -25
+          },
+          {
+            "file": "IMG_1597.jpg",
+            "ground_truth": 14,
+            "predicted": 9,
+            "tp": 3,
+            "error": -5
+          },
+          {
+            "file": "IMG_1598.jpg",
+            "ground_truth": 21,
+            "predicted": 19,
+            "tp": 15,
+            "error": -2
+          },
+          {
+            "file": "IMG_1599.jpg",
+            "ground_truth": 35,
+            "predicted": 30,
+            "tp": 22,
+            "error": -5
+          },
+          {
+            "file": "IMG_1640.jpg",
+            "ground_truth": 15,
+            "predicted": 15,
+            "tp": 12,
+            "error": 0
+          },
+          {
+            "file": "IMG_1641.jpg",
+            "ground_truth": 20,
+            "predicted": 16,
+            "tp": 8,
+            "error": -4
+          },
+          {
+            "file": "IMG_1642.jpg",
+            "ground_truth": 13,
+            "predicted": 16,
+            "tp": 8,
+            "error": 3
+          },
+          {
+            "file": "IMG_1643.jpg",
+            "ground_truth": 33,
+            "predicted": 21,
+            "tp": 12,
+            "error": -12
+          },
+          {
+            "file": "IMG_1644.jpg",
+            "ground_truth": 14,
+            "predicted": 9,
+            "tp": 5,
+            "error": -5
+          },
+          {
+            "file": "IMG_1645.jpg",
+            "ground_truth": 22,
+            "predicted": 16,
+            "tp": 8,
+            "error": -6
+          },
+          {
+            "file": "IMG_1646.jpg",
+            "ground_truth": 19,
+            "predicted": 12,
+            "tp": 7,
+            "error": -7
+          },
+          {
+            "file": "IMG_1647.jpg",
+            "ground_truth": 39,
+            "predicted": 23,
+            "tp": 14,
+            "error": -16
+          },
+          {
+            "file": "IMG_1648.jpg",
+            "ground_truth": 20,
+            "predicted": 19,
+            "tp": 14,
+            "error": -1
+          },
+          {
+            "file": "IMG_1649.jpg",
+            "ground_truth": 19,
+            "predicted": 21,
+            "tp": 15,
+            "error": 2
+          },
+          {
+            "file": "IMG_1650.jpg",
+            "ground_truth": 31,
+            "predicted": 29,
+            "tp": 24,
+            "error": -2
+          },
+          {
+            "file": "IMG_1651.jpg",
+            "ground_truth": 14,
+            "predicted": 9,
+            "tp": 8,
+            "error": -5
+          },
+          {
+            "file": "IMG_1652.jpg",
+            "ground_truth": 17,
+            "predicted": 16,
+            "tp": 8,
+            "error": -1
+          },
+          {
+            "file": "IMG_1654.jpg",
+            "ground_truth": 37,
+            "predicted": 26,
+            "tp": 15,
+            "error": -11
+          },
+          {
+            "file": "IMG_1655.jpg",
+            "ground_truth": 41,
+            "predicted": 30,
+            "tp": 17,
+            "error": -11
+          },
+          {
+            "file": "IMG_1656.jpg",
+            "ground_truth": 22,
+            "predicted": 21,
+            "tp": 14,
+            "error": -1
+          },
+          {
+            "file": "IMG_1657.jpg",
+            "ground_truth": 21,
+            "predicted": 26,
+            "tp": 15,
+            "error": 5
+          },
+          {
+            "file": "IMG_1659.jpg",
+            "ground_truth": 23,
+            "predicted": 19,
+            "tp": 16,
+            "error": -4
+          },
+          {
+            "file": "IMG_1850.jpg",
+            "ground_truth": 12,
+            "predicted": 14,
+            "tp": 7,
+            "error": 2
+          },
+          {
+            "file": "IMG_1852.jpg",
+            "ground_truth": 26,
+            "predicted": 27,
+            "tp": 19,
+            "error": 1
+          },
+          {
+            "file": "IMG_1853.jpg",
+            "ground_truth": 16,
+            "predicted": 17,
+            "tp": 10,
+            "error": 1
+          },
+          {
+            "file": "IMG_1854.jpg",
+            "ground_truth": 25,
+            "predicted": 31,
+            "tp": 19,
+            "error": 6
+          },
+          {
+            "file": "IMG_1857.jpg",
+            "ground_truth": 19,
+            "predicted": 22,
+            "tp": 14,
+            "error": 3
+          },
+          {
+            "file": "IMG_1890.jpg",
+            "ground_truth": 10,
+            "predicted": 11,
+            "tp": 6,
+            "error": 1
+          },
+          {
+            "file": "IMG_1891.jpg",
+            "ground_truth": 40,
+            "predicted": 47,
+            "tp": 21,
+            "error": 7
+          },
+          {
+            "file": "IMG_1893.jpg",
+            "ground_truth": 23,
+            "predicted": 21,
+            "tp": 10,
+            "error": -2
+          },
+          {
+            "file": "IMG_1894.jpg",
+            "ground_truth": 18,
+            "predicted": 13,
+            "tp": 6,
+            "error": -5
+          },
+          {
+            "file": "IMG_1895.jpg",
+            "ground_truth": 14,
+            "predicted": 20,
+            "tp": 8,
+            "error": 6
+          },
+          {
+            "file": "IMG_1896.jpg",
+            "ground_truth": 28,
+            "predicted": 18,
+            "tp": 7,
+            "error": -10
+          },
+          {
+            "file": "IMG_1897.jpg",
+            "ground_truth": 18,
+            "predicted": 15,
+            "tp": 13,
+            "error": -3
+          },
+          {
+            "file": "IMG_1898.jpg",
+            "ground_truth": 31,
+            "predicted": 24,
+            "tp": 17,
+            "error": -7
+          },
+          {
+            "file": "IMG_1899.jpg",
+            "ground_truth": 28,
+            "predicted": 29,
+            "tp": 20,
+            "error": 1
+          },
+          {
+            "file": "IMG_1940.jpg",
+            "ground_truth": 24,
+            "predicted": 19,
+            "tp": 13,
+            "error": -5
+          },
+          {
+            "file": "IMG_1941.jpg",
+            "ground_truth": 15,
+            "predicted": 14,
+            "tp": 9,
+            "error": -1
+          },
+          {
+            "file": "IMG_1942.jpg",
+            "ground_truth": 21,
+            "predicted": 13,
+            "tp": 6,
+            "error": -8
+          },
+          {
+            "file": "IMG_1943.jpg",
+            "ground_truth": 16,
+            "predicted": 17,
+            "tp": 10,
+            "error": 1
+          },
+          {
+            "file": "IMG_1944.jpg",
+            "ground_truth": 20,
+            "predicted": 16,
+            "tp": 13,
+            "error": -4
+          },
+          {
+            "file": "IMG_1945.jpg",
+            "ground_truth": 31,
+            "predicted": 13,
+            "tp": 8,
+            "error": -18
+          },
+          {
+            "file": "IMG_1946.jpg",
+            "ground_truth": 22,
+            "predicted": 20,
+            "tp": 16,
+            "error": -2
+          },
+          {
+            "file": "IMG_1947.jpg",
+            "ground_truth": 19,
+            "predicted": 9,
+            "tp": 7,
+            "error": -10
+          },
+          {
+            "file": "IMG_1948.jpg",
+            "ground_truth": 17,
+            "predicted": 15,
+            "tp": 11,
+            "error": -2
+          },
+          {
+            "file": "IMG_1949.jpg",
+            "ground_truth": 28,
+            "predicted": 17,
+            "tp": 11,
+            "error": -11
+          },
+          {
+            "file": "IMG_1960.jpg",
+            "ground_truth": 19,
+            "predicted": 18,
+            "tp": 12,
+            "error": -1
+          },
+          {
+            "file": "IMG_1961.jpg",
+            "ground_truth": 17,
+            "predicted": 15,
+            "tp": 7,
+            "error": -2
+          },
+          {
+            "file": "IMG_1962.jpg",
+            "ground_truth": 32,
+            "predicted": 21,
+            "tp": 16,
+            "error": -11
+          },
+          {
+            "file": "IMG_1963.jpg",
+            "ground_truth": 35,
+            "predicted": 16,
+            "tp": 7,
+            "error": -19
+          },
+          {
+            "file": "IMG_1964.jpg",
+            "ground_truth": 12,
+            "predicted": 18,
+            "tp": 9,
+            "error": 6
+          },
+          {
+            "file": "IMG_1965.jpg",
+            "ground_truth": 19,
+            "predicted": 25,
+            "tp": 11,
+            "error": 6
+          },
+          {
+            "file": "IMG_1966.jpg",
+            "ground_truth": 25,
+            "predicted": 20,
+            "tp": 14,
+            "error": -5
+          },
+          {
+            "file": "IMG_1967.jpg",
+            "ground_truth": 12,
+            "predicted": 8,
+            "tp": 7,
+            "error": -4
+          },
+          {
+            "file": "IMG_1968.jpg",
+            "ground_truth": 13,
+            "predicted": 13,
+            "tp": 10,
+            "error": 0
+          },
+          {
+            "file": "IMG_1969.jpg",
+            "ground_truth": 19,
+            "predicted": 19,
+            "tp": 10,
+            "error": 0
+          }
+        ]
+      }
+    }
+  },
+  "test_AP": {
+    "metrics/precision(B)": 0.7572953468886559,
+    "metrics/recall(B)": 0.6883778360858157,
+    "metrics/mAP50(B)": 0.7229859595184667,
+    "metrics/mAP50-95(B)": 0.43175945054515213,
+    "fitness": 0.43175945054515213
+  }
+}

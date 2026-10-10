@@ -1,0 +1,1 @@
+{'val_tiles': 120, 'val_boxes': 10135, 'val_originals': 30, 'train_tiles': 360, 'train_boxes': 29447, 'train_originals': 90, 'test_tiles': 120, 'test_boxes': 9612, 'test_originals': 30}

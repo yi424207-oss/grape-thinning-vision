@@ -1,0 +1,8 @@
+Ultralytics 8.4.175 🚀 Python-3.12.14 torch-2.14.1+cpu CPU (AMD EPYC 9V74 80-Core Processor)
+Model summary (fused): 73 layers, 3,132,707 parameters, 0 gradients, 8.6 GFLOPs
+[34m[1mval: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 3497.0±555.8 MB/s, size: 58.8 KB)
+[K[34m[1mval: [0mScanning /workspace/scratch/da5d2b98148c/grape_thinning/data/young_yolo/labels/test.cache... 2 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 2/2 524.3Kit/s 0.0s
+[K                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 1/1 22.6it/s 0.0s
+                   all          2         78      0.944      0.859      0.874      0.419
+Speed: 0.2ms preprocess, 16.7ms inference, 0.0ms loss, 1.9ms postprocess per image
+{'metrics/precision(B)': 0.943634213096171, 'metrics/recall(B)': 0.8585321765640059, 'metrics/mAP50(B)': 0.8740585162317515, 'metrics/mAP50-95(B)': 0.41892895978961164, 'fitness': 0.41892895978961164}

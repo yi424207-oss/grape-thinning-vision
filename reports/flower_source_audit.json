@@ -1,0 +1,11 @@
+{
+  "raw_entries": 567,
+  "unique_filenames": 523,
+  "duplicate_entries": 44,
+  "conflicts": [],
+  "actual_image_counts": {
+    "train": 369,
+    "val": 75,
+    "test": 79
+  }
+}

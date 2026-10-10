@@ -1,0 +1,1502 @@
+[
+  {
+    "file": "Kyoho_1.jpg",
+    "split": "val",
+    "group": "Kyoho-0",
+    "cultivar": "Kyoho",
+    "sha256": "b8f71b19056ccacc1c386eff2639dd58630d509a4ede756a27191a45aedcb7a2",
+    "boxes": 312,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_10.jpg",
+    "split": "train",
+    "group": "Kyoho-1",
+    "cultivar": "Kyoho",
+    "sha256": "1f2ab262b71454def9d9ea2d4f0d675bcde5aea9c024cfcc9a0c4582a535be39",
+    "boxes": 430,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_11.jpg",
+    "split": "train",
+    "group": "Kyoho-2",
+    "cultivar": "Kyoho",
+    "sha256": "6c87b204c9e21d125943bc721757840c5cf886becb71e02374eca5f3454b8ca0",
+    "boxes": 486,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_12.jpg",
+    "split": "train",
+    "group": "Kyoho-2",
+    "cultivar": "Kyoho",
+    "sha256": "4aed22e5187e962c5f635b905c10a49c9fce92f681cbba52592cfbb6050500cf",
+    "boxes": 328,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_13.jpg",
+    "split": "train",
+    "group": "Kyoho-2",
+    "cultivar": "Kyoho",
+    "sha256": "e66d3bc80a5abc5243b83e31128a55d590cd82b44b6ec0937d4f9b522deddbe7",
+    "boxes": 492,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_14.jpg",
+    "split": "train",
+    "group": "Kyoho-2",
+    "cultivar": "Kyoho",
+    "sha256": "fb1e2ee5c678f6aab6d4ea970df7c6c71ba27e84b2a840a0b162c21a1ec50f95",
+    "boxes": 300,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_15.jpg",
+    "split": "train",
+    "group": "Kyoho-2",
+    "cultivar": "Kyoho",
+    "sha256": "292bf8344a535f59549e88b3273342b94617af6542d4c0d70d489c9e995c6cd7",
+    "boxes": 470,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_16.jpg",
+    "split": "test",
+    "group": "Kyoho-3",
+    "cultivar": "Kyoho",
+    "sha256": "9984550f28ff0b214c159a67534568944915042481af9ceac0907f4cd01ef376",
+    "boxes": 503,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_17.jpg",
+    "split": "test",
+    "group": "Kyoho-3",
+    "cultivar": "Kyoho",
+    "sha256": "876d876c5a603412357b6f34f127ef45d9fa212cab7023b6f07342f59ae6ac79",
+    "boxes": 491,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_18.jpg",
+    "split": "test",
+    "group": "Kyoho-3",
+    "cultivar": "Kyoho",
+    "sha256": "090405f315c296e53e62ff93ac1d787470b810cb4d1058468907c9c57cc34646",
+    "boxes": 309,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_19.jpg",
+    "split": "test",
+    "group": "Kyoho-3",
+    "cultivar": "Kyoho",
+    "sha256": "f574d7168d260b29a2e71870acfdd5bb060bf45c452b1810e762fcdfaa71eb60",
+    "boxes": 489,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_2.jpg",
+    "split": "val",
+    "group": "Kyoho-0",
+    "cultivar": "Kyoho",
+    "sha256": "bf42d3284caa533982019ca26362cd9b294f6e3893b3f213a3ac1986efaab489",
+    "boxes": 269,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_20.jpg",
+    "split": "test",
+    "group": "Kyoho-3",
+    "cultivar": "Kyoho",
+    "sha256": "340b9a673fe4fef99769a15026ec4267dcf94c87076f79ad1fd23c1e0662e2e1",
+    "boxes": 415,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_21.jpg",
+    "split": "train",
+    "group": "Kyoho-4",
+    "cultivar": "Kyoho",
+    "sha256": "1be281d56fe5b65c98410483a511d5d38d61c0771257c14bdf17fbde672f0d6e",
+    "boxes": 451,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_22.jpg",
+    "split": "train",
+    "group": "Kyoho-4",
+    "cultivar": "Kyoho",
+    "sha256": "3337abad26225b7de223817a80d6cca20c1efd576c7f5f7cd1f460351de9746e",
+    "boxes": 309,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_23.jpg",
+    "split": "train",
+    "group": "Kyoho-4",
+    "cultivar": "Kyoho",
+    "sha256": "e16af887d33aad97d4b1f81a51a6c8d3f6b08bd0b8b82cd5801bb24fe3eefd46",
+    "boxes": 516,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_24.jpg",
+    "split": "train",
+    "group": "Kyoho-4",
+    "cultivar": "Kyoho",
+    "sha256": "a43ec9b84a440a60883c4a915c4f1dc166834f3e4e7df6c08a0086f7242a8d71",
+    "boxes": 434,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_25.jpg",
+    "split": "train",
+    "group": "Kyoho-4",
+    "cultivar": "Kyoho",
+    "sha256": "e67786f167b77b62831965f8b1bf9695f5c91e7649645f317d25e2aadb6ff1b2",
+    "boxes": 392,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_26.jpg",
+    "split": "test",
+    "group": "Kyoho-5",
+    "cultivar": "Kyoho",
+    "sha256": "f35dae395fcabe20b14cc97789d9071c4fafc8086d45538fde5520bab8587d64",
+    "boxes": 253,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_27.jpg",
+    "split": "test",
+    "group": "Kyoho-5",
+    "cultivar": "Kyoho",
+    "sha256": "bef72d80711b275596002c90b7910950b359cdaa431697c3809088e1aa64c1cb",
+    "boxes": 432,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_28.jpg",
+    "split": "test",
+    "group": "Kyoho-5",
+    "cultivar": "Kyoho",
+    "sha256": "b9017494048942d890461633c2f7b97881bd6075e3e7e67c57acda19ec5635ba",
+    "boxes": 363,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_29.jpg",
+    "split": "test",
+    "group": "Kyoho-5",
+    "cultivar": "Kyoho",
+    "sha256": "3594418511b1b041bdd6cb050a04545ce540af54370c4502a1860e75ca64093a",
+    "boxes": 318,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_3.jpg",
+    "split": "val",
+    "group": "Kyoho-0",
+    "cultivar": "Kyoho",
+    "sha256": "cacf4069fe031e6d548b2f71b02020dfee1c668e6b95de4895dcec317a56c335",
+    "boxes": 243,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_30.jpg",
+    "split": "test",
+    "group": "Kyoho-5",
+    "cultivar": "Kyoho",
+    "sha256": "6c1099c4a38c5604d66549fd75f37e5c74f2b82d23108969e185fc8080deed9f",
+    "boxes": 418,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_31.jpg",
+    "split": "train",
+    "group": "Kyoho-6",
+    "cultivar": "Kyoho",
+    "sha256": "d40ca7c2e7552330f34bc8c40b350e430c9976392455cf06a569926184677d02",
+    "boxes": 346,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_32.jpg",
+    "split": "train",
+    "group": "Kyoho-6",
+    "cultivar": "Kyoho",
+    "sha256": "bd4882d32d3da921ff2f3c9ad0a71b0059b618ab8222c2121d35f773df986fba",
+    "boxes": 337,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_33.jpg",
+    "split": "train",
+    "group": "Kyoho-6",
+    "cultivar": "Kyoho",
+    "sha256": "905cba7f61da6a8eb2345749287aff50562ab77b69c2df6ff2b11fb7b2d3da06",
+    "boxes": 398,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_34.jpg",
+    "split": "train",
+    "group": "Kyoho-6",
+    "cultivar": "Kyoho",
+    "sha256": "1c29d56109bb0a0dcf4c6f7745b5463c263d23838c210e596bb8dffd8b41ff8d",
+    "boxes": 214,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_35.jpg",
+    "split": "train",
+    "group": "Kyoho-6",
+    "cultivar": "Kyoho",
+    "sha256": "951e89174674e51decb0ab6545bdcb1636e861b4f735c23a61730d9d98976aa9",
+    "boxes": 378,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_36.jpg",
+    "split": "train",
+    "group": "Kyoho-7",
+    "cultivar": "Kyoho",
+    "sha256": "f4a7e1f3d73389c61d67516988b31fb4b9514a4154ed9a9f177e63f168859d79",
+    "boxes": 216,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_37.jpg",
+    "split": "train",
+    "group": "Kyoho-7",
+    "cultivar": "Kyoho",
+    "sha256": "ea4d02414ff064c63079b255add8dd0b4956de98ca4f64e2641db85ce6368564",
+    "boxes": 405,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_38.jpg",
+    "split": "train",
+    "group": "Kyoho-7",
+    "cultivar": "Kyoho",
+    "sha256": "7dc6673bf8addeb8b247a0d110599cf37ca3aae2ed7655636066d5a8ad8df406",
+    "boxes": 411,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_39.jpg",
+    "split": "train",
+    "group": "Kyoho-7",
+    "cultivar": "Kyoho",
+    "sha256": "05d88ecf80cf4227dd616e727f63969a76ca58d2d220f9246710cc0af34f79da",
+    "boxes": 503,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_4.jpg",
+    "split": "val",
+    "group": "Kyoho-0",
+    "cultivar": "Kyoho",
+    "sha256": "af34c527f4429eb5f64e4fc4409607698e1fd506ab0568aaa6d6a79b12ebba2f",
+    "boxes": 492,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_40.jpg",
+    "split": "train",
+    "group": "Kyoho-7",
+    "cultivar": "Kyoho",
+    "sha256": "d2865a7a8f8389b771d853efd2aacec7252ceb5b92f895916901fe29bd057739",
+    "boxes": 380,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_41.jpg",
+    "split": "train",
+    "group": "Kyoho-8",
+    "cultivar": "Kyoho",
+    "sha256": "6572a53a7b6265174e2542e1c94254336917d61277819d9b80fab51d9e27bab1",
+    "boxes": 407,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_42.jpg",
+    "split": "train",
+    "group": "Kyoho-8",
+    "cultivar": "Kyoho",
+    "sha256": "10c5c0c9d59ebd948799998138e5cea2b542c95cf08defe90c710e07cfdef61b",
+    "boxes": 341,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_43.jpg",
+    "split": "train",
+    "group": "Kyoho-8",
+    "cultivar": "Kyoho",
+    "sha256": "02b894cc3ee79ea3af9bc00a6406f50b003bddb29bfd5ef33928919efca211a2",
+    "boxes": 407,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_44.jpg",
+    "split": "train",
+    "group": "Kyoho-8",
+    "cultivar": "Kyoho",
+    "sha256": "3cf54ef4691d27051960caa809d653523c44055083af7d0a8eaa41144247288d",
+    "boxes": 353,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_45.jpg",
+    "split": "train",
+    "group": "Kyoho-8",
+    "cultivar": "Kyoho",
+    "sha256": "df7581b5a3a7ca10c2f3e2cc5f3e8e51f17791d5282d44f37f46104c51a45738",
+    "boxes": 508,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_46.jpg",
+    "split": "val",
+    "group": "Kyoho-9",
+    "cultivar": "Kyoho",
+    "sha256": "86d9e3f33504c42dce6e9bd85df17c60761e0b79fb587290e53c1aaba0f61370",
+    "boxes": 516,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_47.jpg",
+    "split": "val",
+    "group": "Kyoho-9",
+    "cultivar": "Kyoho",
+    "sha256": "bbb87cfb25ea344a75dd90fc99846e3e867341d987c00e11388e669ab0397422",
+    "boxes": 351,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_48.jpg",
+    "split": "val",
+    "group": "Kyoho-9",
+    "cultivar": "Kyoho",
+    "sha256": "b4df0cc9fd0d8f8548bf7d7b8578de27298935d80a715ddde96d6afdf0727498",
+    "boxes": 477,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_49.jpg",
+    "split": "val",
+    "group": "Kyoho-9",
+    "cultivar": "Kyoho",
+    "sha256": "63ab5b887468c3db74c63860da5858b6fbfcddc39456e4e43fe8546d099258d1",
+    "boxes": 573,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_5.jpg",
+    "split": "val",
+    "group": "Kyoho-0",
+    "cultivar": "Kyoho",
+    "sha256": "87395bcec2cf22f5be06909733b706c2a0cf6a4789a2c95fa00dff804922da1a",
+    "boxes": 188,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_50.jpg",
+    "split": "val",
+    "group": "Kyoho-9",
+    "cultivar": "Kyoho",
+    "sha256": "e6ed507c270b79b0cf393cfb8ccc6bc2ede75927b4fad65bb7951a56ec72aa01",
+    "boxes": 343,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_6.jpg",
+    "split": "train",
+    "group": "Kyoho-1",
+    "cultivar": "Kyoho",
+    "sha256": "de94390c491bae2a2eeac5668d0a25c6210a3a04fb6dc7f47e27c4bf2c24bafe",
+    "boxes": 509,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_7.jpg",
+    "split": "train",
+    "group": "Kyoho-1",
+    "cultivar": "Kyoho",
+    "sha256": "4bb4309574fbab2e315cc5c646ad6f674cc02d204c17cb2c521820426f3a479b",
+    "boxes": 500,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_8.jpg",
+    "split": "train",
+    "group": "Kyoho-1",
+    "cultivar": "Kyoho",
+    "sha256": "3dee9e09a829e775615eb419918f418d9008ca017fbdb6a2a3e11bf6a19bacc2",
+    "boxes": 349,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "Kyoho_9.jpg",
+    "split": "train",
+    "group": "Kyoho-1",
+    "cultivar": "Kyoho",
+    "sha256": "7424d64080bbfacb33e67b914981672255c942f61eed425516dd4eff893d7825",
+    "boxes": 337,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_1.jpg",
+    "split": "train",
+    "group": "ShineMuscat-0",
+    "cultivar": "ShineMuscat",
+    "sha256": "45b0b1719e4f5a319683ce91ed84e7f76b4d2bf44c680b023abc939c2bc29b03",
+    "boxes": 467,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_10.jpg",
+    "split": "train",
+    "group": "ShineMuscat-1",
+    "cultivar": "ShineMuscat",
+    "sha256": "4406deef10c135bded7fb2a4d5ecd93a8fd3582ce2ea93540597fc5dc1963609",
+    "boxes": 379,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_11.jpg",
+    "split": "test",
+    "group": "ShineMuscat-2",
+    "cultivar": "ShineMuscat",
+    "sha256": "9281ad531e20343368578baa8ef089038ca2b3dd9788eb65232454560a09ac05",
+    "boxes": 332,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_12.jpg",
+    "split": "test",
+    "group": "ShineMuscat-2",
+    "cultivar": "ShineMuscat",
+    "sha256": "95442694a7ebc7c2492f6e422d0a0d19c6710ed809ea18f37037b22432bb96f5",
+    "boxes": 427,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_13.jpg",
+    "split": "test",
+    "group": "ShineMuscat-2",
+    "cultivar": "ShineMuscat",
+    "sha256": "9c7ac36053cea4f4f0d039f05e37979400fd344cb2748fb737e9c1fe5cbb1585",
+    "boxes": 469,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_14.jpg",
+    "split": "test",
+    "group": "ShineMuscat-2",
+    "cultivar": "ShineMuscat",
+    "sha256": "61e2bc953527f76aaeb061b11ec84491e7fc495c90a874d775addcb2e98ffb0c",
+    "boxes": 297,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_15.jpg",
+    "split": "test",
+    "group": "ShineMuscat-2",
+    "cultivar": "ShineMuscat",
+    "sha256": "56801cee5e442efee1b0a554c78209dc8b009471abc0703df2c96e6840e2f014",
+    "boxes": 453,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_16.jpg",
+    "split": "val",
+    "group": "ShineMuscat-3",
+    "cultivar": "ShineMuscat",
+    "sha256": "2cb6fc0c748d1659915e0d6b4e2ad4d5422b766eebcf402543dd107d7d8678d0",
+    "boxes": 428,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_17.jpg",
+    "split": "val",
+    "group": "ShineMuscat-3",
+    "cultivar": "ShineMuscat",
+    "sha256": "e00ba9f980c7c8a42aa91388118d5c0c8f0a607cb3580d62a2749d8f6aa11ba8",
+    "boxes": 426,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_18.jpg",
+    "split": "val",
+    "group": "ShineMuscat-3",
+    "cultivar": "ShineMuscat",
+    "sha256": "0fcb54432483fbcd96c71d5195a094369b8908ee057b768574525903d4de821a",
+    "boxes": 216,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_19.jpg",
+    "split": "val",
+    "group": "ShineMuscat-3",
+    "cultivar": "ShineMuscat",
+    "sha256": "a855cba5cb2f4278d568fd0ee04150fee979fdb3050f16b39b3dabda28b14a86",
+    "boxes": 422,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_2.jpg",
+    "split": "train",
+    "group": "ShineMuscat-0",
+    "cultivar": "ShineMuscat",
+    "sha256": "79e50a04e419747c75f458d79bc251d71697ebc9a8712575c8d161415ba2cb2c",
+    "boxes": 217,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_20.jpg",
+    "split": "val",
+    "group": "ShineMuscat-3",
+    "cultivar": "ShineMuscat",
+    "sha256": "5bb3bba12626ccb19a4c29f0daabe29988c42e118c7c69f5792e13dd9c20f0ac",
+    "boxes": 436,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_21.jpg",
+    "split": "test",
+    "group": "ShineMuscat-4",
+    "cultivar": "ShineMuscat",
+    "sha256": "931230ab252d0c45be87f34f2b6de5e893461ba358ee51aa62e6e8b0f56e3f50",
+    "boxes": 387,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_22.jpg",
+    "split": "test",
+    "group": "ShineMuscat-4",
+    "cultivar": "ShineMuscat",
+    "sha256": "5082a1db0b6a4c69080f1745955497be99961b4ee218bcf8fece7b7754114a38",
+    "boxes": 264,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_23.jpg",
+    "split": "test",
+    "group": "ShineMuscat-4",
+    "cultivar": "ShineMuscat",
+    "sha256": "20943636a9445c65b565830829a6ddb2b921b2d53184b2d536decc711038aaf3",
+    "boxes": 421,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_24.jpg",
+    "split": "test",
+    "group": "ShineMuscat-4",
+    "cultivar": "ShineMuscat",
+    "sha256": "7869b33ce6338a2ca6630930f5ff5c91c6b6c239e8f99964e266edd780e39bc4",
+    "boxes": 481,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_25.jpg",
+    "split": "test",
+    "group": "ShineMuscat-4",
+    "cultivar": "ShineMuscat",
+    "sha256": "e52313250db6211764a031b2d39c2df466283144e926f406be2adadbefa44fa7",
+    "boxes": 441,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_26.jpg",
+    "split": "train",
+    "group": "ShineMuscat-5",
+    "cultivar": "ShineMuscat",
+    "sha256": "49c2a94b03da2eb1db7c29c40a4292f635463ba002334c96d722de1b09e72a80",
+    "boxes": 497,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_27.jpg",
+    "split": "train",
+    "group": "ShineMuscat-5",
+    "cultivar": "ShineMuscat",
+    "sha256": "cdb1a64235d66540c3fc009013edb02656c7e4c5ad0b63e55d0a54d3daae5ab7",
+    "boxes": 481,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_28.jpg",
+    "split": "train",
+    "group": "ShineMuscat-5",
+    "cultivar": "ShineMuscat",
+    "sha256": "1d721e8fbbc20277261ceeaf87e9fa4c35d6f2c0cc6b58facc724d53f7e6a5ec",
+    "boxes": 341,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_29.jpg",
+    "split": "train",
+    "group": "ShineMuscat-5",
+    "cultivar": "ShineMuscat",
+    "sha256": "a8818d2807cef1a1e946bcdbb78422db89bc1f3d3c40140472d4f51d5278e8d6",
+    "boxes": 371,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_3.jpg",
+    "split": "train",
+    "group": "ShineMuscat-0",
+    "cultivar": "ShineMuscat",
+    "sha256": "6a8485b7c109061a63c37cd695766495fd0c35d81d6e2d4107da77a9c282efdc",
+    "boxes": 454,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_30.jpg",
+    "split": "train",
+    "group": "ShineMuscat-5",
+    "cultivar": "ShineMuscat",
+    "sha256": "f69c04428d354d901261eaad3574710b6fb97e5f09138c122de95bca2184bd76",
+    "boxes": 407,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_31.jpg",
+    "split": "train",
+    "group": "ShineMuscat-6",
+    "cultivar": "ShineMuscat",
+    "sha256": "48e485e0ef7e24603b4ad7ac196eef01f5215467a8015e90fee2df9ff58d42a1",
+    "boxes": 461,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_32.jpg",
+    "split": "train",
+    "group": "ShineMuscat-6",
+    "cultivar": "ShineMuscat",
+    "sha256": "2f639c9c121889d39366a35f86a66c28b32c41a06e8365429ceed8aef37ab211",
+    "boxes": 544,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_33.jpg",
+    "split": "train",
+    "group": "ShineMuscat-6",
+    "cultivar": "ShineMuscat",
+    "sha256": "ce78e0bb1cc0ded0fcf9ddbb0916df9f072ac2788050106b6f86e44035fa30ed",
+    "boxes": 524,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_34.jpg",
+    "split": "train",
+    "group": "ShineMuscat-6",
+    "cultivar": "ShineMuscat",
+    "sha256": "c641b497c88349fac4e65406fb808e7420a6febceeb67169d4e0dc65aa392d04",
+    "boxes": 480,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_35.jpg",
+    "split": "train",
+    "group": "ShineMuscat-6",
+    "cultivar": "ShineMuscat",
+    "sha256": "10c18daec13bfe80562722345ab96618c5b558776511fb59a9e8b433979d9101",
+    "boxes": 475,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_36.jpg",
+    "split": "train",
+    "group": "ShineMuscat-7",
+    "cultivar": "ShineMuscat",
+    "sha256": "031d071dcb2eab3ea84a9cd49c9843fed0002cb1ca286ccab29454394aa2e9e2",
+    "boxes": 300,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_37.jpg",
+    "split": "train",
+    "group": "ShineMuscat-7",
+    "cultivar": "ShineMuscat",
+    "sha256": "104763cf21ada357042c4cefaa4f20edc6d24164c2d006cd0a676a0d03d688f7",
+    "boxes": 614,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_38.jpg",
+    "split": "train",
+    "group": "ShineMuscat-7",
+    "cultivar": "ShineMuscat",
+    "sha256": "c9e78775805a31a2563ae6c69b02cd44994d9b618e8e98f7208778660af44116",
+    "boxes": 511,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_39.jpg",
+    "split": "train",
+    "group": "ShineMuscat-7",
+    "cultivar": "ShineMuscat",
+    "sha256": "b7fbfc1586722e4b4f840529488949f81e92d4fcc3d17ada130b3157abdd51e8",
+    "boxes": 642,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_4.jpg",
+    "split": "train",
+    "group": "ShineMuscat-0",
+    "cultivar": "ShineMuscat",
+    "sha256": "eb7bc96dcc31e83044f47b247ed38eb2edd2200c02dfe163c0d091d6b2cfc3af",
+    "boxes": 263,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_40.jpg",
+    "split": "train",
+    "group": "ShineMuscat-7",
+    "cultivar": "ShineMuscat",
+    "sha256": "0145e0c8d93708671362e34b402aafa6cfd73d76e48044265c46c6ce1f38a913",
+    "boxes": 210,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_41.jpg",
+    "split": "val",
+    "group": "ShineMuscat-8",
+    "cultivar": "ShineMuscat",
+    "sha256": "12c096e2207e3c0f5d03fd8d5679e00832d4d42d4ab0e9482d84fdc7f68b7dcf",
+    "boxes": 438,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_42.jpg",
+    "split": "val",
+    "group": "ShineMuscat-8",
+    "cultivar": "ShineMuscat",
+    "sha256": "c361b95d96d0e4c80f277a36040c509720a26138d893b4b3a86610f7b69699bb",
+    "boxes": 458,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_43.jpg",
+    "split": "val",
+    "group": "ShineMuscat-8",
+    "cultivar": "ShineMuscat",
+    "sha256": "f645c1c1cab0da87e03215c156a58fdc7227e99b6e8d1621fe66f1893dccf139",
+    "boxes": 540,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_44.jpg",
+    "split": "val",
+    "group": "ShineMuscat-8",
+    "cultivar": "ShineMuscat",
+    "sha256": "90a16fc66f9f04ce61c6d9fcff89e0dd76e1c0c30e922a246a1382902af9ce1f",
+    "boxes": 424,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_45.jpg",
+    "split": "val",
+    "group": "ShineMuscat-8",
+    "cultivar": "ShineMuscat",
+    "sha256": "6f595ee4920c7a9afbc22b466fb05f2824c7994dfcd9b9e9f5ef06724d209292",
+    "boxes": 520,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_46.jpg",
+    "split": "train",
+    "group": "ShineMuscat-9",
+    "cultivar": "ShineMuscat",
+    "sha256": "637d2de3dbd6e3c18e215a21f3d9ffc1c4c958c7841f99dfe7da0adfeeeb5e6b",
+    "boxes": 405,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_47.jpg",
+    "split": "train",
+    "group": "ShineMuscat-9",
+    "cultivar": "ShineMuscat",
+    "sha256": "4c01ffdbaea6a76287b9eb17987234ebd8548a40f7afe6e002723ed5043e327d",
+    "boxes": 515,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_48.jpg",
+    "split": "train",
+    "group": "ShineMuscat-9",
+    "cultivar": "ShineMuscat",
+    "sha256": "040a097c6fa195bf34e431694168b42869bb6c23f6c69c70137114570318fc82",
+    "boxes": 232,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_49.jpg",
+    "split": "train",
+    "group": "ShineMuscat-9",
+    "cultivar": "ShineMuscat",
+    "sha256": "e3f7dd5bde7904b7f5f80fda1808999a18e1d49a7bee680f99f5a27dca37976e",
+    "boxes": 383,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_5.jpg",
+    "split": "train",
+    "group": "ShineMuscat-0",
+    "cultivar": "ShineMuscat",
+    "sha256": "bb23e441060c17abd7fb072e1832163dda8e1ffb6720d4db0ba7d4e598a47628",
+    "boxes": 266,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_50.jpg",
+    "split": "train",
+    "group": "ShineMuscat-9",
+    "cultivar": "ShineMuscat",
+    "sha256": "538bc1e51604e05873931eb1db9a9aeba713545bbf9ab8143ec6dabe6e67eebb",
+    "boxes": 375,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_6.jpg",
+    "split": "train",
+    "group": "ShineMuscat-1",
+    "cultivar": "ShineMuscat",
+    "sha256": "9b85b37c28bbd278f8b7f6d2f196cbd20049c749ae0dc479961da759761cf833",
+    "boxes": 374,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_7.jpg",
+    "split": "train",
+    "group": "ShineMuscat-1",
+    "cultivar": "ShineMuscat",
+    "sha256": "205af64a268893f253f067b0d904d5a85f9a2455b7b9186a473b8080256a823e",
+    "boxes": 443,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_8.jpg",
+    "split": "train",
+    "group": "ShineMuscat-1",
+    "cultivar": "ShineMuscat",
+    "sha256": "67a164e4aeeb9748c66bf67d9330ccff9236292bee21d5b1e50de11b9069f153",
+    "boxes": 304,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "ShineMuscat_9.jpg",
+    "split": "train",
+    "group": "ShineMuscat-1",
+    "cultivar": "ShineMuscat",
+    "sha256": "5c7ac4e18f4996370dcbdf7815bb5f605997ac9a072a21cdcdc4bbef282691b8",
+    "boxes": 332,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_1.jpg",
+    "split": "train",
+    "group": "SummerBlack-0",
+    "cultivar": "SummerBlack",
+    "sha256": "bab9bcc9b02a4cda208d43b6a2ec34e318d4cfb3ca3a95d64468eb7d3e56d66c",
+    "boxes": 186,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_10.jpg",
+    "split": "train",
+    "group": "SummerBlack-1",
+    "cultivar": "SummerBlack",
+    "sha256": "90c412b717daf65effeccad7f93d81e7ac64b6768da5f2a89eae22c8d9ea2c63",
+    "boxes": 170,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_11.jpg",
+    "split": "test",
+    "group": "SummerBlack-2",
+    "cultivar": "SummerBlack",
+    "sha256": "1ee8d02f22f05157cacb5e0891472188235a14eefde857c28be5bef701914f44",
+    "boxes": 196,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_12.jpg",
+    "split": "test",
+    "group": "SummerBlack-2",
+    "cultivar": "SummerBlack",
+    "sha256": "42bf77056acf6cfd0aad08dcd564be4c5fbe6db806cd43b27989dfe74fc8928e",
+    "boxes": 348,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_13.jpg",
+    "split": "test",
+    "group": "SummerBlack-2",
+    "cultivar": "SummerBlack",
+    "sha256": "9c534f910bf42d41dfe21778ebfc7455c672a5cb0726c54a2c422c423e2fb904",
+    "boxes": 481,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_14.jpg",
+    "split": "test",
+    "group": "SummerBlack-2",
+    "cultivar": "SummerBlack",
+    "sha256": "fb3482c120fce81b9c91fb84a3bf1731d88f865ce8ee0fa1e8cf2714427b956a",
+    "boxes": 161,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_15.jpg",
+    "split": "test",
+    "group": "SummerBlack-2",
+    "cultivar": "SummerBlack",
+    "sha256": "2ca978bfb312040956c527d17a7131ae6d612f4fc3e8299f7bdd51a68bb75ec5",
+    "boxes": 168,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_16.jpg",
+    "split": "val",
+    "group": "SummerBlack-3",
+    "cultivar": "SummerBlack",
+    "sha256": "66c4195b9445855cd334d9a76b762a96f4d613c6a52fb093a495be4721b9d9af",
+    "boxes": 279,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_17.jpg",
+    "split": "val",
+    "group": "SummerBlack-3",
+    "cultivar": "SummerBlack",
+    "sha256": "1d82ef33461e36c8352b6bceba0c1346f1c5cd54d5e265dc68614f24365de640",
+    "boxes": 164,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_18.jpg",
+    "split": "val",
+    "group": "SummerBlack-3",
+    "cultivar": "SummerBlack",
+    "sha256": "c7b01453ce8108bab8e942f98d658ccfdc0c21f1c1ca8908a97807e76d18b894",
+    "boxes": 432,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_19.jpg",
+    "split": "val",
+    "group": "SummerBlack-3",
+    "cultivar": "SummerBlack",
+    "sha256": "d189a9e9911383467f37c117f915174fbf3b866b345988db0ad2304a4c675858",
+    "boxes": 185,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_2.jpg",
+    "split": "train",
+    "group": "SummerBlack-0",
+    "cultivar": "SummerBlack",
+    "sha256": "81e9da8c59084f470da8961d131d136e268169c8eb3040c982317d571863e3e9",
+    "boxes": 213,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_20.jpg",
+    "split": "val",
+    "group": "SummerBlack-3",
+    "cultivar": "SummerBlack",
+    "sha256": "c9958f028a69d64188810a6ba2f53685961f64259f0694523730874eee333015",
+    "boxes": 368,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_21.jpg",
+    "split": "train",
+    "group": "SummerBlack-4",
+    "cultivar": "SummerBlack",
+    "sha256": "7a88bc7ef53af88e3f9582936a183c98915edfb9f5e96e3b7e4145344083e76f",
+    "boxes": 140,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_22.jpg",
+    "split": "train",
+    "group": "SummerBlack-4",
+    "cultivar": "SummerBlack",
+    "sha256": "4d9c6d99580b901f621a11731748b3d7bcefa449431510d9fd26c57a0e9e2fb5",
+    "boxes": 242,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_23.jpg",
+    "split": "train",
+    "group": "SummerBlack-4",
+    "cultivar": "SummerBlack",
+    "sha256": "28ea57440915505aad3687ae389b205d681f0e572766ce9ff6dbf851a8bd99c9",
+    "boxes": 87,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_24.jpg",
+    "split": "train",
+    "group": "SummerBlack-4",
+    "cultivar": "SummerBlack",
+    "sha256": "c3a4ac3a2e6630a5864e488aaec5042f7323f66a43a4edb29d1c2a0202ee07bd",
+    "boxes": 268,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_25.jpg",
+    "split": "train",
+    "group": "SummerBlack-4",
+    "cultivar": "SummerBlack",
+    "sha256": "9a4ce4e6c688e2ebe667f5d3a5754dc03efe393f7ef5cf01c645538c57fbeb3a",
+    "boxes": 171,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_26.jpg",
+    "split": "train",
+    "group": "SummerBlack-5",
+    "cultivar": "SummerBlack",
+    "sha256": "811469f8c9be759f11419aa3856d0e68b16c49c884008c8b2e142afced59f5ae",
+    "boxes": 99,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_27.jpg",
+    "split": "train",
+    "group": "SummerBlack-5",
+    "cultivar": "SummerBlack",
+    "sha256": "9805f04cf0c1e1000c4838c6452b1fb7f7783f3507280d3f5f0eda337ca80393",
+    "boxes": 119,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_28.jpg",
+    "split": "train",
+    "group": "SummerBlack-5",
+    "cultivar": "SummerBlack",
+    "sha256": "00ccd30371591a551e269724a6ac6107b166d7a8411f5f26a3b177e6909a3479",
+    "boxes": 90,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_29.jpg",
+    "split": "train",
+    "group": "SummerBlack-5",
+    "cultivar": "SummerBlack",
+    "sha256": "b5912283edb26f334a31bfa87136edca050f500a14dca88b62206f92b947c2e5",
+    "boxes": 123,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_3.jpg",
+    "split": "train",
+    "group": "SummerBlack-0",
+    "cultivar": "SummerBlack",
+    "sha256": "bae452bd86c83b3e7c317cd8b7abd507068630c51d000d3d20c9734dbf9d4466",
+    "boxes": 521,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_30.jpg",
+    "split": "train",
+    "group": "SummerBlack-5",
+    "cultivar": "SummerBlack",
+    "sha256": "b5e95920d43f230b0f3c6b6e4b99658ac0ace17caac4ce34f909f2f6c2e274a7",
+    "boxes": 95,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_31.jpg",
+    "split": "train",
+    "group": "SummerBlack-6",
+    "cultivar": "SummerBlack",
+    "sha256": "da728d417ae8fd91d010ede14f733ba20bc6468f2ae3d3304794ad7d84eee87f",
+    "boxes": 85,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_32.jpg",
+    "split": "train",
+    "group": "SummerBlack-6",
+    "cultivar": "SummerBlack",
+    "sha256": "41d3b93cbff2f0918d5cd23794220b680238c2cea0874c1b4b0d9dd6e0d8e427",
+    "boxes": 458,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_33.jpg",
+    "split": "train",
+    "group": "SummerBlack-6",
+    "cultivar": "SummerBlack",
+    "sha256": "c851d8bb9a598f3093b87f32c788647432efd21bf6be19ba9aea69b1c3f077a1",
+    "boxes": 229,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_34.jpg",
+    "split": "train",
+    "group": "SummerBlack-6",
+    "cultivar": "SummerBlack",
+    "sha256": "de58deb2ed54e8bc511ef692c3140779204a3b2153b1a219008cee39da7029c2",
+    "boxes": 283,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_35.jpg",
+    "split": "train",
+    "group": "SummerBlack-6",
+    "cultivar": "SummerBlack",
+    "sha256": "68bcb3a4779e1a6c52c8a5bc3aa1163fc18f4873f1cd0e108289d393b19bfc51",
+    "boxes": 301,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_36.jpg",
+    "split": "train",
+    "group": "SummerBlack-7",
+    "cultivar": "SummerBlack",
+    "sha256": "26a15f46c05534af7de855f497827c1164ba9efe139b6b914597deeffbc637b8",
+    "boxes": 120,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_37.jpg",
+    "split": "train",
+    "group": "SummerBlack-7",
+    "cultivar": "SummerBlack",
+    "sha256": "c03d582f6b9433f6455b52046e8341f52256500a39715be7f9f33c9d5b2810b8",
+    "boxes": 134,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_38.jpg",
+    "split": "train",
+    "group": "SummerBlack-7",
+    "cultivar": "SummerBlack",
+    "sha256": "7c9dd78ceaa3b706899a54eab49e4a87ed48827b4c6697e7a22b858dc7766b5d",
+    "boxes": 194,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_39.jpg",
+    "split": "train",
+    "group": "SummerBlack-7",
+    "cultivar": "SummerBlack",
+    "sha256": "799fec56c71adeb17d833247118b01a35ab22ef3141dfbb3f1b60d8b43285793",
+    "boxes": 111,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_4.jpg",
+    "split": "train",
+    "group": "SummerBlack-0",
+    "cultivar": "SummerBlack",
+    "sha256": "718870c94dd053c1e2127d00c8904ea6452ae45b217281db45bb872c51d5021b",
+    "boxes": 139,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_40.jpg",
+    "split": "train",
+    "group": "SummerBlack-7",
+    "cultivar": "SummerBlack",
+    "sha256": "24dad5aedd04fa35c62ccf6eac9ee5ba6691595a74360deeac125254cce301fd",
+    "boxes": 185,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_41.jpg",
+    "split": "val",
+    "group": "SummerBlack-8",
+    "cultivar": "SummerBlack",
+    "sha256": "68a7c4aaa81957ce841a8246e39b162db369cdfc4cc1c12d2981a7d9309f3d6f",
+    "boxes": 142,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_42.jpg",
+    "split": "val",
+    "group": "SummerBlack-8",
+    "cultivar": "SummerBlack",
+    "sha256": "5523af095aff67b5737817047b0e3bc3d0a100b0d13ac3766ca842f9bdf5bb6f",
+    "boxes": 183,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_43.jpg",
+    "split": "val",
+    "group": "SummerBlack-8",
+    "cultivar": "SummerBlack",
+    "sha256": "3020b02c901cdac92c25d26c4f2d0e719e925ecb20f4ab831c8f28611b1b356d",
+    "boxes": 187,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_44.jpg",
+    "split": "val",
+    "group": "SummerBlack-8",
+    "cultivar": "SummerBlack",
+    "sha256": "fb170ab03383740b7c2486b2b0f6f017b8d275e0617f07547e4492d7285ac44e",
+    "boxes": 238,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_45.jpg",
+    "split": "val",
+    "group": "SummerBlack-8",
+    "cultivar": "SummerBlack",
+    "sha256": "eda8556d63ec1e5dd94fb4297e2a9f33640b66a7721cb82a41a5ca8559baab04",
+    "boxes": 181,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_46.jpg",
+    "split": "test",
+    "group": "SummerBlack-9",
+    "cultivar": "SummerBlack",
+    "sha256": "f64c591bd749436e00d9649d45821b7abfef8a2dd7a5c1c759089e1242afd809",
+    "boxes": 142,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_47.jpg",
+    "split": "test",
+    "group": "SummerBlack-9",
+    "cultivar": "SummerBlack",
+    "sha256": "f34357d328792c0dec6c1cf205537521c8a6492f6d633775ba4bbb310361c08f",
+    "boxes": 79,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_48.jpg",
+    "split": "test",
+    "group": "SummerBlack-9",
+    "cultivar": "SummerBlack",
+    "sha256": "764e91ba25c0cc61a5ec9708af06600e3e926a2804412fd45bcfd1e5e2f7e4c3",
+    "boxes": 137,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_49.jpg",
+    "split": "test",
+    "group": "SummerBlack-9",
+    "cultivar": "SummerBlack",
+    "sha256": "d5776c63f0346d321e476b5038c7a56fc7ecab75a5c2b3def32cd3ebd46c73f2",
+    "boxes": 126,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_5.jpg",
+    "split": "train",
+    "group": "SummerBlack-0",
+    "cultivar": "SummerBlack",
+    "sha256": "a9bc5cdfc27a5aaa0aeda1ee965b48d8b234f111e8810a1eea5d85598166d554",
+    "boxes": 457,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_50.jpg",
+    "split": "test",
+    "group": "SummerBlack-9",
+    "cultivar": "SummerBlack",
+    "sha256": "dfc138fde26b1e57d8b17b3a36e44cba9384d2404e215112b30f2ed52a8d5118",
+    "boxes": 114,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_6.jpg",
+    "split": "train",
+    "group": "SummerBlack-1",
+    "cultivar": "SummerBlack",
+    "sha256": "2ad76c1db0e5aacec1a4e22e316df90b8854f4de31df81d0b40748912617a23f",
+    "boxes": 357,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_7.jpg",
+    "split": "train",
+    "group": "SummerBlack-1",
+    "cultivar": "SummerBlack",
+    "sha256": "c5a03f91a5f0f089fff6fa27ece5f46201e4223de73ac5c61f996e9af99395e6",
+    "boxes": 160,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_8.jpg",
+    "split": "train",
+    "group": "SummerBlack-1",
+    "cultivar": "SummerBlack",
+    "sha256": "b3fc84673ffdaac3dad29e155342871205eba9efadcc24a75ee704bb5e56b3af",
+    "boxes": 286,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  },
+  {
+    "file": "SummerBlack_9.jpg",
+    "split": "train",
+    "group": "SummerBlack-1",
+    "cultivar": "SummerBlack",
+    "sha256": "323afb1a4c6fe909edef12ede8837978729fc08b9ff797861e0ef329c2de74dd",
+    "boxes": 175,
+    "source": "GBISC",
+    "stage": "enlarging_or_mature; not verified thinning stage"
+  }
+]

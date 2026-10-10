@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checks": [
+    "berry_aux real image export",
+    "flower real image export",
+    "young real image export",
+    "Unicode path and empty detections",
+    "invalid ROI rejected",
+    "missing image rejected",
+    "ROI original coordinates and JSON CSV count agreement",
+    "ratio sensitivity and count conservation"
+  ],
+  "gui": "Syntax/import reviewed; desktop event loop not executed: environment cannot open X server sockets",
+  "limitation": "Engineering tests do not validate agronomic decisions or field performance.",
+  "desktop_gui_status": "not interactively verified; virtual display sockets unavailable",
+  "cli_examples_status": "executed from supplied licensed images"
+}

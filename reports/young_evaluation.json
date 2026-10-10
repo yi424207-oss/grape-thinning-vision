@@ -1,0 +1,186 @@
+{
+  "task": "young",
+  "imgsz": 384,
+  "iou_match": 0.5,
+  "nms_iou": 0.5,
+  "max_det": 1000,
+  "threshold_selection": "maximum validation F1; never test",
+  "classes": {
+    "berry": {
+      "validation_sweep": [
+        {
+          "threshold": 0.05,
+          "class_id": 0,
+          "precision": 0.2777777777777778,
+          "recall": 0.5555555555555556,
+          "f1": 0.3703703703703704,
+          "tp": 20,
+          "fp": 52,
+          "fn": 16,
+          "images": 1,
+          "count_mae": 36.0,
+          "count_rmse": 36.0,
+          "count_bias": 36.0
+        },
+        {
+          "threshold": 0.1,
+          "class_id": 0,
+          "precision": 0.32786885245901637,
+          "recall": 0.5555555555555556,
+          "f1": 0.41237113402061853,
+          "tp": 20,
+          "fp": 41,
+          "fn": 16,
+          "images": 1,
+          "count_mae": 25.0,
+          "count_rmse": 25.0,
+          "count_bias": 25.0
+        },
+        {
+          "threshold": 0.15,
+          "class_id": 0,
+          "precision": 0.38461538461538464,
+          "recall": 0.5555555555555556,
+          "f1": 0.4545454545454546,
+          "tp": 20,
+          "fp": 32,
+          "fn": 16,
+          "images": 1,
+          "count_mae": 16.0,
+          "count_rmse": 16.0,
+          "count_bias": 16.0
+        },
+        {
+          "threshold": 0.2,
+          "class_id": 0,
+          "precision": 0.41304347826086957,
+          "recall": 0.5277777777777778,
+          "f1": 0.4634146341463415,
+          "tp": 19,
+          "fp": 27,
+          "fn": 17,
+          "images": 1,
+          "count_mae": 10.0,
+          "count_rmse": 10.0,
+          "count_bias": 10.0
+        },
+        {
+          "threshold": 0.25,
+          "class_id": 0,
+          "precision": 0.475,
+          "recall": 0.5277777777777778,
+          "f1": 0.5,
+          "tp": 19,
+          "fp": 21,
+          "fn": 17,
+          "images": 1,
+          "count_mae": 4.0,
+          "count_rmse": 4.0,
+          "count_bias": 4.0
+        },
+        {
+          "threshold": 0.3,
+          "class_id": 0,
+          "precision": 0.4864864864864865,
+          "recall": 0.5,
+          "f1": 0.4931506849315069,
+          "tp": 18,
+          "fp": 19,
+          "fn": 18,
+          "images": 1,
+          "count_mae": 1.0,
+          "count_rmse": 1.0,
+          "count_bias": 1.0
+        },
+        {
+          "threshold": 0.4,
+          "class_id": 0,
+          "precision": 0.5483870967741935,
+          "recall": 0.4722222222222222,
+          "f1": 0.5074626865671641,
+          "tp": 17,
+          "fp": 14,
+          "fn": 19,
+          "images": 1,
+          "count_mae": 5.0,
+          "count_rmse": 5.0,
+          "count_bias": -5.0
+        },
+        {
+          "threshold": 0.5,
+          "class_id": 0,
+          "precision": 0.6,
+          "recall": 0.4166666666666667,
+          "f1": 0.49180327868852464,
+          "tp": 15,
+          "fp": 10,
+          "fn": 21,
+          "images": 1,
+          "count_mae": 11.0,
+          "count_rmse": 11.0,
+          "count_bias": -11.0
+        }
+      ],
+      "validation": {
+        "threshold": 0.4,
+        "class_id": 0,
+        "precision": 0.5483870967741935,
+        "recall": 0.4722222222222222,
+        "f1": 0.5074626865671641,
+        "tp": 17,
+        "fp": 14,
+        "fn": 19,
+        "images": 1,
+        "count_mae": 5.0,
+        "count_rmse": 5.0,
+        "count_bias": -5.0,
+        "per_image": [
+          {
+            "file": "s2_14.jpg",
+            "ground_truth": 36,
+            "predicted": 31,
+            "tp": 17,
+            "error": -5
+          }
+        ]
+      },
+      "test": {
+        "threshold": 0.4,
+        "class_id": 0,
+        "precision": 0.9166666666666666,
+        "recall": 0.8461538461538461,
+        "f1": 0.8799999999999999,
+        "tp": 66,
+        "fp": 6,
+        "fn": 12,
+        "images": 2,
+        "count_mae": 3.0,
+        "count_rmse": 3.1622776601683795,
+        "count_bias": -3.0,
+        "per_image": [
+          {
+            "file": "s13_07.jpg",
+            "ground_truth": 42,
+            "predicted": 38,
+            "tp": 37,
+            "error": -4
+          },
+          {
+            "file": "s13_10.jpg",
+            "ground_truth": 36,
+            "predicted": 34,
+            "tp": 29,
+            "error": -2
+          }
+        ]
+      }
+    }
+  },
+  "test_AP": {
+    "metrics/precision(B)": 0.943634213096171,
+    "metrics/recall(B)": 0.8585321765640059,
+    "metrics/mAP50(B)": 0.8740585162317515,
+    "metrics/mAP50-95(B)": 0.41892895978961164,
+    "fitness": 0.41892895978961164
+  }
+}
