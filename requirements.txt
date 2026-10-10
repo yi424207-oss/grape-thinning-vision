@@ -1,0 +1,10 @@
+ultralytics==8.4.175
+torch==2.14.1
+torchvision==0.29.1
+opencv-python-headless==5.0.0.93
+numpy==2.5.2
+Pillow==12.3.0
+PyYAML==6.0.3
+matplotlib
+scipy
+scikit-learn
