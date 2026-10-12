@@ -20,7 +20,7 @@
 
 ## 下载与运行
 
-下载本仓库后，按 [第二版下载说明](downloads/v02/README.md) 合并分卷，得到 **grape-thinning-delivery-v02.zip** 并解压。此包是可运行课程原型，保留了上述验证范围和不足。GitHub 的 Code → Download ZIP 会包含全部分卷；解压仓库后，在 downloads/v02 目录运行 `python assemble_delivery.py`，再解压生成的完整包并进入项目目录运行下述命令。
+优先从 [第二版 Release](https://github.com/yi424207-oss/grape-thinning-vision/releases/tag/v0.2.0-visual) 下载 **grape-thinning-delivery-v02.zip**，直接解压即可，无需合并分卷。仓库中的 downloads/v02 分卷仍作为原始备份保留。此包是可运行课程原型，保留了上述验证范围和不足。GitHub 的 Code → Download ZIP 会包含全部分卷；解压仓库后，在 downloads/v02 目录运行 `python assemble_delivery.py`，再解压生成的完整包并进入项目目录运行下述命令。
 
 ```bash
 python -m venv .venv
@@ -43,7 +43,7 @@ python src/app.py
 - PUBLIC_PACKAGE_SCOPE.md：公开包包含的材料及复现限制。
 - DATA_SOURCES.md 与 LICENSE：来源署名、数据范围和许可。
 
-设计源码、文本说明与评测记录按目录保存在仓库；完整包同时包含图片、论文DOCX/PDF、数据和模型。根目录 source-code.zip 是历史版本，第二版请使用当前目录源码或 downloads/v02 完整包。第二版模型和完整过程档案在 downloads/v02 分卷中；旧版 Release 保留历史检查点。
+设计源码、文本说明与评测记录按目录保存在仓库；完整包同时包含图片、论文DOCX/PDF、数据和模型。根目录 source-code.zip 是历史版本，第二版请使用当前目录源码或 downloads/v02 完整包。第二版模型和完整过程档案同时在新 Release 完整附件与原始 downloads/v02 分卷中提供；旧版 Release 保留历史检查点。
 
 ## 农艺与评价边界
 
@@ -55,12 +55,13 @@ python src/app.py
 
 ## 第二版下载与上传验收
 
-- [完整交付包：23卷及合并说明](downloads/v02/README.md)
+- [第二版 Release：完整 ZIP 直接下载](https://github.com/yi424207-oss/grape-thinning-vision/releases/tag/v0.2.0-visual)
+- [历史分卷备份与合并说明](downloads/v02/README.md)
 - [论文PDF](docs/课程设计论文.pdf)
 - [可编辑Word：两卷及合并脚本](docs/editable-paper)
 - [论文图表：30张图像文件](docs/figures)
 - [上传验收记录](reports/github_v02_publication_verification.json)
 
-第二版公开包包含2434个条目。上传时已通过ZIP CRC、逐文件SHA-256及远端Git blob校验；2026年10月12日复核全部23卷在库、文件大小与清单一致。旧版Release不代表本次第二版，本次没有另建v02 Release。
+第二版公开包包含2434个条目。上传时已通过ZIP CRC、逐文件SHA-256及远端Git blob校验；2026年10月12日复核全部23卷在库、文件大小与清单一致。第二版 Release：https://github.com/yi424207-oss/grape-thinning-vision/releases/tag/v0.2.0-visual 。旧版 Release 仅作历史归档。
 
 根目录SHA256SUMS.txt描述完整包解压后的文件；分卷校验值见 downloads/v02/manifest.json。Word原件也包含在完整包内。GUI窗口交互尚未实测，幼果小样本结果不代表田间应用准确率。
