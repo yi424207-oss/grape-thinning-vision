@@ -1,0 +1,30 @@
+{
+  "verified_commit": "99289fe61132cc30b219fb48aae6ec19d488dbc3",
+  "publication": "repository downloads/v02; no v02 Release created",
+  "archive_sha256": "b1e358184b8537b9e4f1db3c49b549c8b406c0813ccbdac6d66ee042320092b4",
+  "archive_bytes": 269087545,
+  "archive_parts": 23,
+  "archive_entries": 2434,
+  "figure_files": 30,
+  "public_dataset_images": 1123,
+  "public_train_images": 729,
+  "initial_upload_verification": {
+    "expected_paths_checked": 74,
+    "remote_blob_sha_mismatches": 0,
+    "archive_crc": "passed",
+    "archive_entry_sha256": "all passed",
+    "editable_docx_assembly": "passed",
+    "source": "Checks completed during the preceding upload session; not rerun in this session."
+  },
+  "resume_check": {
+    "date": "2026-10-12",
+    "all_manifest_parts_present": true,
+    "all_part_sizes_match": true,
+    "remote_total_part_bytes": 269087545,
+    "head_unchanged_since_verified_upload": true
+  },
+  "limitations": [
+    "GUI runtime interaction has not been verified.",
+    "Young-fruit experiments cannot be independently retrained using only the public package."
+  ]
+}
