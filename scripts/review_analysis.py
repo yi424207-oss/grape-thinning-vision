@@ -85,6 +85,10 @@ def main(young_prediction_dir=None):
                                 'adapted_minus_baseline_absolute_count_error': abs(v['error'])-abs(u['error'])}
                                 for i, (u, v) in enumerate(zip(b['per_image'], y['per_image']))]})
         results['young_common_threshold_comparison'] = comparisons
+    if not young_prediction_dir and (R/'reports/review_statistics.json').exists():
+        previous=json.loads((R/'reports/review_statistics.json').read_text())
+        results['young_common_threshold_comparison']=previous.get('young_common_threshold_comparison',[])
+        results['young_comparison_source']='Preserved prior aggregate record; nonpublic input detections were not reprocessed.'
     distributions = {}
     for manifest in ['data_manifest.json', 'flower_manifest.json']:
         rows = json.loads((R/'reports'/manifest).read_text())

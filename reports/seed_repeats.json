@@ -1,0 +1,125 @@
+{
+  "seeds": [
+    20261010,
+    20261012,
+    20261013
+  ],
+  "epochs": 25,
+  "fixed_splits": true,
+  "threads": 8,
+  "workers": 0,
+  "selection": "best checkpoint and operating confidence use validation only; all seeds reported",
+  "scope": "Training-seed variability conditional on these fixed datasets and labels, not generalization to new orchards or expert label accuracy.",
+  "runs": [
+    {
+      "task": "berry_aux",
+      "seed": 20261010,
+      "train_seconds": 428.54234466,
+      "classes": {
+        "berry": {
+          "threshold": 0.3,
+          "class_id": 0,
+          "precision": 0.8826689284704552,
+          "recall": 0.6496046608406159,
+          "f1": 0.748411842262975,
+          "tp": 6244,
+          "fp": 830,
+          "fn": 3368,
+          "images": 120,
+          "count_mae": 21.5,
+          "count_rmse": 28.319604517012593,
+          "count_bias": -21.15
+        }
+      },
+      "test_AP": {
+        "metrics/precision(B)": 0.891292708069745,
+        "metrics/recall(B)": 0.6457193429339781,
+        "metrics/mAP50(B)": 0.7147216442617212,
+        "metrics/mAP50-95(B)": 0.4498866548640897,
+        "fitness": 0.4498866548640897
+      }
+    },
+    {
+      "task": "berry_aux",
+      "seed": 20261012,
+      "train_seconds": 441.94284083599996,
+      "classes": {
+        "berry": {
+          "threshold": 0.3,
+          "class_id": 0,
+          "precision": 0.8736028701531668,
+          "recall": 0.6586558468580941,
+          "f1": 0.7510528501097337,
+          "tp": 6331,
+          "fp": 916,
+          "fn": 3281,
+          "images": 120,
+          "count_mae": 20.108333333333334,
+          "count_rmse": 26.87083301028583,
+          "count_bias": -19.708333333333332
+        }
+      },
+      "test_AP": {
+        "metrics/precision(B)": 0.8786440745844238,
+        "metrics/recall(B)": 0.6548064918851436,
+        "metrics/mAP50(B)": 0.7156264747350245,
+        "metrics/mAP50-95(B)": 0.4522060189362028,
+        "fitness": 0.4522060189362028
+      }
+    },
+    {
+      "task": "berry_aux",
+      "seed": 20261013,
+      "train_seconds": 472.8505483560002,
+      "classes": {
+        "berry": {
+          "threshold": 0.3,
+          "class_id": 0,
+          "precision": 0.8879211878926327,
+          "recall": 0.647003745318352,
+          "f1": 0.7485556090515166,
+          "tp": 6219,
+          "fp": 785,
+          "fn": 3393,
+          "images": 120,
+          "count_mae": 22.083333333333332,
+          "count_rmse": 29.173046921202225,
+          "count_bias": -21.733333333333334
+        }
+      },
+      "test_AP": {
+        "metrics/precision(B)": 0.881857855146959,
+        "metrics/recall(B)": 0.6476584365897576,
+        "metrics/mAP50(B)": 0.7147047219947303,
+        "metrics/mAP50-95(B)": 0.45017055471954504,
+        "fitness": 0.45017055471954504
+      }
+    }
+  ],
+  "summary": {
+    "berry_aux": {
+      "berry": {
+        "f1": {
+          "mean": 0.7493401004747418,
+          "sample_std": 0.00148502549018378,
+          "n": 3,
+          "values": [
+            0.748411842262975,
+            0.7510528501097337,
+            0.7485556090515166
+          ]
+        },
+        "count_mae": {
+          "mean": 21.230555555555554,
+          "sample_std": 1.014695265329192,
+          "n": 3,
+          "values": [
+            21.5,
+            20.108333333333334,
+            22.083333333333332
+          ]
+        }
+      }
+    }
+  }
+}

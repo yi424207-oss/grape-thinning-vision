@@ -1,0 +1,20 @@
+{
+  "checked_date": "2026-10-12",
+  "primary_sources": [
+    {
+      "doi": "10.3389/fpls.2025.1739688",
+      "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2025.1739688/full",
+      "confirmed": "Authors, 2026 publication, volume 16, 779-image thinning-season dataset; no access to complete source dataset claimed."
+    },
+    {
+      "doi": "10.1016/j.compag.2025.110286",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0168169925003928",
+      "confirmed": "Publisher search metadata and reference in primary MVDNet article confirm authors, title and DOI."
+    },
+    {
+      "doi": "10.3389/fpls.2015.00457",
+      "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2015.00457/full",
+      "use": "Agronomic background only; does not validate relative threshold 0.70 or this prototype decisions."
+    }
+  ]
+}

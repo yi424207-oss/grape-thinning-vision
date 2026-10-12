@@ -1,5 +1,10 @@
 """Observed CPU throughput; warm timings exclude model load and disk decoding."""
-import argparse, json, platform, time, statistics, resource, sys
+import argparse, json, platform, time, statistics, sys
+import psutil
+try:
+    import resource
+except ImportError:
+    resource=None
 from pathlib import Path
 import cv2, numpy as np, torch, ultralytics
 from ultralytics import YOLO
@@ -25,7 +30,8 @@ def main(repeats=20):
             report['tasks'].append({'model':task,'weights_bytes':w.stat().st_size,'parameters':sum(p.numel() for p in model.model.parameters()),
                 'batch':batch,'load_seconds':load,'mean_batch_seconds':mean,'std_batch_seconds':statistics.stdev(timings),
                 'mean_per_image_seconds':mean/batch,'throughput_images_per_second':batch/mean,
-                'process_peak_rss_mib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024,
+                'process_peak_rss_mib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024 if resource else psutil.Process().memory_info().rss/1024**2,
+                'rss_kind':'process cumulative peak' if resource else 'current process RSS, peak unavailable',
                 'raw_batch_seconds':timings})
     report['scope']='Same decoded image repeated; includes preprocessing, forward and NMS. Excludes model load, decode, ROI tiling and exports. Peak RSS is cumulative for the process, not model-only memory. Throughput is not an end-to-end interactive FPS promise. Young model timed on licensed auxiliary image, not validated young-fruit accuracy.'
     (R/'reports/cpu_benchmark.json').write_text(json.dumps(report,indent=2)+'\n')

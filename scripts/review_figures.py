@@ -9,6 +9,18 @@ from matplotlib.font_manager import fontManager
 R=Path(__file__).resolve().parents[1];O=R/'docs/figures'
 fontManager.addfont('/usr/share/fonts/opentype/grape_course/NotoSansCJKsc-Regular.otf')
 plt.rcParams.update({'font.family':'Noto Sans CJK SC','axes.unicode_minus':False,'font.size':11})
+from PIL import Image
+from matplotlib.patches import Rectangle
+samples=[]
+for cultivar in ['Kyoho','ShineMuscat','SummerBlack']:
+ samples.extend(sorted((R/'data/berry_yolo/images/train').glob(cultivar+'*.jpg'))[:2])
+fig,axs=plt.subplots(2,3,figsize=(10,6.2))
+for ax,path in zip(axs.flat,samples):
+ im=Image.open(path);ax.imshow(im);w,h=im.size
+ for line in (R/'data/berry_yolo/labels/train'/path.with_suffix('.txt').name).read_text().splitlines():
+  cls,x,y,bw,bh=map(float,line.split());ax.add_patch(Rectangle(((x-bw/2)*w,(y-bh/2)*h),bw*w,bh*h,fill=False,ec='#00e5ff',lw=.7))
+ ax.set_title(path.name,fontsize=9);ax.axis('off')
+fig.tight_layout();fig.savefig(O/'berry_samples.png',dpi=200);plt.close(fig)
 d=json.loads((R/'reports/review_statistics.json').read_text())
 for task in ['berry_aux','flower','young']:
     classes=d['models'][task]['classes'];fig,axs=plt.subplots(1,len(classes),figsize=(8,3.5),squeeze=False)
@@ -36,9 +48,10 @@ ax.set_title('实际导出样例  同时展示 keep 和 remove')
 fig.tight_layout();fig.savefig(O/'csv_export_preview.png',dpi=220);plt.close(fig)
 fig,ax=plt.subplots(figsize=(10,3.8));ax.axis('off')
 lines=['实际执行命令  ASCII 双连字符参数', '',
-'python src/predict.py examples/berry_demo_input.jpg',
-'  --weights runs/berry_aux/weights/best.pt',
-'  --output outputs/public_v03 --confidence 0.30 --ratio 0.70','',
+'python src/predict.py examples/berry_demo_input.jpg '+chr(92),
+'  --weights runs/berry_aux/weights/best.pt '+chr(92),
+'  --output outputs/public_v03 '+chr(92),
+'  --confidence 0.30 --ratio 0.70','',
 f'visible_count={v["visible_count"]}  remove_count={v["remove_count"]}  keep_count={v["keep_count"]}',
 'exports: annotated.jpg / berries.csv / result.json',
 'schema_version=2.0  relative_scale=sqrt(box area)/median(scale)']
@@ -61,6 +74,7 @@ fig.tight_layout();fig.savefig(O/'scale_missingness_sensitivity.png',dpi=220);pl
 index=json.loads((R/'reports/figure_evidence_index.json').read_text())
 for entry in index:
     n=entry['figure']
+    if n=='berry_samples.png': entry.update(source=[p.relative_to(R).as_posix() for p in samples])
     if n.endswith('_cm_evidence.png') or n=='test_confusion.png': entry.update(source='reports/review_statistics.json',protocol='match IoU 0.50; validation-selected confidence reused for test; TP/FP/FN only')
     if n in ['csv_export_preview.png','cli_run_record.png']: entry.update(source='outputs/public_v03/result.json',schema_version='2.0')
 index.append({'figure':'scale_missingness_sensitivity.png','source':'reports/scale_missingness_sensitivity.json'})
