@@ -1,0 +1,43 @@
+{
+  "release": "https://github.com/yi424207-oss/grape-thinning-vision/releases/tag/v0.2.0-visual",
+  "tag": "v0.2.0-visual",
+  "published_at": "2026-10-12T00:35:13Z",
+  "asset_count": 6,
+  "all_remote_asset_sha256_match": true,
+  "archive_entries": 2437,
+  "archive_internal_sha256": "passed",
+  "public_images": 1123,
+  "assets": [
+    {
+      "name": "grape-thinning-delivery-v02.zip",
+      "size": 281675088,
+      "sha256": "0f86857538fa3c24d670214ed7d228e7351b6d9b5321856c61b6ad491cc03a31"
+    },
+    {
+      "name": "course-paper-v02.docx",
+      "size": 13811291,
+      "sha256": "2cc631c844beaee66502c75bfe13bef1e0403d0ca212a934879506239a383617"
+    },
+    {
+      "name": "course-paper-v02.pdf",
+      "size": 3988818,
+      "sha256": "3622fab94cda0ed7b977c4e8ae3751f4d531b0ef6ad0a4b1d8cfbf1ae0f7760f"
+    },
+    {
+      "name": "source-code-v02.zip",
+      "size": 67232,
+      "sha256": "011ed400cdecc210c8841146b89ff5a92f486ba2e02453097c4d2818a25091cf"
+    },
+    {
+      "name": "figures-and-evidence-v02.zip",
+      "size": 34319967,
+      "sha256": "ead60aebc60897242ecd59100987df64d85b42c53aa44c9cabc03037b1db0538"
+    },
+    {
+      "name": "RELEASE_SHA256SUMS.txt",
+      "size": 454,
+      "sha256": "7539a2206726e230cd2b9dcea993da99bb5d06a37efd27bccc874dfd2d148569"
+    }
+  ],
+  "notes": "Release attachment includes updated text documentation and publication records. Original repository split archive remains unchanged and has a different checksum."
+}
