@@ -1,0 +1,488 @@
+{
+  "data_manifest.json": {
+    "split_images": {
+      "val": 30,
+      "train": 90,
+      "test": 30
+    },
+    "groups": [
+      {
+        "group": "Kyoho-0",
+        "split": "val",
+        "original_images": 5
+      },
+      {
+        "group": "Kyoho-1",
+        "split": "train",
+        "original_images": 5
+      },
+      {
+        "group": "Kyoho-2",
+        "split": "train",
+        "original_images": 5
+      },
+      {
+        "group": "Kyoho-3",
+        "split": "test",
+        "original_images": 5
+      },
+      {
+        "group": "Kyoho-4",
+        "split": "train",
+        "original_images": 5
+      },
+      {
+        "group": "Kyoho-5",
+        "split": "test",
+        "original_images": 5
+      },
+      {
+        "group": "Kyoho-6",
+        "split": "train",
+        "original_images": 5
+      },
+      {
+        "group": "Kyoho-7",
+        "split": "train",
+        "original_images": 5
+      },
+      {
+        "group": "Kyoho-8",
+        "split": "train",
+        "original_images": 5
+      },
+      {
+        "group": "Kyoho-9",
+        "split": "val",
+        "original_images": 5
+      },
+      {
+        "group": "ShineMuscat-0",
+        "split": "train",
+        "original_images": 5
+      },
+      {
+        "group": "ShineMuscat-1",
+        "split": "train",
+        "original_images": 5
+      },
+      {
+        "group": "ShineMuscat-2",
+        "split": "test",
+        "original_images": 5
+      },
+      {
+        "group": "ShineMuscat-3",
+        "split": "val",
+        "original_images": 5
+      },
+      {
+        "group": "ShineMuscat-4",
+        "split": "test",
+        "original_images": 5
+      },
+      {
+        "group": "ShineMuscat-5",
+        "split": "train",
+        "original_images": 5
+      },
+      {
+        "group": "ShineMuscat-6",
+        "split": "train",
+        "original_images": 5
+      },
+      {
+        "group": "ShineMuscat-7",
+        "split": "train",
+        "original_images": 5
+      },
+      {
+        "group": "ShineMuscat-8",
+        "split": "val",
+        "original_images": 5
+      },
+      {
+        "group": "ShineMuscat-9",
+        "split": "train",
+        "original_images": 5
+      },
+      {
+        "group": "SummerBlack-0",
+        "split": "train",
+        "original_images": 5
+      },
+      {
+        "group": "SummerBlack-1",
+        "split": "train",
+        "original_images": 5
+      },
+      {
+        "group": "SummerBlack-2",
+        "split": "test",
+        "original_images": 5
+      },
+      {
+        "group": "SummerBlack-3",
+        "split": "val",
+        "original_images": 5
+      },
+      {
+        "group": "SummerBlack-4",
+        "split": "train",
+        "original_images": 5
+      },
+      {
+        "group": "SummerBlack-5",
+        "split": "train",
+        "original_images": 5
+      },
+      {
+        "group": "SummerBlack-6",
+        "split": "train",
+        "original_images": 5
+      },
+      {
+        "group": "SummerBlack-7",
+        "split": "train",
+        "original_images": 5
+      },
+      {
+        "group": "SummerBlack-8",
+        "split": "val",
+        "original_images": 5
+      },
+      {
+        "group": "SummerBlack-9",
+        "split": "test",
+        "original_images": 5
+      }
+    ],
+    "cultivar_by_split": {
+      "Kyoho:val": 10,
+      "Kyoho:train": 30,
+      "Kyoho:test": 10,
+      "ShineMuscat:train": 30,
+      "ShineMuscat:test": 10,
+      "ShineMuscat:val": 10,
+      "SummerBlack:train": 30,
+      "SummerBlack:test": 10,
+      "SummerBlack:val": 10
+    },
+    "plant_orchard_identity": "not supplied by source; independence not proven"
+  },
+  "flower_manifest.json": {
+    "split_images": {
+      "train": 369,
+      "test": 79,
+      "val": 75
+    },
+    "groups": [
+      {
+        "group": "143",
+        "split": "train",
+        "original_images": 8
+      },
+      {
+        "group": "144",
+        "split": "train",
+        "original_images": 9
+      },
+      {
+        "group": "145",
+        "split": "test",
+        "original_images": 10
+      },
+      {
+        "group": "146",
+        "split": "train",
+        "original_images": 9
+      },
+      {
+        "group": "147",
+        "split": "train",
+        "original_images": 7
+      },
+      {
+        "group": "148",
+        "split": "train",
+        "original_images": 8
+      },
+      {
+        "group": "149",
+        "split": "train",
+        "original_images": 9
+      },
+      {
+        "group": "150",
+        "split": "train",
+        "original_images": 6
+      },
+      {
+        "group": "151",
+        "split": "train",
+        "original_images": 9
+      },
+      {
+        "group": "152",
+        "split": "train",
+        "original_images": 6
+      },
+      {
+        "group": "153",
+        "split": "val",
+        "original_images": 8
+      },
+      {
+        "group": "154",
+        "split": "val",
+        "original_images": 9
+      },
+      {
+        "group": "155",
+        "split": "train",
+        "original_images": 8
+      },
+      {
+        "group": "156",
+        "split": "train",
+        "original_images": 10
+      },
+      {
+        "group": "157",
+        "split": "test",
+        "original_images": 10
+      },
+      {
+        "group": "158",
+        "split": "train",
+        "original_images": 7
+      },
+      {
+        "group": "159",
+        "split": "test",
+        "original_images": 7
+      },
+      {
+        "group": "160",
+        "split": "train",
+        "original_images": 8
+      },
+      {
+        "group": "161",
+        "split": "train",
+        "original_images": 8
+      },
+      {
+        "group": "162",
+        "split": "train",
+        "original_images": 7
+      },
+      {
+        "group": "163",
+        "split": "val",
+        "original_images": 9
+      },
+      {
+        "group": "164",
+        "split": "test",
+        "original_images": 10
+      },
+      {
+        "group": "165",
+        "split": "test",
+        "original_images": 8
+      },
+      {
+        "group": "166",
+        "split": "train",
+        "original_images": 10
+      },
+      {
+        "group": "167",
+        "split": "train",
+        "original_images": 8
+      },
+      {
+        "group": "168",
+        "split": "val",
+        "original_images": 10
+      },
+      {
+        "group": "169",
+        "split": "train",
+        "original_images": 8
+      },
+      {
+        "group": "170",
+        "split": "train",
+        "original_images": 9
+      },
+      {
+        "group": "171",
+        "split": "train",
+        "original_images": 10
+      },
+      {
+        "group": "172",
+        "split": "val",
+        "original_images": 10
+      },
+      {
+        "group": "173",
+        "split": "train",
+        "original_images": 10
+      },
+      {
+        "group": "174",
+        "split": "train",
+        "original_images": 10
+      },
+      {
+        "group": "175",
+        "split": "train",
+        "original_images": 9
+      },
+      {
+        "group": "176",
+        "split": "train",
+        "original_images": 10
+      },
+      {
+        "group": "177",
+        "split": "train",
+        "original_images": 10
+      },
+      {
+        "group": "178",
+        "split": "train",
+        "original_images": 8
+      },
+      {
+        "group": "179",
+        "split": "train",
+        "original_images": 10
+      },
+      {
+        "group": "180",
+        "split": "train",
+        "original_images": 9
+      },
+      {
+        "group": "181",
+        "split": "train",
+        "original_images": 9
+      },
+      {
+        "group": "182",
+        "split": "train",
+        "original_images": 9
+      },
+      {
+        "group": "183",
+        "split": "val",
+        "original_images": 8
+      },
+      {
+        "group": "184",
+        "split": "train",
+        "original_images": 7
+      },
+      {
+        "group": "185",
+        "split": "test",
+        "original_images": 5
+      },
+      {
+        "group": "186",
+        "split": "train",
+        "original_images": 9
+      },
+      {
+        "group": "187",
+        "split": "train",
+        "original_images": 10
+      },
+      {
+        "group": "188",
+        "split": "train",
+        "original_images": 9
+      },
+      {
+        "group": "189",
+        "split": "test",
+        "original_images": 9
+      },
+      {
+        "group": "190",
+        "split": "train",
+        "original_images": 9
+      },
+      {
+        "group": "191",
+        "split": "train",
+        "original_images": 10
+      },
+      {
+        "group": "192",
+        "split": "train",
+        "original_images": 10
+      },
+      {
+        "group": "193",
+        "split": "val",
+        "original_images": 9
+      },
+      {
+        "group": "194",
+        "split": "test",
+        "original_images": 10
+      },
+      {
+        "group": "195",
+        "split": "val",
+        "original_images": 10
+      },
+      {
+        "group": "196",
+        "split": "test",
+        "original_images": 10
+      },
+      {
+        "group": "197",
+        "split": "train",
+        "original_images": 10
+      },
+      {
+        "group": "198",
+        "split": "train",
+        "original_images": 10
+      },
+      {
+        "group": "199",
+        "split": "train",
+        "original_images": 9
+      },
+      {
+        "group": "200",
+        "split": "train",
+        "original_images": 9
+      },
+      {
+        "group": "201",
+        "split": "train",
+        "original_images": 9
+      },
+      {
+        "group": "202",
+        "split": "val",
+        "original_images": 2
+      }
+    ],
+    "cultivar_by_split": {
+      "unrecorded:train": 369,
+      "unrecorded:test": 79,
+      "unrecorded:val": 75
+    },
+    "plant_orchard_identity": "not supplied by source; independence not proven"
+  }
+}

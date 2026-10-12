@@ -1,0 +1,379 @@
+{
+  "protocol": {
+    "matching_iou": 0.5,
+    "nms_iou": 0.5,
+    "imgsz": 384,
+    "validation_test": "same confidence for each model/class; confidence selected on validation only",
+    "true_negatives": "undefined in object detection; not reported"
+  },
+  "models": {
+    "berry_aux": {
+      "classes": {
+        "berry": {
+          "validation": {
+            "threshold": 0.3,
+            "class_id": 0,
+            "precision": 0.8699057480419488,
+            "recall": 0.6465712876171682,
+            "f1": 0.7417930722209644,
+            "tp": 6553,
+            "fp": 980,
+            "fn": 3582,
+            "images": 120,
+            "count_mae": 21.733333333333334,
+            "count_rmse": 27.840917130487398,
+            "count_bias": -21.683333333333334
+          },
+          "test": {
+            "threshold": 0.3,
+            "class_id": 0,
+            "precision": 0.8826284416690321,
+            "recall": 0.647003745318352,
+            "f1": 0.7466682674990995,
+            "tp": 6219,
+            "fp": 827,
+            "fn": 3393,
+            "images": 120,
+            "count_mae": 21.716666666666665,
+            "count_rmse": 28.492689120778568,
+            "count_bias": -21.383333333333333
+          },
+          "conditional_group_bootstrap": {
+            "sampling_unit": "capture-number group",
+            "groups": 6,
+            "resamples": 10000,
+            "seed": 20261012,
+            "f1_percentile_95": [
+              0.7268661320172732,
+              0.7707348242811501
+            ],
+            "mae_percentile_95": [
+              13.725,
+              27.816666666666666
+            ],
+            "scope": "Conditional on labels and saved model; assumes numbered groups independent. Plant/orchard independence is unverified. Not training-seed variability."
+          }
+        }
+      },
+      "test_AP": {
+        "metrics/precision(B)": 0.8897422964869937,
+        "metrics/recall(B)": 0.6464460100305943,
+        "metrics/mAP50(B)": 0.7148345805396865,
+        "metrics/mAP50-95(B)": 0.4505091644753817,
+        "fitness": 0.4505091644753817
+      }
+    },
+    "flower": {
+      "classes": {
+        "inflorescence": {
+          "validation": {
+            "threshold": 0.5,
+            "class_id": 0,
+            "precision": 0.9166666666666666,
+            "recall": 0.9058823529411765,
+            "f1": 0.9112426035502958,
+            "tp": 77,
+            "fp": 7,
+            "fn": 8,
+            "images": 75,
+            "count_mae": 0.14666666666666667,
+            "count_rmse": 0.5033222956847166,
+            "count_bias": -0.013333333333333334
+          },
+          "test": {
+            "threshold": 0.5,
+            "class_id": 0,
+            "precision": 0.9111111111111111,
+            "recall": 0.8631578947368421,
+            "f1": 0.8864864864864865,
+            "tp": 82,
+            "fp": 8,
+            "fn": 13,
+            "images": 79,
+            "count_mae": 0.13924050632911392,
+            "count_rmse": 0.3731494423540171,
+            "count_bias": -0.06329113924050633
+          },
+          "conditional_group_bootstrap": {
+            "sampling_unit": "capture-number group",
+            "groups": 9,
+            "resamples": 10000,
+            "seed": 20261012,
+            "f1_percentile_95": [
+              0.8148148148148148,
+              0.9554140127388535
+            ],
+            "mae_percentile_95": [
+              0.0759493670886076,
+              0.20481927710843373
+            ],
+            "scope": "Conditional on labels and saved model; assumes numbered groups independent. Plant/orchard independence is unverified. Not training-seed variability."
+          }
+        },
+        "spikelet": {
+          "validation": {
+            "threshold": 0.25,
+            "class_id": 1,
+            "precision": 0.6283783783783784,
+            "recall": 0.5341416719846841,
+            "f1": 0.577440496723008,
+            "tp": 837,
+            "fp": 495,
+            "fn": 730,
+            "images": 75,
+            "count_mae": 4.973333333333334,
+            "count_rmse": 7.632387132040233,
+            "count_bias": -3.1333333333333333
+          },
+          "test": {
+            "threshold": 0.25,
+            "class_id": 1,
+            "precision": 0.6190140845070422,
+            "recall": 0.5155425219941349,
+            "f1": 0.56256,
+            "tp": 879,
+            "fp": 541,
+            "fn": 826,
+            "images": 79,
+            "count_mae": 5.556962025316456,
+            "count_rmse": 7.371687198457265,
+            "count_bias": -3.607594936708861
+          },
+          "conditional_group_bootstrap": {
+            "sampling_unit": "capture-number group",
+            "groups": 9,
+            "resamples": 10000,
+            "seed": 20261012,
+            "f1_percentile_95": [
+              0.5384841140112274,
+              0.588477366255144
+            ],
+            "mae_percentile_95": [
+              4.847113095238096,
+              6.265822784810126
+            ],
+            "scope": "Conditional on labels and saved model; assumes numbered groups independent. Plant/orchard independence is unverified. Not training-seed variability."
+          }
+        }
+      },
+      "test_AP": {
+        "metrics/precision(B)": 0.7572953468886559,
+        "metrics/recall(B)": 0.6883778360858157,
+        "metrics/mAP50(B)": 0.7229859595184667,
+        "metrics/mAP50-95(B)": 0.43175945054515213,
+        "fitness": 0.43175945054515213
+      }
+    },
+    "young": {
+      "classes": {
+        "berry": {
+          "validation": {
+            "threshold": 0.4,
+            "class_id": 0,
+            "precision": 0.5483870967741935,
+            "recall": 0.4722222222222222,
+            "f1": 0.5074626865671641,
+            "tp": 17,
+            "fp": 14,
+            "fn": 19,
+            "images": 1,
+            "count_mae": 5.0,
+            "count_rmse": 5.0,
+            "count_bias": -5.0
+          },
+          "test": {
+            "threshold": 0.4,
+            "class_id": 0,
+            "precision": 0.9166666666666666,
+            "recall": 0.8461538461538461,
+            "f1": 0.8799999999999999,
+            "tp": 66,
+            "fp": 6,
+            "fn": 12,
+            "images": 2,
+            "count_mae": 3.0,
+            "count_rmse": 3.1622776601683795,
+            "count_bias": -3.0
+          },
+          "uncertainty": "Only 2 regions from one test source. No defensible population confidence interval or significance claim."
+        }
+      },
+      "test_AP": {
+        "metrics/precision(B)": 0.943634213096171,
+        "metrics/recall(B)": 0.8585321765640059,
+        "metrics/mAP50(B)": 0.8740585162317515,
+        "metrics/mAP50-95(B)": 0.41892895978961164,
+        "fitness": 0.41892895978961164
+      }
+    }
+  },
+  "cultivar_results": {
+    "Kyoho": {
+      "threshold": 0.3,
+      "class_id": 0,
+      "precision": 0.8848439821693908,
+      "recall": 0.6163001293661061,
+      "f1": 0.7265517767271619,
+      "tp": 2382,
+      "fp": 310,
+      "fn": 1483,
+      "images": 40,
+      "count_mae": 29.325,
+      "count_rmse": 34.9760632433097,
+      "count_bias": -29.325
+    },
+    "ShineMuscat": {
+      "threshold": 0.3,
+      "class_id": 0,
+      "precision": 0.8917884481558803,
+      "recall": 0.6622739018087855,
+      "f1": 0.7600830367734283,
+      "tp": 2563,
+      "fp": 311,
+      "fn": 1307,
+      "images": 40,
+      "count_mae": 24.9,
+      "count_rmse": 28.1238333091348,
+      "count_bias": -24.9
+    },
+    "SummerBlack": {
+      "threshold": 0.3,
+      "class_id": 0,
+      "precision": 0.8608108108108108,
+      "recall": 0.678742674480554,
+      "f1": 0.7590110217456062,
+      "tp": 1274,
+      "fp": 206,
+      "fn": 603,
+      "images": 40,
+      "count_mae": 10.925,
+      "count_rmse": 20.523766710816023,
+      "count_bias": -9.925
+    }
+  },
+  "young_common_threshold_comparison": [
+    {
+      "common_threshold": 0.3,
+      "baseline": {
+        "threshold": 0.3,
+        "class_id": 0,
+        "precision": 0.7311827956989247,
+        "recall": 0.8717948717948718,
+        "f1": 0.7953216374269005,
+        "tp": 68,
+        "fp": 25,
+        "fn": 10,
+        "images": 2,
+        "count_mae": 7.5,
+        "count_rmse": 9.300537618869138,
+        "count_bias": 7.5
+      },
+      "adapted": {
+        "threshold": 0.3,
+        "class_id": 0,
+        "precision": 0.8095238095238095,
+        "recall": 0.8717948717948718,
+        "f1": 0.8395061728395062,
+        "tp": 68,
+        "fp": 16,
+        "fn": 10,
+        "images": 2,
+        "count_mae": 3.0,
+        "count_rmse": 3.1622776601683795,
+        "count_bias": 3.0
+      },
+      "paired_region_differences": [
+        {
+          "region_index": 1,
+          "adapted_minus_baseline_absolute_count_error": -9
+        },
+        {
+          "region_index": 2,
+          "adapted_minus_baseline_absolute_count_error": 0
+        }
+      ]
+    },
+    {
+      "common_threshold": 0.4,
+      "baseline": {
+        "threshold": 0.4,
+        "class_id": 0,
+        "precision": 0.7906976744186046,
+        "recall": 0.8717948717948718,
+        "f1": 0.8292682926829267,
+        "tp": 68,
+        "fp": 18,
+        "fn": 10,
+        "images": 2,
+        "count_mae": 5.0,
+        "count_rmse": 6.4031242374328485,
+        "count_bias": 4.0
+      },
+      "adapted": {
+        "threshold": 0.4,
+        "class_id": 0,
+        "precision": 0.9166666666666666,
+        "recall": 0.8461538461538461,
+        "f1": 0.8799999999999999,
+        "tp": 66,
+        "fp": 6,
+        "fn": 12,
+        "images": 2,
+        "count_mae": 3.0,
+        "count_rmse": 3.1622776601683795,
+        "count_bias": -3.0
+      },
+      "paired_region_differences": [
+        {
+          "region_index": 1,
+          "adapted_minus_baseline_absolute_count_error": -5
+        },
+        {
+          "region_index": 2,
+          "adapted_minus_baseline_absolute_count_error": 1
+        }
+      ]
+    },
+    {
+      "common_threshold": 0.5,
+      "baseline": {
+        "threshold": 0.5,
+        "class_id": 0,
+        "precision": 0.8701298701298701,
+        "recall": 0.8589743589743589,
+        "f1": 0.8645161290322582,
+        "tp": 67,
+        "fp": 10,
+        "fn": 11,
+        "images": 2,
+        "count_mae": 4.5,
+        "count_rmse": 4.527692569068709,
+        "count_bias": -0.5
+      },
+      "adapted": {
+        "threshold": 0.5,
+        "class_id": 0,
+        "precision": 0.9538461538461539,
+        "recall": 0.7948717948717948,
+        "f1": 0.8671328671328672,
+        "tp": 62,
+        "fp": 3,
+        "fn": 16,
+        "images": 2,
+        "count_mae": 6.5,
+        "count_rmse": 6.519202405202649,
+        "count_bias": -6.5
+      },
+      "paired_region_differences": [
+        {
+          "region_index": 1,
+          "adapted_minus_baseline_absolute_count_error": 2
+        },
+        {
+          "region_index": 2,
+          "adapted_minus_baseline_absolute_count_error": 2
+        }
+      ]
+    }
+  ]
+}

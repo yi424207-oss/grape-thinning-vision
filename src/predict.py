@@ -20,7 +20,7 @@ def run(image,weights,output,size_ratio=.7,target=None,conf=.3,roi=None,imgsz=38
     for yy in starts(ch):
       for xx in starts(cw):
         patch=crop[yy:yy+tile,xx:xx+tile]
-        r=model.predict(patch,imgsz=imgsz,conf=conf,iou=.5,max_det=1000,verbose=False,device='cpu')[0]
+        r=model.predict(patch,imgsz=imgsz,rect=False,conf=conf,iou=.5,max_det=1000,verbose=False,device='cpu')[0]
         if r.boxes is not None:
           b=r.boxes.xyxy.cpu().numpy();b+=np.array([xx+x0,yy+y0,xx+x0,yy+y0]);boxes.extend(b.tolist());scores.extend(r.boxes.conf.cpu().numpy().tolist())
     if boxes:
@@ -28,7 +28,7 @@ def run(image,weights,output,size_ratio=.7,target=None,conf=.3,roi=None,imgsz=38
       inds=np.asarray(cv2.dnn.NMSBoxes(xywh,scores,conf,.45),dtype=int).reshape(-1)
       boxes=b[inds].tolist();scores=np.array(scores)[inds].tolist()
     result=decide(boxes,scores,size_ratio,target)
-    result.update(image=Path(image).name,roi=[x0,y0,x1,y1],elapsed_seconds=time.perf_counter()-t,scope='visible berries only',model=Path(weights).name,confidence_threshold=conf,inference_imgsz=imgsz,tile_size=1024,tile_stride=768)
+    result.update(schema_version='2.0', image=Path(image).name,roi=[x0,y0,x1,y1],elapsed_seconds=time.perf_counter()-t,scope='visible berries only',model=Path(weights).name,confidence_threshold=conf,inference_imgsz=imgsz,tile_size=1024,tile_stride=768)
     output=Path(output);output.mkdir(parents=True,exist_ok=True)
     overlay=raw.copy()
     for row in result['decisions']:
@@ -37,7 +37,7 @@ def run(image,weights,output,size_ratio=.7,target=None,conf=.3,roi=None,imgsz=38
     cv2.imencode('.jpg',overlay)[1].tofile(str(output/'annotated.jpg'))
     (output/'result.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     with (output/'berries.csv').open('w',newline='',encoding='utf-8-sig') as f:
-      writer=csv.DictWriter(f,fieldnames=['id','box','confidence','relative_diameter','action','reason']);writer.writeheader();writer.writerows(result['decisions'])
+      writer=csv.DictWriter(f,fieldnames=['id','box','confidence','relative_scale','action','reason']);writer.writeheader();writer.writerows(result['decisions'])
     return result
 
 if __name__=='__main__':

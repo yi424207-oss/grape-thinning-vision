@@ -2,9 +2,7 @@
 from pathlib import Path
 import argparse,json
 import numpy as np
-import torch
 from PIL import Image
-from ultralytics import YOLO
 R=Path(__file__).resolve().parents[1]
 def ious(b,g):
  a=np.maximum(b[:2],g[:,:2]);z=np.minimum(b[2:],g[:,2:]);inter=np.prod(np.maximum(0,z-a),axis=1)
@@ -33,6 +31,8 @@ def collect(model,data,split):
    rows.append(dict(file=p.name,gt=gt,pred=[[int(c),float(s),*b] for c,s,b in zip(res.boxes.cls.tolist(),res.boxes.conf.tolist(),res.boxes.xyxy.tolist())]))
  return rows
 if __name__=='__main__':
+ import torch
+ from ultralytics import YOLO
  a=argparse.ArgumentParser();a.add_argument('--task',choices=['berry_aux','flower','young'],default='berry_aux');a.add_argument('--weights');a.add_argument('--report-name');args=a.parse_args();task=args.task;report_name=args.report_name or task
  torch.set_num_threads(8);data=R/'data'/({'berry_aux':'berry_yolo','flower':'flower_yolo','young':'young_yolo'}[task]);model=YOLO(args.weights or str(R/'runs'/task/'weights/best.pt'))
  rows={s:collect(model,data,s) for s in ['val','test']};(R/'reports'/f'{report_name}_predictions.json').write_text(json.dumps(rows))

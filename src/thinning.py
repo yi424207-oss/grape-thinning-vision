@@ -7,7 +7,7 @@ class Decision:
     id: int
     box: list
     confidence: float
-    relative_diameter: float
+    relative_scale: float
     action: str
     reason: str
 
@@ -25,7 +25,7 @@ def decide(boxes, scores, size_ratio=0.70, visible_target=None):
     if not len(b):return dict(visible_count=0,remove_count=0,keep_count=0,decisions=[])
     wh=b[:,2:]-b[:,:2]
     if (wh<=0).any():raise ValueError('boxes must have positive dimensions')
-    diameter=np.sqrt(wh.prod(axis=1));relative=diameter/np.median(diameter)
+    scale=np.sqrt(wh.prod(axis=1));relative=scale/np.median(scale)
     remove=relative<size_ratio;reasons=np.where(remove,'relative_small','keep').astype(object)
     if visible_target is not None and (~remove).sum()>visible_target:
         # Remove the smaller member in the closest normalized pair; recompute after each removal.
@@ -35,9 +35,9 @@ def decide(boxes, scores, size_ratio=0.70, visible_target=None):
             if len(idx)==1:chosen=idx[0]
             else:
                 dist=np.linalg.norm(centers[idx,None]-centers[None,idx],axis=-1)
-                dist/=np.maximum((diameter[idx,None]+diameter[None,idx])/2,1e-9)
+                dist/=np.maximum((scale[idx,None]+scale[None,idx])/2,1e-9)
                 np.fill_diagonal(dist,np.inf);a,c=np.unravel_index(dist.argmin(),dist.shape)
-                pair=[idx[a],idx[c]];chosen=min(pair,key=lambda j:(diameter[j],s[j],j))
+                pair=[idx[a],idx[c]];chosen=min(pair,key=lambda j:(scale[j],s[j],j))
             remove[chosen]=True;reasons[chosen]='crowding_target'
     rows=[asdict(Decision(i+1,box.tolist(),float(s[i]),float(relative[i]),'remove' if remove[i] else 'keep',str(reasons[i]))) for i,box in enumerate(b)]
     return dict(visible_count=len(b),remove_count=int(remove.sum()),keep_count=int((~remove).sum()),size_ratio=size_ratio,visible_target=visible_target,decisions=rows)
