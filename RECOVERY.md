@@ -1,3 +1,5 @@
+> 优先从 [第二版 Release](https://github.com/yi424207-oss/grape-thinning-vision/releases/tag/v0.2.0-visual) 下载 grape-thinning-delivery-v02.zip 并直接解压。独立论文、源码和图表记录也已附在该版本中。下述分卷是原始备份恢复方式。
+
 # 第二版公开材料恢复索引
 
 第二版完整包发布位置：downloads/v02。进入该目录，运行 python assemble_delivery.py，逐卷校验并生成 grape-thinning-delivery-v02.zip，然后解压。完整包包括代码、论文、三组模型权重、训练日志、1123张许可图片及标签、评测和审计记录。
