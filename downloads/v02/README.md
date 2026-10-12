@@ -1,3 +1,5 @@
+> **新版下载入口：[v0.2.0-visual](https://github.com/yi424207-oss/grape-thinning-vision/releases/tag/v0.2.0-visual)。优先下载 Release 中的完整 ZIP，无需合并分卷。以下分卷保留为原始备份；Release 附件同步了较新的文字说明，其校验值请使用 Release 的 RELEASE_SHA256SUMS.txt。**
+
 # 第二版完整交付包
 
 完整包共 269,087,545 字节，包含设计程序、三组模型权重、训练与评价日志、论文 DOCX/PDF、结果图，以及 1123 张有公开再分发许可的实际数据图片和配套标签。训练划分共 729 张。未获得明确再分发许可的私人幼果照片不在公开包内。
