@@ -1,6 +1,6 @@
 # 第三版恢复与留档
 
-当前完整交付由v0.3.0-review Release的grape-thinning-delivery-v03.zip恢复，直接解压。代码、论文、评测与过程文字保存在main；v03-review分支保留审阅修订检查点。辅助果粒三种子中间档案与最终九次训练档案均保留于同一Release。
+当前完整交付由v0.3.1-writing Release的grape-thinning-delivery-v031.zip恢复，直接解压。代码、论文、评测与过程文字保存在main；v03-review分支保留审阅修订检查点。最终九次训练档案随当前Release交付；辅助果粒三种子中间检查点保留在v0.3.0-review Release。
 
 每次重复训练的runs/repeats目录保存best.pt、last.pt、args.yaml和25轮results.csv，统计见reports/seed_repeats.json。移位后运行python scripts/relink_datasets.py，再按docs/使用说明.md运行。
 

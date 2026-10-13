@@ -1,0 +1,10 @@
+{
+  "version": "v0.3.1-writing",
+  "pages": 21,
+  "figure_groups": 21,
+  "tables": 13,
+  "all_pages_visually_checked": true,
+  "experiment_json_and_figures_unchanged": 61,
+  "scope": "editorial structure and wording only; no new experiments",
+  "pdf_sha256": "273f724af6b28b799b9be86bc1b6a117f2ceb9039582accb007c84e49cc5e166"
+}

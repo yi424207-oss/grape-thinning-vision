@@ -20,7 +20,7 @@
 
 ## 下载与运行
 
-优先从 [第三版 Release](https://github.com/yi424207-oss/grape-thinning-vision/releases/tag/v0.3.0-review) 下载 **grape-thinning-delivery-v03.zip**，直接解压即可。完整包包含代码、原模型、9次重复训练权重与记录、1123张许可图片及标签、更新论文和所有过程证据。独立附件提供Word、PDF、源码、图表与实验记录，以及重复训练档案。downloads/v02与旧Release仅作历史备份，不用于当前版本运行。
+优先从 [第三版 Release](https://github.com/yi424207-oss/grape-thinning-vision/releases/tag/v0.3.1-writing) 下载 **grape-thinning-delivery-v031.zip**，直接解压即可。完整包包含代码、原模型、9次重复训练权重与记录、1123张许可图片及标签、更新论文和所有过程证据。独立附件提供Word、PDF、源码、图表与实验记录，以及重复训练档案。downloads/v02与旧Release仅作历史备份，不用于当前版本运行。
 
 ```bash
 python -m venv .venv
@@ -43,7 +43,7 @@ python src/app.py
 - PUBLIC_PACKAGE_SCOPE.md：公开包包含的材料及复现限制。
 - DATA_SOURCES.md 与 LICENSE：来源署名、数据范围和许可。
 
-设计源码、文本说明与评测记录按目录保存在仓库；完整包同时包含图片、论文DOCX/PDF、数据和模型。根目录source-code.zip和downloads/v02是历史版本；第三版运行请使用v0.3.0-review完整包。
+设计源码、文本说明与评测记录按目录保存在仓库；完整包同时包含图片、论文DOCX/PDF、数据和模型。根目录source-code.zip和downloads/v02是历史版本；第三版运行请使用v0.3.1-writing完整包。
 
 ## 农艺与评价边界
 
@@ -60,9 +60,13 @@ python src/app.py
 新增统一匹配IoU=0.50的TP/FP/FN图、同阈值适配比较、三品种分布、按编号组bootstrap条件区间、三种子复验、漏检扰动和CPU实测。原主实验保持独立，未用新种子较高分数覆盖原值。幼果样本量没有因重复训练而增加；专家复核、田间真值及GUI交互验收仍未完成。
 
 - [可编辑论文正文](docs/论文正文.md)与[PDF](docs/课程设计论文.pdf)
-- [第三版Word分卷](docs/editable-paper-v03)
+- [当前Word分卷](docs/editable-paper-v031)
 - [论文图表](docs/figures)与[来源索引](reports/figure_evidence_index.json)
 - [重复训练原始结果](reports/seed_repeats.json)
 - [同口径复评与条件区间](reports/review_statistics.json)
 - [CPU原始计时](reports/cpu_benchmark.json)
 - [第三版下载说明](RELEASE_DOWNLOAD.md)
+
+## 文字与结构修订
+
+v0.3.1-writing按文字审阅建议压缩重复说明，补充实施条件下的设计取舍，幼果移出主结果表，强化结论的研究优先级。实验数值、模型与配图未修改。逐项评判见[修订记录](docs/文字审阅意见评判与修订.md)。

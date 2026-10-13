@@ -1,4 +1,4 @@
-"""Build and verify v03 public archives; private datasets stay outside the project."""
+"""Build and verify v031 public archives; private datasets stay outside the project."""
 from pathlib import Path
 import argparse,hashlib,json,shutil,zipfile
 from PIL import Image
@@ -40,22 +40,22 @@ def main(dest):
         assert len((run/'results.csv').read_text().splitlines())==26
         assert not list(run.rglob('*.jpg')) and not list(run.rglob('*.png'))
     validation={'public_dataset_images_fully_decoded':counts,'public_images':1123,'training_images':729,'seed_runs':9,'epochs_per_seed_run':25,'unit_tests':8,'gui_interaction':'unverified','young_labels':'weak; no expert review','private_dataset_included':False}
-    (ROOT/'reports/delivery_v03_validation.json').write_text(json.dumps(validation,ensure_ascii=False,indent=2)+'\n')
+    (ROOT/'reports/delivery_v031_validation.json').write_text(json.dumps(validation,ensure_ascii=False,indent=2)+'\n')
     files=sorted(p for p in ROOT.rglob('*') if p.is_file() and permitted(p))
     for p in files:
         if p.suffix.lower() in {'.jpg','.png'}:
             with Image.open(p) as im:im.load()
     (ROOT/'SHA256SUMS.txt').write_text(''.join(f'{digest(p)}  {p.relative_to(ROOT).as_posix()}\n' for p in files))
-    archive(dest/'grape-thinning-delivery-v03.zip',files)
+    archive(dest/'grape-thinning-delivery-v031.zip',files)
     source=[p for p in files if p.relative_to(ROOT).parts[0] in {'src','scripts','tests'} or len(p.relative_to(ROOT).parts)==1 or (p.relative_to(ROOT).parts[0]=='docs' and p.suffix=='.md')]
-    archive(dest/'source-code-v03.zip',source)
+    archive(dest/'source-code-v031.zip',source)
     evidence=[p for p in files if p.relative_to(ROOT).parts[0]=='reports' or (p.relative_to(ROOT).parts[0]=='docs' and 'figures' in p.relative_to(ROOT).parts) or (p.relative_to(ROOT).parts[0]=='runs' and p.suffix in {'.csv','.yaml'})]
-    archive(dest/'figures-and-evidence-v03.zip',evidence)
+    archive(dest/'figures-and-evidence-v031.zip',evidence)
     repeat=[p for p in files if p.relative_to(ROOT).parts[:2]==('runs','repeats') or p.name=='seed_repeats.json']
-    archive(dest/'repeat-training-v03.zip',repeat)
-    for original,name in [('课程设计论文.docx','course-paper-v03.docx'),('课程设计论文.pdf','course-paper-v03.pdf')]:shutil.copyfile(ROOT/'docs'/original,dest/name)
-    selected=sorted(p for p in dest.iterdir() if p.is_file() and p.name!='RELEASE_SHA256SUMS.txt')
+    archive(dest/'repeat-training-v031.zip',repeat)
+    for original,name in [('课程设计论文.docx','course-paper-v031.docx'),('课程设计论文.pdf','course-paper-v031.pdf')]:shutil.copyfile(ROOT/'docs'/original,dest/name)
+    selected=[dest/name for name in ['grape-thinning-delivery-v031.zip','source-code-v031.zip','figures-and-evidence-v031.zip','repeat-training-v031.zip','course-paper-v031.docx','course-paper-v031.pdf']]
     (dest/'RELEASE_SHA256SUMS.txt').write_text(''.join(f'{digest(p)}  {p.name}\n' for p in selected))
     print('ZIP CRC and per-entry SHA-256 passed',flush=True)
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=ROOT.parent/'release-v03');main(parser.parse_args().output)
+    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=ROOT.parent/'release-v031');main(parser.parse_args().output)
