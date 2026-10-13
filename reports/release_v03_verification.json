@@ -1,0 +1,80 @@
+{
+  "version": "v0.3.0-review",
+  "release_url": "https://github.com/yi424207-oss/grape-thinning-vision/releases/tag/v0.3.0-review",
+  "release_id": 410657187,
+  "published_at": "2026-10-13T06:42:13Z",
+  "draft": false,
+  "latest": true,
+  "source_commit": "d6c30bfadcbe86b06cc2a1d506a827019e06dd02",
+  "changed_git_files_verified": 67,
+  "git_file_verification": "Every file's remote Git blob SHA matched the local original bytes, including BOM and CRLF CSV exports.",
+  "release_assets": [
+    {
+      "name": "auxiliary-seed-checkpoint.zip",
+      "bytes": 35397075,
+      "sha256": "b081844057f3f47b5d030434b43adb9f3d2e232e25fb75cee8fb857a258030b3",
+      "url": "https://github.com/yi424207-oss/grape-thinning-vision/releases/download/v0.3.0-review/auxiliary-seed-checkpoint.zip"
+    },
+    {
+      "name": "course-paper-v03.docx",
+      "bytes": 14104327,
+      "sha256": "9f4f2ac3de3ac818c4601384735882f1afce19cddac21575fe3cad4c556bfacd",
+      "url": "https://github.com/yi424207-oss/grape-thinning-vision/releases/download/v0.3.0-review/course-paper-v03.docx"
+    },
+    {
+      "name": "course-paper-v03.pdf",
+      "bytes": 4405810,
+      "sha256": "2f9ea4ad288bdc37331e42ba00421d1e634c0a19686d34c862aa574ae20bf013",
+      "url": "https://github.com/yi424207-oss/grape-thinning-vision/releases/download/v0.3.0-review/course-paper-v03.pdf"
+    },
+    {
+      "name": "figures-and-evidence-v03.zip",
+      "bytes": 19540902,
+      "sha256": "61c678999893b978e6522ce7b92d56a68c643fd15a4aee00d22d8a73aa93e8ff",
+      "url": "https://github.com/yi424207-oss/grape-thinning-vision/releases/download/v0.3.0-review/figures-and-evidence-v03.zip"
+    },
+    {
+      "name": "grape-thinning-delivery-v03.zip",
+      "bytes": 390340694,
+      "sha256": "0ab89773fb3b2131da677d0b329117fa4da6818a69751363b77ce8a97fce6ce9",
+      "url": "https://github.com/yi424207-oss/grape-thinning-vision/releases/download/v0.3.0-review/grape-thinning-delivery-v03.zip"
+    },
+    {
+      "name": "RELEASE_SHA256SUMS.txt",
+      "bytes": 746,
+      "sha256": "d8984bf5a56cbee3a5ce2d31bec85bb845ae3c7babb0ac5a4e0797f1b050713f",
+      "url": "https://github.com/yi424207-oss/grape-thinning-vision/releases/download/v0.3.0-review/RELEASE_SHA256SUMS.txt"
+    },
+    {
+      "name": "repeat-training-v03.zip",
+      "bytes": 106198661,
+      "sha256": "a5913e4a8f8b9c7001704534475afa2cf035e15061f4da94990bbcc8e2da4f55",
+      "url": "https://github.com/yi424207-oss/grape-thinning-vision/releases/download/v0.3.0-review/repeat-training-v03.zip"
+    },
+    {
+      "name": "source-code-v03.zip",
+      "bytes": 93492,
+      "sha256": "8f0f81a4118ac4ccba473e5db449101bb4181a0739996e06c9d163a629eba2af",
+      "url": "https://github.com/yi424207-oss/grape-thinning-vision/releases/download/v0.3.0-review/source-code-v03.zip"
+    }
+  ],
+  "archive_verification": "Original ZIP CRC and internal SHA-256 passed. Restored complete v03 bundle and every manifest entry verified after the interrupted session.",
+  "paper": {
+    "pages": 21,
+    "figure_groups": 21,
+    "tables": 13,
+    "all_pages_visually_checked": true
+  },
+  "experiments": {
+    "additional_seed_runs": 9,
+    "epochs_per_run": 25,
+    "unit_tests_passed": 8
+  },
+  "remaining_limits": [
+    "No expert or double-human label review",
+    "No field thinning ground truth",
+    "GUI window interaction not accepted",
+    "Young data remains a small weak-label experiment and is not distributed in public artifacts"
+  ],
+  "proof": "reports/release-v03-published.jpg"
+}
