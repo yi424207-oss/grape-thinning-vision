@@ -1,0 +1,22 @@
+{
+  "visible_count": 39,
+  "remove_count": 19,
+  "keep_count": 20,
+  "size_ratio": 0.7,
+  "visible_target": 20,
+  "schema_version": "2.0",
+  "image": "berry_demo_input.jpg",
+  "roi": [
+    0,
+    0,
+    1200,
+    1800
+  ],
+  "elapsed_seconds": 15.094280601000037,
+  "scope": "visible berries only",
+  "model": "best.pt",
+  "confidence_threshold": 0.3,
+  "inference_imgsz": 384,
+  "tile_size": 1024,
+  "tile_stride": 768
+}

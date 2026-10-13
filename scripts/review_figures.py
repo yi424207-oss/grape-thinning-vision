@@ -77,5 +77,21 @@ for entry in index:
     if n=='berry_samples.png': entry.update(source=[p.relative_to(R).as_posix() for p in samples])
     if n.endswith('_cm_evidence.png') or n=='test_confusion.png': entry.update(source='reports/review_statistics.json',protocol='match IoU 0.50; validation-selected confidence reused for test; TP/FP/FN only')
     if n in ['csv_export_preview.png','cli_run_record.png']: entry.update(source='outputs/public_v03/result.json',schema_version='2.0')
+index=[x for x in index if x['figure'] not in ['scale_missingness_sensitivity.png','seed_repeat_results.png']]
 index.append({'figure':'scale_missingness_sensitivity.png','source':'reports/scale_missingness_sensitivity.json'})
 (R/'reports/figure_evidence_index.json').write_text(json.dumps(index,ensure_ascii=False,indent=2)+'\n')
+
+seed_report=json.loads((R/'reports/seed_repeats.json').read_text())
+if len(seed_report['runs'])==9:
+    entries=[('berry_aux','berry','辅助果粒'),('flower','inflorescence','整花序'),('flower','spikelet','小穗'),('young','berry','幼果试验')]
+    fig,axs=plt.subplots(2,4,figsize=(11,5.3))
+    for col,(task,label,title) in enumerate(entries):
+        q=seed_report['summary'][task][label]
+        for row,metric,ylabel in [(0,'f1','F1'),(1,'count_mae','计数 MAE')]:
+            ax=axs[row,col];values=q[metric]['values'];ax.plot(range(3),values,'o-',color='#227c9d');ax.set_xticks(range(3),['10','12','13']);ax.set_xlabel('种子日期后缀 202610');ax.set_ylabel(ylabel);ax.grid(alpha=.2)
+            if row==0:ax.set_title(title);ax.set_ylim(0,1)
+            else:ax.set_ylim(bottom=0)
+            for i,v in enumerate(values):ax.annotate(f'{v:.3f}',(i,v),xytext=(0,6),textcoords='offset points',ha='center',fontsize=8)
+    fig.tight_layout();fig.savefig(O/'seed_repeat_results.png',dpi=220);plt.close(fig)
+    index.append({'figure':'seed_repeat_results.png','source':'reports/seed_repeats.json','scope':'fixed-split seed variability; not independent field replication'})
+    (R/'reports/figure_evidence_index.json').write_text(json.dumps(index,ensure_ascii=False,indent=2)+'\n')

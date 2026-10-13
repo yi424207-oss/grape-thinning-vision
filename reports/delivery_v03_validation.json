@@ -1,0 +1,22 @@
+{
+  "public_dataset_images_fully_decoded": {
+    "berry_yolo": {
+      "train": 360,
+      "val": 120,
+      "test": 120
+    },
+    "flower_yolo": {
+      "train": 369,
+      "val": 75,
+      "test": 79
+    }
+  },
+  "public_images": 1123,
+  "training_images": 729,
+  "seed_runs": 9,
+  "epochs_per_seed_run": 25,
+  "unit_tests": 8,
+  "gui_interaction": "unverified",
+  "young_labels": "weak; no expert review",
+  "private_dataset_included": false
+}

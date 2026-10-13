@@ -1,0 +1,33 @@
+{
+  "source": "saved licensed demonstration detections; simulated selective missingness, not new detector performance",
+  "rows": [
+    {
+      "simulated_smallest_fraction_lost": 0,
+      "remaining": 40,
+      "median_scale": 106.70164117756111,
+      "remove_count": 15,
+      "remaining_action_flips": 0
+    },
+    {
+      "simulated_smallest_fraction_lost": 0.1,
+      "remaining": 36,
+      "median_scale": 110.02479604664924,
+      "remove_count": 11,
+      "remaining_action_flips": 0
+    },
+    {
+      "simulated_smallest_fraction_lost": 0.2,
+      "remaining": 32,
+      "median_scale": 116.72416743484575,
+      "remove_count": 8,
+      "remaining_action_flips": 1
+    },
+    {
+      "simulated_smallest_fraction_lost": 0.3,
+      "remaining": 28,
+      "median_scale": 121.70641385085479,
+      "remove_count": 5,
+      "remaining_action_flips": 2
+    }
+  ]
+}

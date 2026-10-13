@@ -59,7 +59,7 @@ for label,key in [('轮次','epochs'),('输入边长 px','imgsz'),('批量','bat
  rows.append([label]+[str(configs[t][key]) for t in ['berry_aux','flower','young']])
 page('3.1 原始模型训练配置')
 table('表4 各模型独立训练配置',['参数','辅助果粒','花序与小穗','幼果适配'],rows)
-note('原训练日志记录Python 3.12.14、PyTorch 2.14.1+cpu、Ultralytics 8.4.175。依赖已固定在requirements.txt，补充的完整CPU依赖锁定文件为requirements-lock-cpu.txt。三组训练各只有一个随机种子，尚未评估训练种子变异。')
+note('原训练日志记录Python 3.12.14、PyTorch 2.14.1+cpu、Ultralytics 8.4.175。依赖已固定在requirements.txt，补充的完整CPU依赖锁定文件为requirements-lock-cpu.txt。原主实验各只有一个随机种子；本轮追加每模型三个种子复验，配置和结果单独报告。')
 for task,title,num,detail in [
  ('berry_aux','4 辅助果粒模型训练结果',5,'该模型学习较大果粒，稠密场景仍存在漏检。验证曲线不能代替幼果性能，也不能作为独立测试结论。'),
  ('flower','4.1 花序与小穗模型训练结果',7,'整花序尺度较大，定位较容易；小穗密集且相似，定位与类别混淆更明显。spikelet指小穗，不能当作单花。'),
@@ -102,11 +102,11 @@ fig('test_error_examples.png','图19 独立测试中计数误差最大的两个�
 p('失败图主动选取绝对计数误差最大的测试样本，避免只展示好看的结果。密集果粒在384像素输入下目标很小，遮挡导致漏检，叶片及果梗也可能产生误检；提高小果比例阈值不会修复检测漏检。')
 sens=json.loads((R/'reports/threshold_sensitivity.json').read_text())
 table('表7 同一40粒演示ROI的小果比例敏感性',['比例τ','检测数','建议去除','保留'],[[f"{x['size_ratio']:.2f}",x['visible_count'],x['remove_count'],x['keep_count']] for x in sens])
-p('默认0.70下建议去除15粒、保留25粒。该表只验证规则响应与数量守恒，未与农艺专家疏除选择对照，不能据此称默认比例最优。工程验收通过6项单元测试及真实照片导出、中文路径、空白图像、缺失文件、越界ROI和CSV/JSON一致性检查。')
+p('默认0.70下建议去除15粒、保留25粒。该表只验证规则响应与数量守恒，未与农艺专家疏除选择对照，不能据此称默认比例最优。原版工程验收通过6项单元测试及真实照片导出、中文路径、空白图像、缺失文件、越界ROI和CSV/JSON一致性检查。')
 page('7.1 选择性漏检与规则敏感性')
 fig('scale_missingness_sensitivity.png','图20 删除最小框的模拟对剩余对象建议的影响',6.1)
 note('在保存的40框示例上模拟删除最小的10%、20%、30%检测框，中位尺度由106.70 px增至110.02、116.72、121.71 px；剩余对象建议分别改变0、1、2个。这是检测结果上的扰动分析，不是新检测性能实验。中位数归一化也会受选择性漏检影响；分位数或空间分层需另行验证，当前建议必须由人工复查。')
-page('7.2 指标不确定性与CPU性能')
+page('7.2 指标不确定性与AP评估')
 rows=[]
 for task,name,label in [('berry_aux','berry','辅助果粒'),('flower','inflorescence','整花序'),('flower','spikelet','小穗')]:
  q=review['models'][task]['classes'][name]['conditional_group_bootstrap'];a=q['f1_percentile_95'];b=q['mae_percentile_95']
@@ -119,20 +119,36 @@ for task in ['berry_aux','flower']:
  for name,q in ap[task]['class_AP'].items():rows.append([task+' '+name,f"{q['AP50']:.4f}",f"{q['AP50_95']:.4f}"])
 rows.append(['幼果 流程试验',f"{young['test_AP']['metrics/mAP50(B)']:.4f}",f"{young['test_AP']['metrics/mAP50-95(B)']:.4f}"])
 table('表9 独立测试AP与固定阈值指标分开报告',['对象','AP50','AP50至95'],rows)
-note('辅助及花序AP已以原权重重新验证；幼果AP引用保存的原始评测，未重新取得图片。AP50匹配IoU为0.50；AP50至95为IoU 0.50至0.95步长0.05的平均。AP评测候选置信度下限0.001、NMS IoU 0.50，不能把该下限称作固定工作阈值。')
-page('7.3 运行测量和导出字段')
+note('三组AP均已以原主实验权重重新验证，并与原记录一致；本轮重复训练另列。AP50匹配IoU为0.50；AP50至95为IoU 0.50至0.95步长0.05的平均。AP评测候选置信度下限0.001、NMS IoU 0.50，不能把该下限称作固定工作阈值。')
+page('7.3 三种随机种子重复训练')
+seed_report=json.loads((R/'reports/seed_repeats.json').read_text())
+assert len(seed_report['runs'])==9, 'Complete all nine seed runs before publishing this paper'
+p('固定原有数据划分，分别用20261010、20261012、20261013三个种子追加训练，每次25轮，共9次。辅助果粒和花序从同一COCO预训练权重开始；幼果均从原主实验辅助best.pt开始，不按辅助复验的测试表现选择初始模型。冻结层数、优化器、学习率与输入大小沿用原配置；本轮固定8线程、workers=0、patience=25，保持实际训练轮数一致。')
+fig('seed_repeat_results.png','图21 固定划分下各随机种子的F1与计数MAE',6.1)
+rows=[]
+for task,name,label,unit in [('berry_aux','berry','辅助果粒','粒每图块'),('flower','inflorescence','整花序','穗每图'),('flower','spikelet','小穗','小穗每图'),('young','berry','幼果试验','粒每区域')]:
+ q=seed_report['summary'][task][name];f=q['f1'];m=q['count_mae']
+ rows.append([label,f"{f['mean']:.4f} ± {f['sample_std']:.4f}",f"{m['mean']:.2f} ± {m['sample_std']:.2f}",unit])
+table('表10 三次训练的均值和样本标准差',['对象','F1','计数MAE','MAE单位'],rows)
+note('每次最佳轮次及工作阈值仅由验证集选择，再固定到测试；全部种子均报告。完整逐次指标、AP和阈值见reports/seed_repeats.json，权重、配置与25轮CSV见runs/repeats。标准差仅表示当前固定划分和标签条件下的训练波动，不是跨果园泛化区间。幼果验证仅1区、测试仅2区；三次重训没有增加独立测试样本，也不能减轻弱标签偏差。当前硬件及workers与原主实验有差异，因此原主实验与本轮种子复验分别列示，不用新值覆盖旧值。')
+ap_seed=[]
+for task,label in [('berry_aux','辅助果粒'),('flower','花序两类平均'),('young','幼果试验')]:
+ a=seed_report['test_AP_summary'][task]['metrics/mAP50(B)'];b=seed_report['test_AP_summary'][task]['metrics/mAP50-95(B)']
+ ap_seed.append(f"{label} {a['mean']:.4f}±{a['sample_std']:.4f} / {b['mean']:.4f}±{b['sample_std']:.4f}")
+note('三种子测试mAP50 / mAP50至95的均值±标准差：'+'；'.join(ap_seed)+'。花序值为两类平均，不是单独小穗的AP。')
+page('7.4 运行测量和导出字段')
 rows=[]
 for q in cpu['tasks']:
  rows.append([q['model'],q['batch'],f"{q['mean_per_image_seconds']*1000:.2f}",f"{q['throughput_images_per_second']:.1f}",f"{q['process_peak_rss_mib']:.1f}"])
-table('表10 当前CPU预热推理测量',['模型','批量','ms每图','图每秒','峰值RSS MiB'],rows)
+table('表11 当前CPU预热推理测量',['模型','批量','ms每图','图每秒','峰值RSS MiB'],rows)
 note('硬件为'+cpu['cpu']+'，固定8线程、384像素方形填充。预热3次后测20次；同一已解码许可图重复输入，包含预处理、前向与NMS，不包含模型加载、磁盘读取、ROI切窗和结果导出。吞吐量不是交互界面的端到端FPS，峰值RSS为进程累计峰值，不是独立模型内存。原训练硬件为AMD EPYC 9V74，不能与当前测量混同。原始时间序列与标准差见reports/cpu_benchmark.json。')
-table('表11 CSV及JSON逐粒字段',['字段','含义和取值'],[['id','当前结果内从1开始的编号 对应编号图 不保证跨图一致'],['box','原图像素坐标 x1 y1 x2 y2'],['confidence','检测置信度 0至1 不表示农艺正确概率'],['relative_scale','sqrt(框面积)除以当前检测框尺度中位数 无量纲'],['action','keep 保留 或 remove 建议去除'],['reason','keep 未触发规则 relative_small 低于尺度阈值 crowding_target 因可见上限去除']])
+table('表12 CSV及JSON逐粒字段',['字段','含义和取值'],[['id','当前结果内从1开始的编号 对应编号图 不保证跨图一致'],['box','原图像素坐标 x1 y1 x2 y2'],['confidence','检测置信度 0至1 不表示农艺正确概率'],['relative_scale','sqrt(框面积)除以当前检测框尺度中位数 无量纲'],['action','keep 保留 或 remove 建议去除'],['reason','keep 未触发规则 relative_small 低于尺度阈值 crowding_target 因可见上限去除']])
 note('只有设置visible_target时才使用crowding_target；花序分支仅输出定位与类别计数，不输出果粒去除动作。8项单元测试通过；新版CLI实测39个检测对象，建议去除12、保留27，字段与编号图可对应。')
 page('8 结论与交付复现')
 p('本设计完成三组实际训练及可见目标识别、相对大小筛选、可调上限和结构化导出。训练数据、曲线、混淆矩阵与失败案例均保留来源路径，便于检查“样本—训练—验证—测试—程序输出”的对应关系。当前可作为课程算法原型，尚无整穗隐藏粒数、田间疏除正确率或机械剪切精度的证据。')
 p('后续应优先扩大跨果园、跨光照的独立幼果样本，并由双人或专家复核标签，再考虑实例分割与果梗朝向。继续追求更高小样本分数不足以消除上述限制。')
-table('表12 交付包可直接查找的材料',['目录','内容'],[['data/berry_yolo images labels','实际辅助果粒训练360 验证120 测试120图块'],['data/flower_yolo images labels','实际花序训练369 验证75 测试79原图'],['幼果模型与汇总记录','公开包不包含幼果原图及逐图标注 无法仅依公开包重训'],['runs 各模型目录','best last权重 results.csv results.png 矩阵 PR'],['docs figures','论文图及图像来源证据索引'],['src scripts tests reports','程序 复现脚本 单元测试 实际评测与日志']])
-p('完整包解压后先按使用说明安装依赖，再运行提供的两张有许可的示例；模型已训练，无需重训才能识别。幼果网络来源可能失效，公开包也不包含对应原图和逐图标注，其复现只能核查汇总记录及已训练权重。更换路径后运行scripts/relink_datasets.py。未完成双人或专家复核、田间验证、多随机种子重训和桌面窗口交互验收。')
+table('表13 交付包可直接查找的材料',['目录','内容'],[['data/berry_yolo images labels','实际辅助果粒训练360 验证120 测试120图块'],['data/flower_yolo images labels','实际花序训练369 验证75 测试79原图'],['幼果模型与汇总记录','公开包不包含幼果原图及逐图标注 无法仅依公开包重训'],['runs 各模型目录','best last权重 results.csv results.png 矩阵 PR'],['docs figures','论文图及图像来源证据索引'],['src scripts tests reports','程序 复现脚本 单元测试 实际评测与日志']])
+p('完整包解压后先按使用说明安装依赖，再运行提供的两张有许可的示例；模型已训练，无需重训才能识别。幼果网络来源可能失效，公开包也不包含对应原图和逐图标注，其复现只能核查汇总记录及已训练权重。更换路径后运行scripts/relink_datasets.py。本轮已补充9次多随机种子训练和CPU测量；双人或专家复核、田间验证和桌面窗口交互验收仍未完成。')
 page('参考文献')
 refs=[
 '[1] YANG C, GENG T, PENG J, et al. Mask-GK An efficient method based on mask Gaussian kernel for segmentation and counting of grape berries in field[J]. Computers and Electronics in Agriculture, 2025, 234:110286. DOI:10.1016/j.compag.2025.110286.',

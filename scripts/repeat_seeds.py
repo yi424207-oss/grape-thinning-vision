@@ -31,7 +31,7 @@ def execute(external_data=None):
                 patience=25,close_mosaic=5,cache=False,plots=False,save=True,verbose=False,amp=False)
             best=YOLO(str(out/'weights/best.pt'))
             rows={split:collect(best,data,split) for split in ['val','test']}
-            result={'task':task,'seed':seed,'train_seconds':time.perf_counter()-start,'classes':{}}
+            result={'task':task,'seed':seed,'training_and_operating_point_evaluation_seconds':time.perf_counter()-start,'classes':{}}
             for c,label in best.names.items():
                 sweep=[score(rows['val'],t,c) for t in [.05,.1,.15,.2,.25,.3,.4,.5]]
                 chosen=max(sweep,key=lambda x:x['f1']);test=score(rows['test'],chosen['threshold'],c)
@@ -59,6 +59,10 @@ def execute(external_data=None):
                 ckpt=torch.load(f,map_location='cpu',weights_only=False)
                 if isinstance(ckpt.get('train_args'),dict):
                     for key in ['data','model','project','save_dir']:ckpt['train_args'][key]=cfg[key]
+                for model_key in ['model','ema']:
+                    instance=ckpt.get(model_key)
+                    if isinstance(getattr(instance,'args',None),dict):
+                        for key in ['data','model','project','save_dir']:instance.args[key]=cfg[key]
                 torch.save(ckpt,f)
             print('COMPLETED',name,flush=True)
             del model,best,ap,rows;gc.collect()

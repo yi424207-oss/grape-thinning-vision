@@ -1,0 +1,17 @@
+{
+  "output": "course-paper-v03.docx",
+  "size": 14104327,
+  "sha256": "9f4f2ac3de3ac818c4601384735882f1afce19cddac21575fe3cad4c556bfacd",
+  "parts": [
+    {
+      "file": "course-paper-v03.docx.part01",
+      "size": 8000000,
+      "sha256": "5251c6ff98c076bf548616f3f3bb8e59484cbbe5d4dc8a34d54672ed97867c3c"
+    },
+    {
+      "file": "course-paper-v03.docx.part02",
+      "size": 6104327,
+      "sha256": "bf3120254c3e05d0045d5998ab6cfb75d3fda6d72d9063d3f372c044349aad83"
+    }
+  ]
+}

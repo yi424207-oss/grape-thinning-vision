@@ -2,12 +2,12 @@
   {
     "figure": "berry_samples.png",
     "source": [
+      "data/berry_yolo/images/train/Kyoho_10_00.jpg",
+      "data/berry_yolo/images/train/Kyoho_10_01.jpg",
+      "data/berry_yolo/images/train/ShineMuscat_10_00.jpg",
       "data/berry_yolo/images/train/ShineMuscat_10_01.jpg",
-      "data/berry_yolo/images/train/ShineMuscat_2_00.jpg",
-      "data/berry_yolo/images/train/ShineMuscat_34_11.jpg",
-      "data/berry_yolo/images/train/ShineMuscat_3_10.jpg",
-      "data/berry_yolo/images/train/ShineMuscat_4_11.jpg",
-      "data/berry_yolo/images/train/ShineMuscat_9_11.jpg"
+      "data/berry_yolo/images/train/SummerBlack_10_00.jpg",
+      "data/berry_yolo/images/train/SummerBlack_10_01.jpg"
     ]
   },
   {
@@ -83,30 +83,18 @@
   },
   {
     "figure": "berry_aux_cm_evidence.png",
-    "source": {
-      "numeric_source": "reports/visual_validation.json",
-      "task": "berry_aux",
-      "conf": 0.001,
-      "match_iou": 0.45
-    }
+    "source": "reports/review_statistics.json",
+    "protocol": "match IoU 0.50; validation-selected confidence reused for test; TP/FP/FN only"
   },
   {
     "figure": "flower_cm_evidence.png",
-    "source": {
-      "numeric_source": "reports/visual_validation.json",
-      "task": "flower",
-      "conf": 0.001,
-      "match_iou": 0.45
-    }
+    "source": "reports/review_statistics.json",
+    "protocol": "match IoU 0.50; validation-selected confidence reused for test; TP/FP/FN only"
   },
   {
     "figure": "young_cm_evidence.png",
-    "source": {
-      "numeric_source": "reports/visual_validation.json",
-      "task": "young",
-      "conf": 0.001,
-      "match_iou": 0.45
-    }
+    "source": "reports/review_statistics.json",
+    "protocol": "match IoU 0.50; validation-selected confidence reused for test; TP/FP/FN only"
   },
   {
     "figure": "berry_aux_train_batch0.jpg",
@@ -120,7 +108,8 @@
   },
   {
     "figure": "test_confusion.png",
-    "source": "reports/*_evaluation.json: fixed threshold on held-out test"
+    "source": "reports/review_statistics.json",
+    "protocol": "match IoU 0.50; validation-selected confidence reused for test; TP/FP/FN only"
   },
   {
     "figure": "test_count_scatter.png",
@@ -142,15 +131,13 @@
   },
   {
     "figure": "cli_run_record.png",
-    "source": [
-      "outputs/public_quickstart/result.json",
-      "reports/unit_tests.txt",
-      "reports/delivery_verification.json"
-    ]
+    "source": "outputs/public_v03/result.json",
+    "schema_version": "2.0"
   },
   {
     "figure": "csv_export_preview.png",
-    "source": "outputs/public_quickstart/berries.csv"
+    "source": "outputs/public_v03/result.json",
+    "schema_version": "2.0"
   },
   {
     "figure": "test_error_examples.png",
@@ -159,5 +146,14 @@
       "cyan": "ground truth",
       "orange": "prediction"
     }
+  },
+  {
+    "figure": "scale_missingness_sensitivity.png",
+    "source": "reports/scale_missingness_sensitivity.json"
+  },
+  {
+    "figure": "seed_repeat_results.png",
+    "source": "reports/seed_repeats.json",
+    "scope": "fixed-split seed variability; not independent field replication"
   }
 ]

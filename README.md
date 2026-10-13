@@ -4,11 +4,11 @@
 
 ## 新版材料与样本位置
 
-新版论文有19组图，含实际训练样本、批次、三组results.png、验证和测试矩阵、PR曲线、导出与失败案例。完整交付包直接包含1123张许可图片及标签，其中训练侧729张；幼果40个实际输入另作私人附件，见docs/数据交付索引.md。
+第三版论文有21组图，含实际训练样本、批次、三组results.png、同口径验证和测试TP/FP/FN、PR曲线、导出与失败案例。完整交付包直接包含1123张许可图片及标签，其中训练侧729张；幼果40个实际输入未获明确再分发许可，不在公开包中，见docs/数据交付索引.md。
 
 ## 当前交付状态
 
-命令行识别、单穗ROI、相对大小阈值、可见保留上限、编号图和CSV/JSON导出已实际运行。三组模型实际完成25轮CPU训练。6项单元测试与端到端导出检查通过。桌面界面源码已完成，但受当前环境图形连接限制，只验证了导入和语法，尚未完成窗口交互验收。
+命令行识别、单穗ROI、相对大小阈值、可见保留上限、编号图和CSV/JSON导出已实际运行。三组主实验各完成25轮CPU训练，本轮另完成每模型3种子共9次25轮重训。8项单元测试和两组实际CLI导出检查通过。桌面界面源码已完成，但受当前环境图形连接限制，只验证了导入和语法，尚未完成窗口交互验收。
 
 幼果训练使用37张真实疏果期照片的1571个伪标签；外部验证1个区域、测试2个区域78个AI视觉辅助检查框，未经专家复核。这是小规模探索试验，不能声称已达到田间应用水平。大果粒结果与幼果结果分开。
 
@@ -20,7 +20,7 @@
 
 ## 下载与运行
 
-优先从 [第二版 Release](https://github.com/yi424207-oss/grape-thinning-vision/releases/tag/v0.2.0-visual) 下载 **grape-thinning-delivery-v02.zip**，直接解压即可，无需合并分卷。仓库中的 downloads/v02 分卷仍作为原始备份保留。此包是可运行课程原型，保留了上述验证范围和不足。GitHub 的 Code → Download ZIP 会包含全部分卷；解压仓库后，在 downloads/v02 目录运行 `python assemble_delivery.py`，再解压生成的完整包并进入项目目录运行下述命令。
+优先从 [第三版 Release](https://github.com/yi424207-oss/grape-thinning-vision/releases/tag/v0.3.0-review) 下载 **grape-thinning-delivery-v03.zip**，直接解压即可。完整包包含代码、原模型、9次重复训练权重与记录、1123张许可图片及标签、更新论文和所有过程证据。独立附件提供Word、PDF、源码、图表与实验记录，以及重复训练档案。downloads/v02与旧Release仅作历史备份，不用于当前版本运行。
 
 ```bash
 python -m venv .venv
@@ -43,25 +43,26 @@ python src/app.py
 - PUBLIC_PACKAGE_SCOPE.md：公开包包含的材料及复现限制。
 - DATA_SOURCES.md 与 LICENSE：来源署名、数据范围和许可。
 
-设计源码、文本说明与评测记录按目录保存在仓库；完整包同时包含图片、论文DOCX/PDF、数据和模型。根目录 source-code.zip 是历史版本，第二版请使用当前目录源码或 downloads/v02 完整包。第二版模型和完整过程档案同时在新 Release 完整附件与原始 downloads/v02 分卷中提供；旧版 Release 保留历史检查点。
+设计源码、文本说明与评测记录按目录保存在仓库；完整包同时包含图片、论文DOCX/PDF、数据和模型。根目录source-code.zip和downloads/v02是历史版本；第三版运行请使用v0.3.0-review完整包。
 
 ## 农艺与评价边界
 
 默认相对尺度0.70是工程启发式参数，未经专家疏果选择验证。输出仅为检测到的可见果粒，隐藏果粒不推算；不能把45–50粒整穗指标直接填作照片可见目标。花序中的 spikelet 是小穗，不能当单花或果粒。幼果训练标签是伪标签，外部框是AI辅助检查框；禁止把小样本F1写成普遍识别准确率。
 
-网络幼果照片未明确许可再分发；第二版公开包不包含这些照片、对应逐图标注和来源定位清单，也不包含相关备份恢复脚本。仅靠公开包无法重新训练幼果模型，但可检查保存的权重与统计结果。CC BY 4.0 原始花序/GBISC附件位于checkpoint-001 Release，署名见DATA_SOURCES.md。
+网络幼果照片未明确许可再分发；公开包不包含这些照片、对应逐图标注和来源定位清单，也不包含相关备份恢复脚本。仅靠公开包无法重新训练幼果模型，但可检查保存的权重与统计结果。CC BY 4.0 原始花序/GBISC附件位于checkpoint-001 Release，署名见DATA_SOURCES.md。
 
 本项目代码与YOLO模型按AGPL-3.0发布。所有实验结论以本仓库实际日志为依据，未使用生成图像冒充训练照片。
 
-## 第二版下载与上传验收
+## 审阅修订与验证
 
-- [第二版 Release：完整 ZIP 直接下载](https://github.com/yi424207-oss/grape-thinning-vision/releases/tag/v0.2.0-visual)
-- [历史分卷备份与合并说明](downloads/v02/README.md)
-- [论文PDF](docs/课程设计论文.pdf)
-- [可编辑Word：两卷及合并脚本](docs/editable-paper)
-- [论文图表：30张图像文件](docs/figures)
-- [上传验收记录](reports/github_v02_publication_verification.json)
+[逐项核对与修订记录](docs/审阅意见核对与修订.md)区分真实问题和误读：原F1为0.746668，统一显示0.7467；原表“33”是保留数，去除数本来就是单调的3、7、15、17、19。
 
-第二版公开包包含2434个条目。上传时已通过ZIP CRC、逐文件SHA-256及远端Git blob校验；2026年10月12日复核全部23卷在库、文件大小与清单一致。第二版 Release：https://github.com/yi424207-oss/grape-thinning-vision/releases/tag/v0.2.0-visual 。旧版 Release 仅作历史归档。
+新增统一匹配IoU=0.50的TP/FP/FN图、同阈值适配比较、三品种分布、按编号组bootstrap条件区间、三种子复验、漏检扰动和CPU实测。原主实验保持独立，未用新种子较高分数覆盖原值。幼果样本量没有因重复训练而增加；专家复核、田间真值及GUI交互验收仍未完成。
 
-根目录SHA256SUMS.txt描述完整包解压后的文件；分卷校验值见 downloads/v02/manifest.json。Word原件也包含在完整包内。GUI窗口交互尚未实测，幼果小样本结果不代表田间应用准确率。
+- [可编辑论文正文](docs/论文正文.md)与[PDF](docs/课程设计论文.pdf)
+- [第三版Word分卷](docs/editable-paper-v03)
+- [论文图表](docs/figures)与[来源索引](reports/figure_evidence_index.json)
+- [重复训练原始结果](reports/seed_repeats.json)
+- [同口径复评与条件区间](reports/review_statistics.json)
+- [CPU原始计时](reports/cpu_benchmark.json)
+- [第三版下载说明](RELEASE_DOWNLOAD.md)

@@ -1,11 +1,9 @@
-> 优先从 [第二版 Release](https://github.com/yi424207-oss/grape-thinning-vision/releases/tag/v0.2.0-visual) 下载 grape-thinning-delivery-v02.zip 并直接解压。独立论文、源码和图表记录也已附在该版本中。下述分卷是原始备份恢复方式。
+# 第三版恢复与留档
 
-# 第二版公开材料恢复索引
+当前完整交付由v0.3.0-review Release的grape-thinning-delivery-v03.zip恢复，直接解压。代码、论文、评测与过程文字保存在main；v03-review分支保留审阅修订检查点。辅助果粒三种子中间档案与最终九次训练档案均保留于同一Release。
 
-第二版完整包发布位置：downloads/v02。进入该目录，运行 python assemble_delivery.py，逐卷校验并生成 grape-thinning-delivery-v02.zip，然后解压。完整包包括代码、论文、三组模型权重、训练日志、1123张许可图片及标签、评测和审计记录。
+每次重复训练的runs/repeats目录保存best.pt、last.pt、args.yaml和25轮results.csv，统计见reports/seed_repeats.json。移位后运行python scripts/relink_datasets.py，再按docs/使用说明.md运行。
 
-旧版 Release 保留早期开发检查点。若早期统计或评测与第二版不一致，以第二版和纠正记录为准。原始 CC BY 数据在 checkpoint-001 Release 的 flower-original-ccby4.zip 与 gbisc-original-ccby4.zip；署名和许可见 DATA_SOURCES.md。
+旧v0.2.0-visual、downloads/v02与早期Release保留原始过程。原始CC BY 4.0花序与GBISC附件仍在checkpoint-001 Release。
 
-移动项目后运行 python scripts/relink_datasets.py 更新数据路径。未获明确再分发许可的照片不在公开交付包内，因此不能仅靠本公开包重现幼果训练；已训练幼果权重、日志及标注方法记录仍可检查。辅助果粒和花序的实际图片、标签可直接检查和复用。
-
-已完成：三组25轮训练、分组与重复审计、统一填充后的评测、幼果适配前后对照、CLI端到端测试、论文排版和源代码。限制：GUI窗口交互尚未实测；无田间疏除真值；幼果独立场景很少，训练标签为伪标签，外部框未经专家复核。
+幼果输入及标注未取得明确再分发许可，保持非公开。专家复核、田间验证及桌面窗口交互验收尚未完成。
