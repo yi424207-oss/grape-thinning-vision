@@ -1,0 +1,58 @@
+{
+  "version": "v0.3.1-writing",
+  "published": true,
+  "release_url": "https://github.com/yi424207-oss/grape-thinning-vision/releases/tag/v0.3.1-writing",
+  "source_commit": "de3a338a7d34d864221edf4c16c0e1460b2f93ec",
+  "assets": [
+    {
+      "name": "course-paper-v031.docx",
+      "size": 14104886,
+      "state": "uploaded",
+      "digest": "sha256:bb900b63ce253ad9c759e277c22c871370bc56cf03b88adbdd6c7bcb412f4032"
+    },
+    {
+      "name": "course-paper-v031.pdf",
+      "size": 4386557,
+      "state": "uploaded",
+      "digest": "sha256:273f724af6b28b799b9be86bc1b6a117f2ceb9039582accb007c84e49cc5e166"
+    },
+    {
+      "name": "figures-and-evidence-v031.zip",
+      "size": 19668157,
+      "state": "uploaded",
+      "digest": "sha256:3649df1a2267ced5713e426b9fcb82b2f6d9c059d5c7de9930841e7c2b811ab0"
+    },
+    {
+      "name": "grape-thinning-delivery-v031.zip",
+      "size": 390457767,
+      "state": "uploaded",
+      "digest": "sha256:61e2f49255cdf9dc0d7f51fbe469d7f23fd0c109b3aa867944147eea5f14a588"
+    },
+    {
+      "name": "RELEASE_SHA256SUMS.txt",
+      "size": 550,
+      "state": "uploaded",
+      "digest": "sha256:edc49a295b934bd498066d960ab7d09e8bb337dcd9f631b4cb94572e72d2d484"
+    },
+    {
+      "name": "repeat-training-v031.zip",
+      "size": 106198661,
+      "state": "uploaded",
+      "digest": "sha256:023433b1cbb9f38974c06da01e6c3ed644120961ac69d922edcc8805db9f2c5e"
+    },
+    {
+      "name": "source-code-v031.zip",
+      "size": 96243,
+      "state": "uploaded",
+      "digest": "sha256:ae7577610a44b9668d06e9a8bac970699a3e858ee210b2e92004d35f12b9f949"
+    }
+  ],
+  "asset_sha256_matched_local": true,
+  "paper_pages": 21,
+  "figure_groups": 21,
+  "tables": 13,
+  "unchanged_experiment_json_and_figures": 61,
+  "checked_text_git_blobs": 8,
+  "scope": "Editorial restructuring only; no new experiments or altered experimental values.",
+  "current_document_location": "Release course-paper-v031.docx/pdf; previous repository PDF archived under docs/archive/course-paper-v03.pdf"
+}
